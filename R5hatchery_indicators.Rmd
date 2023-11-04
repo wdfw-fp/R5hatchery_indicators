@@ -1,0 +1,178 @@
+---
+title: "R5HatcheryIndicators"
+author: "thomas buehrens"
+date: "2023-11-02"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+pacman ::p_load(jsonlite, dplyr, RODBC, curl,odbc,DBI,tidyverse,janitor,fuzzyjoin)
+```
+
+## Query SPI
+```{r }
+database_args<-list(
+  Driver = "PostgreSQL Unicode",
+  Server = Sys.getenv("POSTGRES_SPI_IP"),
+  Database = "FISH",
+  Port = 5433,
+  UID = Sys.getenv("POSTGRES_SPI_UN"),
+  PWD = Sys.getenv("POSTGRES_SPI_PW"),
+  Trusted_Connection = "True"
+)
+  
+con <- DBI::dbConnect(
+  odbc::odbc(),
+  Driver = database_args$Driver,
+  Server = database_args$Server,
+  Database = database_args$Database,
+  Port = database_args$Port,
+  UID = database_args$UID,
+  PWD = database_args$PWD,
+  Trusted_Connection = database_args$Trusted_Connection
+)
+
+species_lut<-data.frame(DBI::dbGetQuery(con, "SELECT * FROM spi.species_lut;"))%>%
+  dplyr::select(sasi_common_name,species_lut_id)
+
+sasi_run_lut<-data.frame(DBI::dbGetQuery(con, "SELECT * FROM spi.sasi_run_lut;"))%>%
+  dplyr::select(sasi_run_lut_id,sasi_run_desc)
+
+stock<- data.frame(DBI::dbGetQuery(con, "SELECT * FROM spi.stock;"))%>%
+    filter(nosa_esu_dps_name%in%c("Salmon, coho (Lower Columbia River ESU)",
+                                "Steelhead (Lower Columbia River DPS)",
+                                "Salmon, Chinook (Lower Columbia River ESU)",
+                                "Salmon, chum (Columbia River ESU)"
+                                ))%>%
+  left_join(species_lut)%>%
+  left_join(sasi_run_lut)%>%
+  mutate(location=gsub("Coho","",nosa_common_pop_name),
+         location=gsub("Steelhead","",location),
+         location=gsub("Chum","",location),
+         location=gsub("Chinook","",location),
+         location=gsub("Winter","",location),
+         location=gsub("Spring","",location),
+         location=gsub("Summer","",location),
+         location=gsub("Fall","",location),
+         location=gsub("Late","",location),
+         location=gsub("Early","",location),
+         location=gsub("(Bright)","",location),
+         location=gsub("(Tule)","",location),
+         location=gsub("  ","",location),
+         location=str_replace_all(location, "[[:space:]\\p{P}]+", " ")
+         )%>%
+  #dplyr::select(nosa_common_pop_name,nosa_esa_pop_name)%>%
+  filter(!is.na(nosa_esa_pop_name))%>%
+  dplyr::rename(stock = location,
+                run= sasi_run_desc
+                )%>%
+  mutate(species=str_replace_all(sasi_common_name, " ", ""),
+         facility_name = stock,
+         species=gsub("salmon","",species),
+         run=ifelse(run%in%c("Late","Both early & late","Early","Early (Type S)","Late (Type N)"),"Fall",run)
+         )%>%
+  mutate(across(c(species,run,stock,facility_name),~tolower(.)))
+
+
+DBI::dbDisconnect(con)
+```
+
+## Query FishBooks
+```{r }
+hatchery_spawn_groups <- function() {
+  con <- RODBC::odbcConnect("busprod_hatcheries")
+    results <- RODBC::sqlQuery(con, as.is = TRUE, 
+"SELECT distinct
+	facility.name
+    ,dfwf.Latitude_Meas as latitude
+	,dfwf.Longitude_Meas as longitude
+	,event.event_type_id,
+    event_type_lut.description
+	,SPECIES_LUT.Description as species_description
+	,run_lut.Description as run_description
+	, STOCK_LUT.Description as stock_description
+	,origin_lut.Description Origin_desc
+	,MARK_TYPE_CLIP_LUT.Description
+  FROM hatcheries.dbo.EVENT_ADULT
+     JOIN hatcheries.dbo.event ON event.event_id = event_adult.event_id
+     JOIN hatcheries.dbo.brood ON event.brood_id = brood.brood_id
+     JOIN hatcheries.dbo.facility ON facility.facility_id = event.facility_id
+     JOIN hatcheries.dbo.event_type_lut ON event_type_lut.event_type_id = event.event_type_id
+	  join STOCK_LUT on STOCK_LUT.STOCK_Id = brood.stock_id
+  join RUN_LUT on run_lut.RUN_Id = brood.run_id
+  join SPECIES_LUT on SPECIES_LUT.SPECIES_Id = brood.species_id
+  join ORIGIN_LUT on origin_lut.ORIGIN_Id = BROOD.ORIGIN_Id
+  join MARK_TYPE_CLIP_LUT on MARK_TYPE_CLIP_LUT.MARK_TYPE_CLIP_Id = EVENT_ADULT.MARK_TYPE_CLIP1_ID
+  join fishProgram.WALOCs.facility waf on waf.facility_id = EVENT.facility_id
+  join fishProgram.WALOCs.vw_WALOCS_DFW_Facility dfwf on dfwf.WALOC_Id = waf.WALOC_Id
+  where name not like 'OLY%'
+  and brood_year >= 2010
+  and dfwf.Hatchery_Region_Group like '%Columbia%'
+  and dfwf.Region = 5
+	 
+	 and (event_adult.male_num > 0 OR event_adult.female_num > 0 OR event_adult.adult_num > 0 OR event_adult.jack_num > 0 OR event_adult.nvf_num > 0) AND event.deleted_flag = 'false' AND (event.event_type_id in (3))"
+                          )
+                          
+    
+    
+    close(con)
+    
+    return(results)
+}
+
+#hatchery_spawn_groups<-hatchery_spawn_groups()
+hatchery_spawn_groups<-readxl::read_excel("LCR_Hatchery_Spawns.xlsx")%>%
+  filter(Description=="Unmarked",species_description!="CUTTHROAT")%>%
+  mutate(run_description=ifelse(run_description%in%c("TYPE N", "TYPE S"),"FALL",run_description),
+         run_description=ifelse(run_description=="WINTERLATE","WINTER",run_description),
+         run_description=ifelse(run_description=="NA" & species_description=="CHUM","FALL",run_description)
+         )%>%
+  dplyr::select(facility_name,species_description, stock_description,run_description,Description)%>%
+  mutate(quasi_noaa_name=paste(stock_description,run_description,species_description))%>%
+  group_by(facility_name,quasi_noaa_name)%>%#Origin_desc
+  summarise(facility_name=first(facility_name),
+            species_description = first(species_description),
+            stock_description = first(stock_description),
+            run_description = first(run_description),
+            quasi_noaa_name=first(quasi_noaa_name)
+            )%>%
+  dplyr::rename(stock=stock_description,species=species_description,run=run_description)%>%
+  ungroup()%>%
+  mutate(across(c(species,run,stock,facility_name),~tolower(.)))
+```
+
+```{r}
+column_pairs<-c("species","run","stock","facility_name")
+results<-stringdist_left_join(hatchery_spawn_groups, stock%>%                         dplyr::select(stock,run,species,facility_name,nosa_common_pop_name), by = column_pairs, max_dist =20000)%>%
+  ungroup()%>%
+  mutate(dist1=stringdist::stringdist(stock.x,stock.y),
+dist2=stringdist::stringdist(species.x,species.y),
+dist3=stringdist::stringdist(run.x,run.y),
+dist4=stringdist::stringdist(facility_name.x,facility_name.y),
+# dist1=dist1/max(dist1),
+# dist2=dist2/max(dist2),
+# dist3=dist3/max(dist3),
+# dist4=dist4/max(dist4),
+dist5=dist1+dist2+dist3+dist4
+)%>%
+  ungroup()%>%
+  group_by(quasi_noaa_name)%>%
+  filter(dist3==0)%>%
+  filter(dist2==0)%>%
+  filter(dist5==min(dist5))
+write.csv(results,"prelim_results.csv",row.names = F)
+```
+
+```{r }
+results<-readxl::read_excel("LCR_Hatchery_Spawns.xlsx")%>%
+  mutate(run_description2=ifelse(run_description%in%c("TYPE N", "TYPE S"),"FALL",run_description),
+         run_description2=ifelse(run_description2=="WINTERLATE","WINTER",run_description2),
+         run_description2=ifelse(run_description2=="NA" & species_description=="CHUM","FALL",run_description2)
+         )%>%
+  mutate(quasi_noaa_name=paste(stock_description,run_description2,species_description))%>%
+  dplyr::select(-run_description2)%>%
+  left_join(read_csv("LCR_hatchery_stock_NOAA_pop_lut.csv"))
+
+write.csv(results,"results_final.csv",row.names = F)
+```

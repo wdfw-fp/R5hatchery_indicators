@@ -1,0 +1,31 @@
+quasi_noaa_name,nosa_esa_pop_name,stock_id,comments
+Elochoman River FALL COHO,"Salmon, coho (Lower Columbia River ESU) Elochoman River - late",A8655092-2FE2-46DE-B49B-C5A2F4D44451,NA
+Cowlitz River FALL CHINOOK,"Salmon, Chinook (Lower Columbia River ESU) Lower Cowlitz River - fall",2780D7B8-3349-4A06-87C9-386B95DF1882,NA
+Cowlitz River FALL COHO,"Salmon, coho (Lower Columbia River ESU) Lower Cowlitz River - late",26A87887-9878-4DA6-A207-C9D26DAEC587,NA
+Cowlitz River Hatchery Stock FALL CHINOOK,"Salmon, Chinook (Lower Columbia River ESU) Lower Cowlitz River - fall",2780D7B8-3349-4A06-87C9-386B95DF1882,NA
+Cowlitz River Hatchery Stock SPRING CHINOOK,"Salmon, Chinook (Lower Columbia River ESU) Upper Cowlitz River - spring",3964C8A2-ECF7-4293-8DB4-52B417516542,never integrated!!! Shouldn't be unmarked fish in brood
+Cowlitz River WINTER STEELHEAD,Steelhead (Lower Columbia River DPS) Lower Cowlitz River - winter,0CCF5308-0104-462A-823D-208168F9ECF7,NA
+Tilton River WINTER STEELHEAD,Steelhead (Lower Columbia River DPS) Tilton River - winter,F088B0C7-1F48-40E0-B871-DA0FF4EB94E6,NA
+Upper Cowlitz River FALL COHO,"Salmon, coho (Lower Columbia River ESU) Upper Cowlitz River - early and late",F6D6E39E-80E1-4A22-A52D-EB733334D579,NA
+Lower Cowlitz River WINTER STEELHEAD,Steelhead (Lower Columbia River DPS) Lower Cowlitz River - winter,0CCF5308-0104-462A-823D-208168F9ECF7,NA
+Upper Cowlitz River WINTER STEELHEAD,Steelhead (Lower Columbia River DPS) Lower Cowlitz River - winter,0CCF5308-0104-462A-823D-208168F9ECF7,NA
+Grays River FALL CHUM,"Salmon, chum (Columbia River ESU) Grays and Chinook Rivers - fall",21B7D79C-A1CF-4C67-A798-D61AD141A523,NA
+Grays River FALL COHO,"Salmon, coho (Lower Columbia River ESU) Grays and Chinook Rivers - late",B0BAF03F-4C1A-440C-94FB-7BF53CD15D9D,was grays coho every integrated (should there be unmarked fish in brood?)
+Kalama Falls Hatchery WINTER STEELHEAD,Steelhead (Lower Columbia River DPS) Kalama River - winter,E4599B39-1404-49A3-B1CF-D09DE1F2963D,NA
+Kalama River FALL CHINOOK,"Salmon, Chinook (Lower Columbia River ESU) Kalama River - fall",936B6531-3BBF-4FD3-938E-9AFE87978842,was kalama fall chinook ever integrated?
+Kalama River FALL COHO,"Salmon, coho (Lower Columbia River ESU) Kalama River - late",FC5372B1-0479-448C-B9C5-E8591AA89999,was kalama fall chinook ever integrated?
+Kalama River SPRING CHINOOK,"Salmon, Chinook (Lower Columbia River ESU) Kalama River - spring",DC782234-F619-4D27-AD19-EDF19D9BF7E7,NA
+Kalama River SUMMER STEELHEAD,Steelhead (Lower Columbia River DPS) Kalama River - summer,286FEC6E-6971-4434-94D2-25E3F2737187,NA
+Kalama River WINTER STEELHEAD,Steelhead (Lower Columbia River DPS) Kalama River - winter,E4599B39-1404-49A3-B1CF-D09DE1F2963D,NA
+Lewis River WINTER STEELHEAD,NA,NA,placeholder name; this pop appears to be missing from SPI stock table
+Toutle River FALL CHINOOK,"Salmon, Chinook (Lower Columbia River ESU) Toutle River - fall",B1FE67B3-5D33-4978-AF69-1C3C5650A2F3,NA
+Toutle River FALL COHO,"Salmon, coho (Lower Columbia River ESU) North Fork Toutle River - early and late",DB8AF0AD-BAE9-480B-8A2F-643BF842E6B1,NA
+Lewis River FALL COHO,"Salmon, coho (Lower Columbia River ESU) North Fork Lewis River - early and late",48D5363E-85A4-45B3-AC34-112780345C7E,NA
+Lewis River Hatchery Stock FALL COHO,"Salmon, coho (Lower Columbia River ESU) North Fork Lewis River - early and late",48D5363E-85A4-45B3-AC34-112780345C7E,NA
+Lewis River SPRING CHINOOK,"Salmon, Chinook (Lower Columbia River ESU) North Fork Lewis River - spring",BDB87F1F-D64E-47A8-8CE6-0B6BC415973F,was lewis spring chinook ever integrated?
+Lewis River Hatchery Stock SPRING CHINOOK,"Salmon, Chinook (Lower Columbia River ESU) North Fork Lewis River - spring",BDB87F1F-D64E-47A8-8CE6-0B6BC415973F,was lewis spring chinook ever integrated?
+Columbia River FALL CHUM,"Salmon, chum (Columbia River ESU) Washougal River - fall",2CB705B7-0D2C-483F-88D3-80226165224B,NA
+I-205 FALL CHUM,"Salmon, chum (Columbia River ESU) Washougal River - fall",2CB705B7-0D2C-483F-88D3-80226165224B,NA
+Washougal River FALL CHINOOK,"Salmon, Chinook (Lower Columbia River ESU) Washougal River - fall",1F2F9F62-FE8F-4934-A1E3-DBAFF7FE49F9,NA
+Washougal River FALL COHO,"Salmon, coho (Lower Columbia River ESU) Washougal River - late",40B850DA-D2AF-43DE-9E39-495518B517BE,NA
+Washougal River Hatchery Stock FALL CHINOOK,"Salmon, Chinook (Lower Columbia River ESU) Washougal River - fall",1F2F9F62-FE8F-4934-A1E3-DBAFF7FE49F9,NA
