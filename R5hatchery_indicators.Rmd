@@ -2,16 +2,41 @@
 title: "R5HatcheryIndicators"
 author: "thomas buehrens"
 date: "2023-11-02"
-output: html_document
+output:
+  html_document:
+    code_folding: hide
+    fig_caption: yes
+    theme: cerulean
+    toc: yes
+    toc_depth: 3
+    toc_float: yes
+  pdf_document:
+    toc: yes
+    toc_depth: '3'
+  word_document:
+    toc: yes
+    toc_depth: '3'
+editor_options: 
+  markdown: 
+    wrap: 72
 ---
+
+```{=html}
+<script>
+   $(document).ready(function() {
+     $head = $('#header');
+     $head.prepend('<img src=\"https://privatelands.wdfw.wa.gov/wdfwlogo_clrnotxt.png"\" style=\"float: right;width: 150px;\"/>')
+   });
+</script>
+```
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
-pacman ::p_load(jsonlite, dplyr, RODBC, curl,odbc,DBI,tidyverse,janitor,fuzzyjoin,ggplot2)
+pacman ::p_load(jsonlite, dplyr, RODBC, curl,odbc,DBI,tidyverse,janitor,fuzzyjoin,ggplot2,lubridate,kableExtra)
 ```
 
 ## Query SPI to get LCR pop list
-```{r }
+```{r results='hide',warning=FALSE,message=FALSE}
 database_args<-list(
   Driver = "PostgreSQL Unicode",
   Server = Sys.getenv("POSTGRES_SPI_IP"),
@@ -39,7 +64,7 @@ species_lut<-data.frame(DBI::dbGetQuery(con, "SELECT * FROM spi.species_lut;"))%
 sasi_run_lut<-data.frame(DBI::dbGetQuery(con, "SELECT * FROM spi.sasi_run_lut;"))%>%
   dplyr::select(sasi_run_lut_id,sasi_run_desc)
 
-nosa<-data.frame(DBI::dbGetQuery(con, "SELECT * FROM spi.vw_ca_nosa;"))
+nosa<-data.frame(DBI::dbGetQuery(con, "SELECT * FROM spi.vw_ca_nosa_sos2;"))
 
 stock<- data.frame(DBI::dbGetQuery(con, "SELECT * FROM spi.stock;"))%>%
   filter(nosa_esu_dps_name%in%c("Salmon, coho (Lower Columbia River ESU)",
@@ -82,7 +107,7 @@ DBI::dbDisconnect(con)
 
 ## Query FishBooks to identify Unique Spawns
 Generates table of "unique spawns" (combo of stock, facility, run, species, mark)
-```{r }
+```{r results='hide',warning=FALSE,message=FALSE}
 #con_fp <- DBI::dbConnect(odbc::odbc(), Driver = "SQL Server", Server = "busprod.dfw.wa.lcl\\busprod", Database = "Hatcheries", Trusted_Connection = "True")
 #adult_all_coho <- tbl(con_fp, dbplyr::in_schema("Adult","vw_ADULT_All")) 
 
@@ -156,7 +181,7 @@ hatchery_spawn_groups<-readxl::read_excel("data/LCR_Hatchery_Spawns.xlsx")%>%
 
 # join SPI.stock to Unique Spawns in Lower Columbia R5
 This makes a "draft lookup table" that needs manual modification to create "LCR_hatchery_stock_NOAA_pop_lut.csv"
-```{r}
+```{r results='hide',warning=FALSE,message=FALSE}
 column_pairs<-c("species","run","stock","facility_name")
 results<-stringdist_left_join(hatchery_spawn_groups, stock%>%
                                 dplyr::select(stock,
@@ -183,8 +208,8 @@ results<-stringdist_left_join(hatchery_spawn_groups, stock%>%
 
 # Calculate hatchery metrics
 this joins "LCR_hatchery_stock_NOAA_pop_lut.csv" with all the brood codes and then calculates hatchery indicators by brood_code.
-```{r }
-results<-readxl::read_excel("data/LCR_Unique_Spawns.xlsx")%>%
+```{r results='hide',warning=FALSE,message=FALSE}
+results<-readxl::read_excel("data/LCR_Unique_Spawns_v2.xlsx")%>%
   mutate(run_description2=ifelse(run_description%in%c("TYPE N", "TYPE S"),"FALL",run_description),
          run_description2=ifelse(run_description2=="WINTERLATE","WINTER",run_description2),
          run_description2=ifelse(run_description2=="NA" & species_description=="CHUM","FALL",run_description2)
@@ -195,6 +220,13 @@ results<-readxl::read_excel("data/LCR_Unique_Spawns.xlsx")%>%
   mutate(quasi_noaa_name=paste(stock_description,run_description2,species_description))%>%
   dplyr::select(-run_description2)%>%
   filter(mark_type%in%c("Unmarked","AD"))%>%
+  mutate(brood_origin=ifelse(mark_type == "Unmarked", "Wild", "Hatchery"), #start by assuming unclipped = Wild
+         brood_origin=ifelse(mark_type == "Unmarked" & Wire_Present_flag == 1 & brood_code%in%paste0("SH:WL:LEWI:",2010:year(Sys.Date()),":MW"),"Hatchery",brood_origin), #make unclipped steelhead with wire hatchery on lewis.
+         brood_origin=ifelse(mark_type == "AD" & Wire_Present_flag == 1, "Hatchery",brood_origin), #make fish with wire detected but not collected and ad-clipped hatchery
+         brood_origin=ifelse(mark_type == "Unmarked" & Wire_Collected_flag == 1, "Hatchery",brood_origin),#make fish that are unmarked but have wire collected hatchery
+         brood_origin=ifelse(mark_type == "Unmarked" & Wire_Collected_flag == 1 & name=="COWLITZ SALMON HATCHERY" & species_description%in%c("COHO","STEELHEAD"), "Wild",brood_origin), #wire positive unmarked coho and steelhead from upper basin are wild
+          brood_origin=ifelse(mark_type == "Unmarked" & Wire_Present_flag == 1 & stock_description=="Lewis River" & species_description=="COHO","Hatchery",brood_origin) #wire positive unmarked coho in lewis are DIT hatchery fish
+  )%>%
   ungroup()%>%
   group_by(brood_code,
            Brood_Year,
@@ -202,10 +234,10 @@ results<-readxl::read_excel("data/LCR_Unique_Spawns.xlsx")%>%
            run_description,
            stock_description,
            Origin_desc,
-           mark_type,
+           brood_origin,
            quasi_noaa_name)%>%
   summarise(spawners = sum(males) + sum(females) + sum(jacks))%>%
-  pivot_wider(names_from = mark_type,values_from = spawners,values_fill = 0)%>%
+  pivot_wider(names_from = brood_origin,values_from = spawners,values_fill = 0)%>%
   left_join(read_csv("results/LCR_hatchery_stock_NOAA_pop_lut.csv")%>%
               mutate(Origin_desc="Mixed Hatchery/Wild Origin")
               )%>%
@@ -239,7 +271,7 @@ results<-readxl::read_excel("data/LCR_Unique_Spawns.xlsx")%>%
                        )
          ),
          pNOS = 1 - pHOS,
-         pNOB = Unmarked/(Unmarked+AD),
+         pNOB = Wild/(Wild + Hatchery),
          pHOB = 1 - pNOB,
          pNI = pNOB/(pHOS + pNOB)
          )
@@ -248,7 +280,7 @@ write.csv(results,"results/results_final.csv",row.names = F)
 ```
 
 # Visualize Results
-```{r}
+```{r message=F,results='hide',warning=F}
 
 p1<-ggplot(results,aes(x=Brood_Year,y=pNI,group=nosa_esa_pop_name,color=species_description))+
   geom_line()+
@@ -274,5 +306,22 @@ p3<-ggplot(results,aes(x=Brood_Year,y=pNOB,group=interaction(quasi_noaa_name,Ori
   ylim(0,1)+
   theme(legend.position="none")
 ggsave("results/pNOB_by_facility_stock_species.png",p3,width=8,height=48,units="in",dpi=150)
+```
 
+```{r message=F,results='asis',warning=F,fig.show='asis',fig.cap="Figure 1. pNI by NOAA population for integrated programs; if there is more than one program released in the basin, this is inaccurate." }
+knitr::include_graphics("results/pNI_by_NOAA_pop.png")
+```
+
+```{r message=F,results='asis',warning=F,fig.show='asis',fig.cap="Figure 2. pNI by facility, stock, species, and simplified run type for integrated programs." }
+knitr::include_graphics("results/pNI_by_facility_stock_species.png")
+```
+
+```{r message=F,results='asis',warning=F,fig.show='asis',fig.cap="Figure 3. pNOB by facility, stock, species, and simplified run type." }
+knitr::include_graphics("results/pNOB_by_facility_stock_species.png")
+```
+
+```{r message=F,results='asis',warning=F}
+results%>%
+   kbl(caption = "Table 1.Results.",digits =3)%>%
+   kable_classic(full_width = F, html_font = "Cambria")
 ```
