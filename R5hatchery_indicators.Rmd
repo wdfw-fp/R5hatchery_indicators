@@ -267,8 +267,8 @@ p2<-ggplot(results,aes(x=Brood_Year,y=pNI,group=quasi_noaa_name,color=species_de
   theme(legend.position="none")
 ggsave("results/pNI_by_facility_stock_species.png",p2,width=8,height=48,units="in",dpi=150)
 
-p3<-ggplot(results,aes(x=Brood_Year,y=pNOB,group=quasi_noaa_name,color=species_description))+
-  geom_line()+
+p3<-ggplot(results,aes(x=Brood_Year,y=pNOB,group=interaction(quasi_noaa_name,Origin_desc),color=species_description))+
+  geom_line(aes(line.type=factor(Origin_desc)))+
   geom_point()+
   facet_wrap(~quasi_noaa_name,ncol=1)+
   ylim(0,1)+
