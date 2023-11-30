@@ -1,0 +1,103 @@
+---
+title: "Interactive Dashboard"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+---
+```{r}
+# Load required libraries
+library(shiny)
+library(ggplot2)
+library(tidyverse)
+
+# Load your data (replace this with your actual data loading code)
+populations_LUT <- read_csv("results/populations_LUT.csv") %>% dplyr::rename(population = esa_pop_name)
+indicators <- read_csv("results/indicators_NOAA_pop.csv") %>%
+  dplyr::rename(population = esa_pop_name) %>%
+  left_join(populations_LUT)
+
+# Shiny app
+shinyApp(
+  ui = fluidPage(
+    # Shiny UI components
+    # selectInput("species", "Select Species", choices = unique(indicators$species), multiple = F),
+    # selectInput("run", "Select Run", choices = unique(indicators$run), multiple = F),
+    selectInput("population", "Select Population", choices = unique(indicators$population), multiple = F),
+    downloadButton("downloadData", "Download Data"),
+    plotOutput("plot")  # This creates a placeholder for the plot
+  ),
+
+  server = function(input, output, session) {
+    # Reactive values
+    values <- reactiveValues(subset_data = NULL)
+
+    # Reactive expression for subset data
+    subset_data_reactive <- reactive({
+      indicators %>%
+        filter(
+          #species %in% input$species &
+          #run %in% input$run &
+          population == input$population 
+          )%>%
+        dplyr::select(
+          Brood_Year, species, run, population, NMFS_POPID, NOSA, TSA,
+          pNOB, pHOS, pNI, total_releases = total
+        ) %>%
+        pivot_longer(
+          values_to = "value",
+          names_to = "indicator",
+          cols = c(NOSA, TSA, pHOS, pNOB, pNI, total_releases)
+        ) %>%
+        mutate(indicator = factor(indicator, levels = c("NOSA", "TSA", "pHOS", "pNOB", "pNI", "total_releases")))
+    })
+
+    # Render plot
+    output$plot <- renderPlot({
+      # Plotting code
+      facet_limits<-subset_data_reactive()%>%
+        group_by(indicator,species)%>%
+        mutate(minBY=min(Brood_Year),maxBY=max(Brood_Year),min=0,max=max(value,na.rm = T,nan.rm=T))%>%
+        distinct(minBY,maxBY,min,max)%>%
+        pivot_longer(cols = c(minBY,maxBY),values_to = "Brood_Year",names_to = "type")%>%
+        pivot_longer(cols = c(min,max),values_to = "value",names_to = "type2")%>%
+        dplyr::select(-c(type,type2))
+      # Create the ggplot for the current facet level
+      current_plot <- ggplot(subset_data_reactive(), aes(x = Brood_Year, y = value,color=species)) +
+        geom_line()+
+        geom_point()+
+        ylim(0,NA)+
+        theme_bw()+
+        theme(plot.title = element_text(size = 12))+
+        facet_wrap(~indicator,nrow=6,scales="free_y")+
+        ggtitle(unique(indicators$esa_pop_name)[i])+
+        geom_blank(data=facet_limits,aes(x=Brood_Year,y=value)) 
+    })
+
+    # Download handler
+    output$downloadData <- downloadHandler(
+      filename = function() {
+        paste("salmon_indicator_data_", Sys.Date(), ".csv", sep = "")
+      },
+      content = function(file) {
+        req(values$subset_data)
+        write.csv(values$subset_data, file)
+      }
+    )
+
+    # Observe event for updating population choices
+    observe({
+      updateSelectInput(session, "population", choices = unique(indicators$population))
+    })
+
+    #Observe event for updating plot and download button
+    observe({
+      req(subset_data_reactive())
+    })
+
+    # Render download button
+    output$download_button <- renderUI({
+      download_button
+    })
+  }
+)
+```
