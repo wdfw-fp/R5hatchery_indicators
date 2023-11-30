@@ -20,8 +20,8 @@ indicators <- read_csv("results/indicators_NOAA_pop.csv") %>%
 shinyApp(
   ui = fluidPage(
     # Shiny UI components
-    # selectInput("species", "Select Species", choices = unique(indicators$species), multiple = F),
-    # selectInput("run", "Select Run", choices = unique(indicators$run), multiple = F),
+    #selectInput("species", "Select Species", choices = unique(indicators$species), multiple = F),
+    #selectInput("run", "Select Run", choices = unique(indicators$run), multiple = F),
     selectInput("population", "Select Population", choices = unique(indicators$population), multiple = F),
     downloadButton("downloadData", "Download Data"),
     plotOutput("plot")  # This creates a placeholder for the plot
@@ -29,10 +29,7 @@ shinyApp(
 
   server = function(input, output, session) {
     # Reactive values
-    values <- reactiveValues(subset_data = NULL)
-
-    # Reactive expression for subset data
-    subset_data_reactive <- reactive({
+    subset_data_reactive<-reactive({ # Reactive expression for subset data
       indicators %>%
         filter(
           #species %in% input$species &
@@ -49,10 +46,13 @@ shinyApp(
           cols = c(NOSA, TSA, pHOS, pNOB, pNI, total_releases)
         ) %>%
         mutate(indicator = factor(indicator, levels = c("NOSA", "TSA", "pHOS", "pNOB", "pNI", "total_releases")))
-    })
+    })#
+    
 
+    
     # Render plot
     output$plot <- renderPlot({
+      #browser()
       # Plotting code
       facet_limits<-subset_data_reactive()%>%
         group_by(indicator,species)%>%
@@ -68,10 +68,13 @@ shinyApp(
         ylim(0,NA)+
         theme_bw()+
         theme(plot.title = element_text(size = 12))+
-        facet_wrap(~indicator,nrow=6,scales="free_y")+
-        ggtitle(unique(indicators$esa_pop_name)[i])+
-        geom_blank(data=facet_limits,aes(x=Brood_Year,y=value)) 
-    })
+        facet_wrap(~indicator,nrow=6,scales="free_y")#+
+        #ggtitle(subset_data_reactive()$population[1])+
+        ggtitle("shit")+
+        geom_blank(data=facet_limits,aes(x=Brood_Year,y=value))
+        
+      print(current_plot) 
+    },height= 600, width = 800)
 
     # Download handler
     output$downloadData <- downloadHandler(
@@ -79,8 +82,8 @@ shinyApp(
         paste("salmon_indicator_data_", Sys.Date(), ".csv", sep = "")
       },
       content = function(file) {
-        req(values$subset_data)
-        write.csv(values$subset_data, file)
+        req(subset_data_reactive())
+        write.csv(subset_data_reactive(), file, row.names = F)
       }
     )
 
