@@ -474,7 +474,7 @@ state_map <- ne_states (country = 'United States of America', returnclass = 'sf'
   filter (name %in% c('Washington','Oregon'))
 
 # The input file geodatabase
-fgdb <- "data/WCR_Salmon_Steelhead_gdb_2015.gdb"
+fgdb <- "spatial_data/WCR_Salmon_Steelhead_gdb_2015.gdb"
 if (file.exists(fgdb)) {
     print("Geodatabase already downloaded!")
 } else {
@@ -482,9 +482,9 @@ if (file.exists(fgdb)) {
   url<-"https://www.webapps.nwfsc.noaa.gov/portal/sharing/rest/content/items/097239ff29b44a8b87acc048f0363229/data"
   response <- GET(url, timeout(600))
   content <- content(response, as = "raw")
-  writeBin(content, "data/WCR_Salmon_Steelhead_gdb_2015.zip")
+  writeBin(content, "spatial_data/WCR_Salmon_Steelhead_gdb_2015.zip")
   #download.file(, destfile = "data/WCR_Salmon_Steelhead_gdb_2015.zip", mode = "wb",timeout = 300)
-  unzip("data/WCR_Salmon_Steelhead_gdb_2015.zip", exdir = "data")
+  unzip("spatial_data/WCR_Salmon_Steelhead_gdb_2015.zip", exdir = "spatial_data")
 }
 
 noaa_polygons<-st_read(fgdb, layer = "fish")%>%
