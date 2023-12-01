@@ -697,8 +697,10 @@ FallChum_plot<-ggplot() +
 url <- "https://cax.streamnet.org/download/ca-data-all%2011-27-2023%2010%2015.xls"
 temp_file <- tempfile(fileext = ".xls")
 download.file(url, temp_file, mode = "wb")
+populations<-readxl::read_excel(temp_file, sheet = "Populations")
+unlink(temp_file)
 
-populations<-readxl::read_excel("data/ca-data-all_11-27-2023_10_15.xls", sheet = "Populations")%>%
+populations<-populations%>%
   dplyr::rename(run=RUN,species=SPECIES)%>%
   mutate(species=gsub(" salmon","",species),
          run=ifelse(run%in%c("Late","Both early & late","Early","Early (Type S)","Late (Type N)"),"Fall",run),
@@ -712,7 +714,7 @@ populations<-readxl::read_excel("data/ca-data-all_11-27-2023_10_15.xls", sheet =
          )%>%
   filter(!is.na(NMFS_POPID))
 
-unlink(temp_file)
+
 
 #LUT to figure out which release sites in anadromous waters so we can filter those that are not
 R5_anadromous_release_sites_LUT<-read_csv("data/R5_anadromous_release_sites_LUT.csv")%>%
