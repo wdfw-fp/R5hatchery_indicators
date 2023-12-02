@@ -1,5 +1,5 @@
 ---
-title: "Interactive Dashboard"
+title: "Salmon Indicators Dashboard"
 output: 
   flexdashboard::flex_dashboard:
     orientation: columns
