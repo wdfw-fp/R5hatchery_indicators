@@ -283,10 +283,16 @@ shinyApp(
         geom_point() +
         ylim(0, NA) +
         theme_bw() +
-        theme(plot.title = element_text(size = 12)) +
+        theme() +
         facet_wrap(~indicator, nrow = 6, scales = "free_y") +
         ggtitle(filtered_data$population[1]) +
-        geom_blank(data = facet_limits, aes(x = Brood_Year, y = value))
+        geom_blank(data = facet_limits, aes(x = Brood_Year, y = value))+
+        theme(
+         plot.title = element_text(size = 18),
+         text = element_text(size = 16),  # Adjust the main text size
+         axis.text = element_text(size = 14)  # Adjust the axis text size
+        # You can add more elements like legend.text, title, etc., if needed
+        )
 
       print(current_plot)
     } else {
