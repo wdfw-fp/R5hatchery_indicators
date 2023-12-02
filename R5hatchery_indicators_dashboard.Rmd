@@ -107,7 +107,7 @@ shinyApp(
         theme_bw() +
         theme(plot.title = element_text(size = 12)) +
         facet_wrap(~indicator, nrow = 6, scales = "free_y") +
-        ggtitle("shit") +
+        ggtitle(filtered_data$population[1]) +
         geom_blank(data = facet_limits, aes(x = Brood_Year, y = value))
 
       print(current_plot)
