@@ -20,9 +20,11 @@ indicators <- read_csv("results/indicators_NOAA_pop.csv") %>%
 # Shiny app
 shinyApp(
   ui = fluidPage(
+    # Title
+    titlePanel("Lower Columbia Salmon Indicator Dashboard"),
     #logo
     fluidRow(
-      column(12, align = "center",
+      column(12, align = "left",
              img(src = "https://privatelands.wdfw.wa.gov/wdfwlogo_clrnotxt.png", height = "160px")
       )
     ),
