@@ -38,7 +38,7 @@ if (file.exists(fgdb)) {
 noaa_polygons<-st_read(fgdb, layer = "fish")%>%
   st_set_crs(st_crs("+proj=longlat +datum=NAD83 +units=m"))
 
-Coho <- noaa_polygons%>%
+FallCoho <- noaa_polygons%>%
   filter(
     DPS %in% c(
       "Salmon, coho (Lower Columbia River ESU)",
