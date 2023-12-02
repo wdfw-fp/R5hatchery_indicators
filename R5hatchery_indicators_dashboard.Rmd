@@ -7,7 +7,7 @@ output:
 
 ```{r}
 # Load required libraries
-pacman::p_load(shiny, tidyverse, ggplot2, leaflet)
+pacman::p_load(shiny, tidyverse, ggplot2, leaflet,sf,rnaturalearth)
 
 # Load your data (replace this with your actual data loading code)
 populations_LUT <- read_csv("results/populations_LUT.csv") %>%
@@ -16,6 +16,132 @@ populations_LUT <- read_csv("results/populations_LUT.csv") %>%
 indicators <- read_csv("results/indicators_NOAA_pop.csv") %>%
   dplyr::rename(population = esa_pop_name) %>%
   left_join(populations_LUT)
+
+
+state_map <- ne_states (country = 'United States of America', returnclass = 'sf')%>% 
+  filter (name %in% c('Washington','Oregon'))
+
+# The input file geodatabase
+fgdb <- "spatial_data/WCR_Salmon_Steelhead_gdb_2015.gdb"
+if (file.exists(fgdb)) {
+    print("Geodatabase already downloaded!")
+} else {
+  print("Attempting to download Geodatabase...may take a few mins!")
+  url<-"https://www.webapps.nwfsc.noaa.gov/portal/sharing/rest/content/items/097239ff29b44a8b87acc048f0363229/data"
+  response <- GET(url, timeout(600))
+  content <- content(response, as = "raw")
+  writeBin(content, "spatial_data/WCR_Salmon_Steelhead_gdb_2015.zip")
+  #download.file(, destfile = "data/WCR_Salmon_Steelhead_gdb_2015.zip", mode = "wb",timeout = 300)
+  unzip("spatial_data/WCR_Salmon_Steelhead_gdb_2015.zip", exdir = "spatial_data")
+}
+
+noaa_polygons<-st_read(fgdb, layer = "fish")%>%
+  st_set_crs(st_crs("+proj=longlat +datum=NAD83 +units=m"))
+
+Coho <- noaa_polygons%>%
+  filter(
+    DPS %in% c(
+      "Salmon, coho (Lower Columbia River ESU)",
+      "Salmon, coho (Lower Columbia River ESU) - Outside legal area"
+    ),
+    SPECIES == "CO" & !is.na(NWFSC_POP_ID)
+  ) %>%
+  group_by(NWFSC_POP_ID)%>%
+  summarise()
+  
+WinterSteelhead <- noaa_polygons%>%
+  filter(
+    DPS %in% c(
+      "Steelhead (Lower Columbia River DPS)",
+      "Steelhead (Lower Columbia River DPS) - Outside legal area"
+      #could add in Steelhead (Middle Columbia River DPS) and su wi for klickitat and white salmon
+    )
+  ) %>%
+  filter(SPECIES == "ST" & RUN_TIMING == "wi") %>%
+  group_by(NWFSC_POP_ID)%>%
+  summarise()%>%
+  bind_rows(noaa_polygons%>%
+    filter(
+      DPS %in% c(
+        "Salmon, coho (Lower Columbia River ESU)",
+        "Salmon, coho (Lower Columbia River ESU) - Outside legal area"
+      ),
+      SPECIES == "CO" & NWFSC_POP_ID%in%c(134,135,140)
+    ) %>%
+    group_by(NWFSC_POP_ID)%>%
+    mutate(NWFSC_POP_ID=ifelse(NWFSC_POP_ID==135,9991,NWFSC_POP_ID),#Grays
+           NWFSC_POP_ID=ifelse(NWFSC_POP_ID==134,9992,NWFSC_POP_ID),#elochoman
+           NWFSC_POP_ID=ifelse(NWFSC_POP_ID==140,9993,NWFSC_POP_ID),#Mill -abernathy-germany
+           )%>%
+    summarise()
+  )
+
+SummerSteelhead <- noaa_polygons%>%
+  filter(
+    DPS %in% c(
+      "Steelhead (Lower Columbia River DPS)",
+      "Steelhead (Lower Columbia River DPS) - Outside legal area"
+    )
+  ) %>%
+  filter(SPECIES == "ST" & RUN_TIMING == "su") %>%
+  group_by(NWFSC_POP_ID)%>%
+  summarise()
+
+SpringChinook <- noaa_polygons%>%
+  filter(
+    DPS %in% c(
+      "Salmon, Chinook (Lower Columbia River ESU)",
+      "Salmon, Chinook (Lower Columbia River ESU) - Outside legal area"
+    )
+  ) %>%
+  filter(SPECIES == "CK" & RUN_TIMING %in% c("sp","ss")) %>%
+  group_by(NWFSC_POP_ID)%>%
+  summarise()
+
+FallChinook <- noaa_polygons%>%
+  filter(
+    DPS %in% c(
+      "Salmon, Chinook (Lower Columbia River ESU)",
+      "Salmon, Chinook (Lower Columbia River ESU) - Outside legal area"
+    )
+  ) %>%
+  filter(SPECIES == "CK" & RUN_TIMING == "fa") %>%
+  group_by(NWFSC_POP_ID)%>%
+  summarise()
+
+LateFallChinook <- noaa_polygons%>%
+  filter(
+    DPS %in% c(
+      "Salmon, Chinook (Lower Columbia River ESU)",
+      "Salmon, Chinook (Lower Columbia River ESU) - Outside legal area"
+    )
+  ) %>%
+  filter(SPECIES == "CK" & RUN_TIMING == "lf") %>%
+  group_by(NWFSC_POP_ID)%>%
+  summarise()
+
+FallChum <- noaa_polygons%>%
+  filter(
+    DPS %in% c(
+      "Salmon, chum (Columbia River ESU)",
+      "Salmon, chum (Columbia River ESU) - Outside legal area"
+    )
+  ) %>%
+  filter(SPECIES == "CM" & RUN_TIMING == "fa") %>%
+  group_by(NWFSC_POP_ID)%>%
+  summarise()
+
+SummerChum <- noaa_polygons%>%
+  filter(
+    DPS %in% c(
+      "Salmon, chum (Columbia River ESU)",
+      "Salmon, chum (Columbia River ESU) - Outside legal area"
+    )
+  ) %>%
+  filter(SPECIES == "CM" & RUN_TIMING == "su") %>%
+  group_by(NWFSC_POP_ID)%>%
+  summarise()
+
 
 # Shiny app
 shinyApp(
@@ -33,7 +159,8 @@ shinyApp(
     selectInput("run", "Select Run", choices = c("None", unique(indicators$run)), multiple = FALSE),
     selectInput("population", "Select Population", choices = c("None", unique(indicators$population)), multiple = FALSE),
     downloadButton("downloadData", "Download Data"),
-    plotOutput("plot")  # This creates a placeholder for the plot
+    plotOutput("plot"),  # This creates a placeholder for the plot
+    plotOutput("range_map")
   ),
 
   server = function(input, output, session) {
@@ -82,6 +209,32 @@ shinyApp(
       filter(if (input$species != "None") species == input$species else TRUE)
     updateSelectInput(session, "population", choices = c("None", unique(run_species_filtered$population)), selected = if (input$population != "None") input$population else "None")
   })
+  
+  #map
+  # Render Coho Plot
+  output$range_map <- renderPlot({
+    if (input$population!="None") {
+      Run<-tools::toTitleCase(subset_data_reactive()$run[1])
+      Species<-tools::toTitleCase(subset_data_reactive()$species[1])
+      
+      range_dat<-get(paste0(Run,Species))
+    
+      range_map<-ggplot() +
+        geom_sf(data = state_map, color = "black",fill = "lightgrey") + # Washington state map
+        geom_sf(data = range_dat, mapping = aes(geometry = SHAPE),fill="lightblue") +
+        geom_sf(data = range_dat, mapping = aes(geometry = SHAPE),fill="lightblue") +
+        geom_sf(data = range_dat%>%
+                filter(NWFSC_POP_ID==subset_data_reactive()$NMFS_POPID[1]),
+              mapping = aes(geometry = SHAPE), fill="darkblue") +
+        #geom_sf(data=release_locs,mapping=aes(geometry=geometry),size=3)+
+        #labs(title = "Polygons by NWFSC_POP_ID", fill = NA) +
+        ylim(44.75,46.8)+
+        xlim(-124,-121)+
+        theme_minimal()
+      
+      print(range_map)
+    }
+  }, height = 600, width = 800)
 
   # Render plot
   output$plot <- renderPlot({
