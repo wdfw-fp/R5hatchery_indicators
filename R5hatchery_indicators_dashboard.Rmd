@@ -141,8 +141,10 @@ SummerChum <- noaa_polygons%>%
   filter(SPECIES == "CM" & RUN_TIMING == "su") %>%
   group_by(NWFSC_POP_ID)%>%
   summarise()
+```
 
 
+```{r}
 # Shiny app
 shinyApp(
   ui = fluidPage(
@@ -159,8 +161,22 @@ shinyApp(
     selectInput("run", "Select Run", choices = c("None", unique(indicators$run)), multiple = FALSE),
     selectInput("population", "Select Population", choices = c("None", unique(indicators$population)), multiple = FALSE),
     downloadButton("downloadData", "Download Data"),
-    plotOutput("plot"),  # This creates a placeholder for the plot
-    plotOutput("range_map")
+    
+    tags$style("
+    #downloadButton {
+      clear: both:
+    }
+    #plot {
+      float: left;
+    }
+    #range_map {
+      float: right;
+    }
+  "),
+    #placeholder for the plot
+    plotOutput("plot",width = "66%", height = "600px"),  
+    # This creates a placeholder for the ,map
+    plotOutput("range_map",width = "33%", height = "600px")
   ),
 
   server = function(input, output, session) {
@@ -226,6 +242,7 @@ shinyApp(
         geom_sf(data = range_dat%>%
                 filter(NWFSC_POP_ID==subset_data_reactive()$NMFS_POPID[1]),
               mapping = aes(geometry = SHAPE), fill="darkblue") +
+        geom_sf(data = state_map, color = "black",fill=NA) + # Washington state map
         #geom_sf(data=release_locs,mapping=aes(geometry=geometry),size=3)+
         #labs(title = "Polygons by NWFSC_POP_ID", fill = NA) +
         ylim(44.75,46.8)+
@@ -234,7 +251,7 @@ shinyApp(
       
       print(range_map)
     }
-  }, height = 600, width = 800)
+  })
 
   # Render plot
   output$plot <- renderPlot({
@@ -275,7 +292,7 @@ shinyApp(
     } else {
       print("Please select only one population to generate the plot.")
     }
-  }, height = 600, width = 800)
+  })
 
   # Download handler
     output$downloadData <- downloadHandler(
