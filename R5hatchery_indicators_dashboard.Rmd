@@ -244,9 +244,15 @@ shinyApp(
               mapping = aes(geometry = SHAPE), fill="darkblue") +
         geom_sf(data = state_map, color = "black",fill=NA) + # Washington state map
         #geom_sf(data=release_locs,mapping=aes(geometry=geometry),size=3)+
-        #labs(title = "Polygons by NWFSC_POP_ID", fill = NA) +
+        labs(title = paste0(Run," ", Species, " Populations"), fill = NA) +
         ylim(44.75,46.8)+
         xlim(-124,-121)+
+        theme(
+         plot.title = element_text(size = 18),
+         text = element_text(size = 12),  # Adjust the main text size
+         axis.text = element_text(size = 12)  # Adjust the axis text size
+        # You can add more elements like legend.text, title, etc., if needed
+        )+
         theme_minimal()
       
       print(range_map)
