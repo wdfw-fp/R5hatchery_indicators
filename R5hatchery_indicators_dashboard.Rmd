@@ -20,6 +20,12 @@ indicators <- read_csv("results/indicators_NOAA_pop.csv") %>%
 # Shiny app
 shinyApp(
   ui = fluidPage(
+    #logo
+    fluidRow(
+      column(12, align = "center",
+             img(src = "https://privatelands.wdfw.wa.gov/wdfwlogo_clrnotxt.png", height = "160px")
+      )
+    ),
     # Shiny UI components
     selectInput("species", "Select Species", choices = c("None", unique(indicators$species)), multiple = FALSE),
     selectInput("run", "Select Run", choices = c("None", unique(indicators$run)), multiple = FALSE),
