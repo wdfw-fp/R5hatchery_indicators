@@ -13,7 +13,7 @@ pacman::p_load(shiny, tidyverse, ggplot2, leaflet,sf,rnaturalearth)
 populations_LUT <- read_csv("results/populations_LUT.csv") %>%
   dplyr::rename(population = esa_pop_name)
 
-indicators <- read_csv("results/indicators_NOAA_pop.csv") %>%
+indicators <- read_csv("results/indicators_by_NOAA_pop.csv") %>%
   dplyr::rename(population = esa_pop_name) %>%
   left_join(populations_LUT)
 

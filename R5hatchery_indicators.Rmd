@@ -320,6 +320,19 @@ ORDER BY
 # join SPI.stock to Hatchery Spawn Groups in Lower Columbia R5
 This makes a "draft lookup table" that needs manual modification to create "LCR_hatchery_stock_NOAA_pop_lut.csv"
 ```{r results='hide',warning=FALSE,message=FALSE}
+dir_path <- here::here("results")
+if (!dir.exists(dir_path)) {
+  # If not, create the directory
+  dir.create(dir_path, recursive = TRUE)
+}
+dir_path <- here::here("results", "draft_luts")
+if (!dir.exists(dir_path)) {
+  # If not, create the directory
+  dir.create(dir_path, recursive = TRUE)
+}
+
+
+
 column_pairs<-c("species","run","stock","facility_name")
 results<-stringdist_left_join(hatchery_spawn_groups, stock%>%
                                 dplyr::select(stock,
@@ -340,7 +353,7 @@ results<-stringdist_left_join(hatchery_spawn_groups, stock%>%
   filter(dist3==0)%>%
   filter(dist2==0)%>%
   filter(dist5==min(dist5))%>%
-  write.csv("results/DRAFT_R5_hatchery_stock_NOAA_pop_LUT.csv",row.names = F)
+  write.csv("results/draft_luts/DRAFT_R5_hatchery_stock_NOAA_pop_LUT.csv",row.names = F)
 ```
 
 
@@ -597,6 +610,12 @@ SummerChum <- noaa_polygons%>%
 
 
 ```{r }
+dir_path <- here::here("results", "maps")
+if (!dir.exists(dir_path)) {
+  # If not, create the directory
+  dir.create(dir_path, recursive = TRUE)
+}
+
 Coho_plot<-ggplot() +
   geom_sf(data = state_map, color = "black",fill = "lightgrey") + # Washington state map
   geom_sf(data = Coho, mapping = aes(geometry = SHAPE),fill="lightblue") +
@@ -606,7 +625,7 @@ Coho_plot<-ggplot() +
   ylim(44.75,46.8)+
   xlim(-124,-121.4)+
   theme_minimal()
-ggsave("results/Coho.png",Coho_plot,width=10,height=7,units="in",dpi=150)
+ggsave("results/maps/Coho.png",Coho_plot,width=10,height=7,units="in",dpi=150)
 
 
 SummerSteelhead_plot<-ggplot() +
@@ -618,7 +637,7 @@ SummerSteelhead_plot<-ggplot() +
   ylim(44.75,46.8)+
   xlim(-124,-121.4)+
   theme_minimal()
-  ggsave("results/SummerSteelhead.png",SummerSteelhead_plot,width=10,height=7,units="in",dpi=150)
+  ggsave("results/maps/SummerSteelhead.png",SummerSteelhead_plot,width=10,height=7,units="in",dpi=150)
   
   
 WinterSteelhead_plot<-ggplot() +
@@ -630,7 +649,7 @@ WinterSteelhead_plot<-ggplot() +
   ylim(44.75,46.8)+
   xlim(-124,-121.4)+
   theme_minimal()
-  ggsave("results/WinterSteelhead.png",WinterSteelhead_plot,width=10,height=7,units="in",dpi=150)
+  ggsave("results/maps/WinterSteelhead.png",WinterSteelhead_plot,width=10,height=7,units="in",dpi=150)
 
 FallChinook_plot<-ggplot() +
   geom_sf(data = state_map, color = "black",fill = "lightgrey") + # Washington state map
@@ -641,7 +660,7 @@ FallChinook_plot<-ggplot() +
   ylim(44.75,46.8)+
   xlim(-124,-121.4)+
   theme_minimal()
-  ggsave("results/FallChinook.png",FallChinook_plot,width=10,height=7,units="in",dpi=150)
+  ggsave("results/maps/FallChinook.png",FallChinook_plot,width=10,height=7,units="in",dpi=150)
   
 LateFallChinook_plot<-ggplot() +
   geom_sf(data = state_map, color = "black",fill = "lightgrey") + # Washington state map
@@ -652,7 +671,7 @@ LateFallChinook_plot<-ggplot() +
   ylim(44.75,46.8)+
   xlim(-124,-121.4)+
   theme_minimal()
-  ggsave("results/LateFallChinook.png",LateFallChinook_plot,width=10,height=7,units="in",dpi=150)
+  ggsave("results/maps/LateFallChinook.png",LateFallChinook_plot,width=10,height=7,units="in",dpi=150)
 
 SpringChinook_plot<-ggplot() +
   geom_sf(data = state_map, color = "black",fill = "lightgrey") + # Washington state map
@@ -663,7 +682,7 @@ SpringChinook_plot<-ggplot() +
   ylim(44.75,46.8)+
   xlim(-124,-121.4)+
   theme_minimal()
-  ggsave("results/SpringChinook.png",SpringChinook_plot,width=10,height=7,units="in",dpi=150) 
+  ggsave("results/maps/SpringChinook.png",SpringChinook_plot,width=10,height=7,units="in",dpi=150) 
   
 SummerChum_plot<-ggplot() +
   geom_sf(data = state_map, color = "black",fill = "lightgrey") + # Washington state map
@@ -674,7 +693,7 @@ SummerChum_plot<-ggplot() +
   ylim(44.75,46.8)+
   xlim(-124,-121.4)+
   theme_minimal()
-  ggsave("results/SummerChum.png",SummerChum_plot,width=10,height=7,units="in",dpi=150) 
+  ggsave("results/maps/SummerChum.png",SummerChum_plot,width=10,height=7,units="in",dpi=150) 
 
 FallChum_plot<-ggplot() +
   geom_sf(data = state_map, color = "black",fill = "lightgrey") + # Washington state map
@@ -685,7 +704,7 @@ FallChum_plot<-ggplot() +
   ylim(44.75,46.8)+
   xlim(-124,-121.4)+
   theme_minimal()
-  ggsave("results/FallChum.png",FallChum_plot,width=10,height=7,units="in",dpi=150) 
+  ggsave("results/maps/FallChum.png",FallChum_plot,width=10,height=7,units="in",dpi=150) 
 ```  
 
 
@@ -728,7 +747,7 @@ releases%>%
   dplyr::filter(
     species %in% c("steelhead","coho","chum","chinook")
   )%>%distinct(release_location,latitude,longitude)%>%
-  write.csv("results/DRAFT_R5_anadromous_release_sites_LUT.csv",row.names = F)
+  write.csv("results/draft_luts/DRAFT_R5_anadromous_release_sites_LUT.csv",row.names = F)
 
 releases_edit<-releases%>%
   rowid_to_column(var="release_id")%>%
@@ -828,7 +847,7 @@ release_locs_pops<-st_join_min(release_locs,y=Coho)%>%
   filter(distance==0)%>%
   dplyr::select(-distance)
 
-write.csv(release_locs_pops,"results/DRAFT_R5_release_locs_NOAA_pops_LUT.csv",row.names = F)
+write.csv(release_locs_pops,"results/draft_luts/DRAFT_R5_release_locs_NOAA_pops_LUT.csv",row.names = F)
 
 #map release locations to see where they aren't within NOAA polygons
 # release_locs_fix<-ggplot() +
@@ -845,6 +864,12 @@ write.csv(release_locs_pops,"results/DRAFT_R5_release_locs_NOAA_pops_LUT.csv",ro
 
 
 ```{r}
+dir_path <- here::here("results", "qaqc")
+if (!dir.exists(dir_path)) {
+  # If not, create the directory
+  dir.create(dir_path, recursive = TRUE)
+}
+
 releases_NOAA_pop<-stock%>%
   dplyr::select(nosa_esa_pop_name)%>%
   cross_join(tibble(Brood_Year=2010:year(Sys.Date())))%>%
@@ -878,13 +903,13 @@ write.csv(releases_NOAA_pop,"results/releases_noaa_pop.csv",row.names = F)
 
 releases_edit%>%
   filter(!release_id%in%releases_NOAA_pop$release_id)%>%
-  write.csv("results/unassigned_releases.csv",row.names = F)
+  write.csv("results/qaqc/unassigned_releases.csv",row.names = F)
 
 dups<-releases_NOAA_pop%>%filter(!is.na(release_id))%>%group_by(release_id)%>%summarise(n=n())%>%filter(n>1)
 
 releases_NOAA_pop%>%
   filter(release_id%in%dups$release_id)%>%
-  write.csv("results/duplicated_releases.csv",row.names = F)
+  write.csv("results/qaqc/duplicated_releases.csv",row.names = F)
 
 indicators<-releases_NOAA_pop%>%
   dplyr::select(esa_pop_name,sasi_stock_num,Brood_Year,BROOD_Code,total_amt,stock,species,run)%>%
@@ -908,7 +933,7 @@ orphan_brood_codes_in_releases_not_in_unique_spawn_events<-indicators%>%
   distinct(brood_code,quasi_noaa_name)%>%
   left_join(read_csv("data/R5_hatchery_stock_NOAA_pop_LUT.csv"))%>%
   filter(!is.na(nosa_esa_pop_name))%>%
-  write.csv("results/orphan_brood_codes_in_releases_not_in_unique_spawn_events.csv",row.names = F)
+  write.csv("results/qaqc/orphan_brood_codes_in_releases_not_in_unique_spawn_events.csv",row.names = F)
 
 
 indicators<-indicators%>%
@@ -966,7 +991,7 @@ indicators<-indicators%>%
                      )
        ),
   )
-write.csv(indicators,"results/indicators_NOAA_pop.csv",row.names = F)
+write.csv(indicators,"results/indicators_by_NOAA_pop.csv",row.names = F)
 
 indicators%>%
   ungroup()%>%
