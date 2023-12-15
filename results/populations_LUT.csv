@@ -1,0 +1,66 @@
+"ESA_Population_Name","Species","Run","NMFS_POPID"
+"Salmon, Chinook (Lower Columbia River ESU) Coweeman River - fall","chinook","fall",6
+"Salmon, Chinook (Lower Columbia River ESU) Elochoman River - fall","chinook","fall",7
+"Salmon, Chinook (Lower Columbia River ESU) Grays and Chinook Rivers - fall","chinook","fall",8
+"Salmon, Chinook (Lower Columbia River ESU) Kalama River - fall","chinook","fall",11
+"Salmon, Chinook (Lower Columbia River ESU) Kalama River - spring","chinook","spring",12
+"Salmon, Chinook (Lower Columbia River ESU) Lewis River - fall","chinook","fall",14
+"Salmon, Chinook (Lower Columbia River ESU) Lewis River - late fall","chinook","late fall",13
+"Salmon, Chinook (Lower Columbia River ESU) Lower Cowlitz River - fall","chinook","fall",15
+"Salmon, Chinook (Lower Columbia River ESU) Lower Gorge Tributaries - fall","chinook","fall",16
+"Salmon, Chinook (Lower Columbia River ESU) Mill, Abernathy, and Germany Creeks - fall","chinook","fall",17
+"Salmon, Chinook (Lower Columbia River ESU) North Fork Lewis River - spring","chinook","spring",18
+"Salmon, Chinook (Lower Columbia River ESU) Tilton River - spring","chinook","spring",24
+"Salmon, Chinook (Lower Columbia River ESU) Toutle River - fall","chinook","fall",25
+"Salmon, Chinook (Lower Columbia River ESU) Toutle River - spring","chinook","spring",26
+"Salmon, Chinook (Lower Columbia River ESU) Upper Cowlitz River - fall","chinook","fall",27
+"Salmon, Chinook (Lower Columbia River ESU) Upper Cowlitz River - spring","chinook","spring",28
+"Salmon, Chinook (Lower Columbia River ESU) Upper Gorge Tributaries - fall","chinook","fall",29
+"Salmon, Chinook (Lower Columbia River ESU) Washougal River - fall","chinook","fall",30
+"Salmon, Chinook (Lower Columbia River ESU) White Salmon River - fall","chinook","fall",31
+"Salmon, Chinook (Lower Columbia River ESU) White Salmon River - spring","chinook","spring",32
+"Salmon, chum (Columbia River ESU) Elochoman River - fall","chum","fall",114
+"Salmon, chum (Columbia River ESU) Grays and Chinook Rivers - fall","chum","fall",115
+"Salmon, chum (Columbia River ESU) Lewis River - fall","chum","fall",117
+"Salmon, chum (Columbia River ESU) Lower Gorge Tributaries - fall","chum","fall",118
+"Salmon, chum (Columbia River ESU) Mill, Abernathy, and Germany Creeks - fall","chum","fall",119
+"Salmon, chum (Columbia River ESU) Upper Gorge Tributaries - fall","chum","fall",123
+"Salmon, chum (Columbia River ESU) Washougal River - fall","chum","fall",124
+"Salmon, coho (Lower Columbia River ESU) Coweeman River - late","coho","fall",132
+"Salmon, coho (Lower Columbia River ESU) East Fork Lewis River - early and late","coho","fall",133
+"Salmon, coho (Lower Columbia River ESU) Elochoman River - late","coho","fall",134
+"Salmon, coho (Lower Columbia River ESU) Grays and Chinook Rivers - late","coho","fall",135
+"Salmon, coho (Lower Columbia River ESU) Kalama River - late","coho","fall",136
+"Salmon, coho (Lower Columbia River ESU) Lower Cowlitz River - late","coho","fall",137
+"Salmon, coho (Lower Columbia River ESU) Lower Gorge Tributaries - late","coho","fall",138
+"Salmon, coho (Lower Columbia River ESU) Mill, Abernathy, and Germany Creeks - late","coho","fall",140
+"Salmon, coho (Lower Columbia River ESU) North Fork Lewis River - early and late","coho","fall",141
+"Salmon, coho (Lower Columbia River ESU) North Fork Toutle River - early and late","coho","fall",142
+"Salmon, coho (Lower Columbia River ESU) Salmon Creek - late","coho","fall",144
+"Salmon, coho (Lower Columbia River ESU) South Fork Toutle River - early and late","coho","fall",147
+"Salmon, coho (Lower Columbia River ESU) Tilton River - early and late","coho","fall",148
+"Salmon, coho (Lower Columbia River ESU) Upper Cowlitz River - early and late","coho","fall",149
+"Salmon, coho (Lower Columbia River ESU) Washington Upper Gorge Tributaries and White Salmon River - late","coho","fall",150
+"Salmon, coho (Lower Columbia River ESU) Washougal River - late","coho","fall",151
+"Steelhead (Lower Columbia River DPS) Coweeman River - winter","steelhead","winter",227
+"Steelhead (Lower Columbia River DPS) East Fork Lewis River - summer","steelhead","summer",228
+"Steelhead (Lower Columbia River DPS) East Fork Lewis River - winter","steelhead","winter",229
+"Steelhead (Lower Columbia River DPS) Kalama River - summer","steelhead","summer",232
+"Steelhead (Lower Columbia River DPS) Kalama River - winter","steelhead","winter",233
+"Steelhead (Lower Columbia River DPS) Lower Cowlitz River - winter","steelhead","winter",234
+"Steelhead (Lower Columbia River DPS) Lower Gorge Tributaries - winter","steelhead","winter",235
+"Steelhead (Lower Columbia River DPS) North Fork Lewis River - summer","steelhead","summer",236
+"Steelhead (Lower Columbia River DPS) North Fork Lewis River - winter","steelhead","winter",237
+"Steelhead (Lower Columbia River DPS) North Fork Toutle River - winter","steelhead","winter",238
+"Steelhead (Lower Columbia River DPS) Salmon Creek - winter","steelhead","winter",239
+"Steelhead (Lower Columbia River DPS) South Fork Toutle River - winter","steelhead","winter",241
+"Steelhead (Lower Columbia River DPS) Tilton River - winter","steelhead","winter",242
+"Steelhead (Lower Columbia River DPS) Upper Cowlitz River - winter","steelhead","winter",243
+"Steelhead (Lower Columbia River DPS) Upper Gorge Tributaries - winter","steelhead","winter",244
+"Steelhead (Lower Columbia River DPS) Washougal River - summer","steelhead","summer",245
+"Steelhead (Lower Columbia River DPS) Washougal River - winter","steelhead","winter",246
+"Steelhead (Lower Columbia River DPS) Wind River - summer","steelhead","summer",247
+"Steelhead (Middle Columbia River DPS) Klickitat River - summer and winter","steelhead","both summer & winter",254
+"Steelhead (Southwest Washington DPS) Elochoman River - winter","steelhead","winter",9992
+"Steelhead (Southwest Washington DPS) Grays and Chinook Rivers - winter","steelhead","winter",9991
+"Steelhead (Southwest Washington DPS) Mill Creek - winter","steelhead","winter",9993
