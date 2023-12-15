@@ -2,5 +2,8 @@
 .Rhistory
 .RData
 .Ruserdata
-/results
+/results/draft_luts
+/results/maps
+/results/pNI_release_NOAA_pop
+/results/qaqc
 /spatial_data

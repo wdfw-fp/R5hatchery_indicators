@@ -1,5 +1,5 @@
 ---
-title: "Salmon Indicators Dashboard"
+title: "Region 5 Salmon Indicators Dashboard"
 output: 
   flexdashboard::flex_dashboard:
     orientation: columns
@@ -11,10 +11,10 @@ pacman::p_load(shiny, tidyverse, ggplot2, leaflet,sf,rnaturalearth)
 
 # Load your data (replace this with your actual data loading code)
 populations_LUT <- read_csv("results/populations_LUT.csv") %>%
-  dplyr::rename(population = esa_pop_name)
+  dplyr::rename(Population = ESA_Population_Name)
 
 indicators <- read_csv("results/indicators_by_NOAA_pop.csv") %>%
-  dplyr::rename(population = esa_pop_name) %>%
+  dplyr::rename(Population = ESA_Population_Name) %>%
   left_join(populations_LUT)
 
 
@@ -146,6 +146,11 @@ SummerChum <- noaa_polygons%>%
 
 ```{r}
 # Shiny app
+library(shiny)
+library(dplyr)
+library(tidyr)
+library(ggplot2)
+
 shinyApp(
   ui = fluidPage(
     # Title
@@ -157,14 +162,14 @@ shinyApp(
       )
     ),
     # Shiny UI components
-    selectInput("species", "Select Species", choices = c("None", unique(indicators$species)), multiple = FALSE),
-    selectInput("run", "Select Run", choices = c("None", unique(indicators$run)), multiple = FALSE),
-    selectInput("population", "Select Population", choices = c("None", unique(indicators$population)), multiple = FALSE),
+    selectInput("Species", "Select Species", choices = c("None", unique(indicators$Species)), multiple = FALSE),
+    selectInput("Run", "Select Run", choices = c("None", unique(indicators$Run)), multiple = FALSE),
+    selectInput("Population", "Select Population", choices = c("None", unique(indicators$Population)), multiple = FALSE),
     downloadButton("downloadData", "Download Data"),
     
     tags$style("
     #downloadButton {
-      clear: both:
+      clear: both;
     }
     #plot {
       float: left;
@@ -174,139 +179,139 @@ shinyApp(
     }
   "),
     #placeholder for the plot
-    plotOutput("plot",width = "66%", height = "600px"),  
+    plotOutput("plot", width = "66%", height = "600px"),  
     # This creates a placeholder for the ,map
-    plotOutput("range_map",width = "33%", height = "600px")
+    plotOutput("range_map", width = "33%", height = "600px")
   ),
 
   server = function(input, output, session) {
-  # Set initial values to NULL
-  updateSelectInput(session, "species", selected = "None")
-  updateSelectInput(session, "run", selected = "None")
-  updateSelectInput(session, "population", selected = "None")
+    # Set initial values to NULL
+    updateSelectInput(session, "Species", selected = "None")
+    updateSelectInput(session, "Run", selected = "None")
+    updateSelectInput(session, "Population", selected = "None")
 
-  # Reactive values
-  subset_data_reactive <- reactive({
-    indicators %>%
-      filter(
-        if (input$species != "None") species == input$species else TRUE,
-        if (input$run != "None") run == input$run else TRUE,
-        if (input$population != "None") population == input$population else TRUE
-      ) %>%
-      dplyr::select(
-        Brood_Year, species, run, population, NMFS_POPID, NOSA, TSA,
-        pNOB, pHOS, pNI, total_releases = total
-      ) %>%
-      pivot_longer(
-        values_to = "value",
-        names_to = "indicator",
-        cols = c(NOSA, TSA, pHOS, pNOB, pNI, total_releases)
-      ) %>%
-      mutate(indicator = factor(indicator, levels = c("NOSA", "TSA", "pHOS", "pNOB", "pNI", "total_releases")))
-  })
-
-  observe({
-    species_population_filtered <- indicators %>%
-      filter(if (input$species != "None") species == input$species else TRUE) %>%
-      filter(if (input$population != "None") population == input$population else TRUE)
-    updateSelectInput(session, "run", choices = c("None", unique(species_population_filtered$run)), selected = if (input$run != "None") input$run else "None")
-  })
-
-  observe({
-    run_population_filtered <- indicators %>%
-      filter(if (input$run != "None") run == input$run else TRUE) %>%
-      filter(if (input$population != "None") population == input$population else TRUE)
-    updateSelectInput(session, "species", choices = c("None", unique(run_population_filtered$species)), selected = if (input$species != "None") input$species else "None")
-  })
-
-  observe({
-    run_species_filtered <- indicators %>%
-      filter(if (input$run != "None") run == input$run else TRUE) %>%
-      filter(if (input$species != "None") species == input$species else TRUE)
-    updateSelectInput(session, "population", choices = c("None", unique(run_species_filtered$population)), selected = if (input$population != "None") input$population else "None")
-  })
-  
-  #map
-  # Render Coho Plot
-  output$range_map <- renderPlot({
-    if (input$population!="None") {
-      Run<-tools::toTitleCase(subset_data_reactive()$run[1])
-      Species<-tools::toTitleCase(subset_data_reactive()$species[1])
-      
-      range_dat<-get(paste0(Run,Species))
-    
-      range_map<-ggplot() +
-        geom_sf(data = state_map, color = "black",fill = "lightgrey") + # Washington state map
-        geom_sf(data = range_dat, mapping = aes(geometry = SHAPE),fill="lightblue") +
-        geom_sf(data = range_dat, mapping = aes(geometry = SHAPE),fill="lightblue") +
-        geom_sf(data = range_dat%>%
-                filter(NWFSC_POP_ID==subset_data_reactive()$NMFS_POPID[1]),
-              mapping = aes(geometry = SHAPE), fill="darkblue") +
-        geom_sf(data = state_map, color = "black",fill=NA) + # Washington state map
-        #geom_sf(data=release_locs,mapping=aes(geometry=geometry),size=3)+
-        labs(title = paste0(Run," ", Species, " Populations"), fill = NA) +
-        ylim(44.75,46.8)+
-        xlim(-124,-121)+
-        theme(
-         plot.title = element_text(size = 18),
-         text = element_text(size = 12),  # Adjust the main text size
-         axis.text = element_text(size = 12)  # Adjust the axis text size
-        # You can add more elements like legend.text, title, etc., if needed
-        )+
-        theme_minimal()
-      
-      print(range_map)
-    }
-  })
-
-  # Render plot
-  output$plot <- renderPlot({
-    cat("Selected species:", input$species, "\n")
-    cat("Selected run:", input$run, "\n")
-    cat("Selected population:", input$population, "\n")
-
-    # Plotting code
-    filtered_data <- subset_data_reactive()
-    # Check the number of unique populations in the filtered data
-    unique_populations <- unique(filtered_data$population)
-
-    if (length(unique_populations) == 1) {
-      facet_limits <- filtered_data %>%
-        group_by(indicator, species) %>%
-        mutate(
-          minBY = min(Brood_Year),
-          maxBY = max(Brood_Year),
-          min = 0,
-          max = max(value, na.rm = TRUE, nan.rm = TRUE)
+    # Reactive values
+    subset_data_reactive <- reactive({
+      indicators %>%
+        filter(
+          if (input$Species != "None") Species == input$Species else TRUE,
+          if (input$Run != "None") Run == input$Run else TRUE,
+          if (input$Population != "None") Population == input$Population else TRUE
         ) %>%
-        distinct(minBY, maxBY, min, max) %>%
-        pivot_longer(cols = c(minBY, maxBY), values_to = "Brood_Year", names_to = "type") %>%
-        pivot_longer(cols = c(min, max), values_to = "value", names_to = "type2") %>%
-        dplyr::select(-c(type, type2))
+        dplyr::select(
+          Brood_Year, Species, Run, Population, NMFS_POPID, NOSA, TSA,
+          pNOB, pHOS, pNI, Total_Releases
+        ) %>%
+        pivot_longer(
+          values_to = "value",
+          names_to = "indicator",
+          cols = c(NOSA, TSA, pHOS, pNOB, pNI, Total_Releases)
+        ) %>%
+        mutate(indicator = factor(indicator, levels = c("NOSA", "TSA", "pHOS", "pNOB", "pNI", "Total_Releases")))
+    })
 
-      current_plot <- ggplot(filtered_data, aes(x = Brood_Year, y = value, color = species)) +
-        geom_line() +
-        geom_point() +
-        ylim(0, NA) +
-        theme_bw() +
-        theme() +
-        facet_wrap(~indicator, nrow = 6, scales = "free_y") +
-        ggtitle(filtered_data$population[1]) +
-        geom_blank(data = facet_limits, aes(x = Brood_Year, y = value))+
-        theme(
-         plot.title = element_text(size = 18),
-         text = element_text(size = 16),  # Adjust the main text size
-         axis.text = element_text(size = 14)  # Adjust the axis text size
-        # You can add more elements like legend.text, title, etc., if needed
-        )
+    observe({
+      species_population_filtered <- indicators %>%
+        filter(if (input$Species != "None") Species == input$Species else TRUE) %>%
+        filter(if (input$Population != "None") Population == input$Population else TRUE)
+      updateSelectInput(session, "Run", choices = c("None", unique(species_population_filtered$Run)), selected = if (input$Run != "None") input$Run else "None")
+    })
 
-      print(current_plot)
-    } else {
-      print("Please select only one population to generate the plot.")
-    }
-  })
+    observe({
+      run_population_filtered <- indicators %>%
+        filter(if (input$Run != "None") Run == input$Run else TRUE) %>%
+        filter(if (input$Population != "None") Population == input$Population else TRUE)
+      updateSelectInput(session, "Species", choices = c("None", unique(run_population_filtered$Species)), selected = if (input$Species != "None") input$Species else "None")
+    })
 
-  # Download handler
+    observe({
+      run_species_filtered <- indicators %>%
+        filter(if (input$Run != "None") Run == input$Run else TRUE) %>%
+        filter(if (input$Species != "None") Species == input$Species else TRUE)
+      updateSelectInput(session, "Population", choices = c("None", unique(run_species_filtered$Population)), selected = if (input$Population != "None") input$Population else "None")
+    })
+  
+    #map
+    # Render Coho Plot
+    output$range_map <- renderPlot({
+      if (input$Population != "None") {
+        Run <- tools::toTitleCase(subset_data_reactive()$Run[1])
+        Species <- tools::toTitleCase(subset_data_reactive()$Species[1])
+        
+        range_dat <- get(paste0(Run, Species))
+      
+        range_map <- ggplot() +
+          geom_sf(data = state_map, color = "black", fill = "lightgrey") + # Washington state map
+          geom_sf(data = range_dat, mapping = aes(geometry = SHAPE), fill = "lightblue") +
+          geom_sf(data = range_dat, mapping = aes(geometry = SHAPE), fill = "lightblue") +
+          geom_sf(data = range_dat %>%
+                    filter(NWFSC_POP_ID == subset_data_reactive()$NMFS_POPID[1]),
+                  mapping = aes(geometry = SHAPE), fill = "darkblue") +
+          geom_sf(data = state_map, color = "black", fill = NA) + # Washington state map
+          #geom_sf(data=release_locs,mapping=aes(geometry=geometry),size=3)+
+          labs(title = paste0(Run, " ", Species, " Populations"), fill = NA) +
+          ylim(44.75, 46.8) +
+          xlim(-124, -121) +
+          theme(
+           plot.title = element_text(size = 18),
+           text = element_text(size = 12),  # Adjust the main text size
+           axis.text = element_text(size = 12)  # Adjust the axis text size
+          # You can add more elements like legend.text, title, etc., if needed
+          ) +
+          theme_minimal()
+        
+        print(range_map)
+      }
+    })
+
+    # Render plot
+    output$plot <- renderPlot({
+      cat("Selected Species:", input$Species, "\n")
+      cat("Selected Run:", input$Run, "\n")
+      cat("Selected Population:", input$Population, "\n")
+
+      # Plotting code
+      filtered_data <- subset_data_reactive()
+      # Check the number of unique populations in the filtered data
+      unique_populations <- unique(filtered_data$Population)
+
+      if (length(unique_populations) == 1) {
+        facet_limits <- filtered_data %>%
+          group_by(indicator, Species) %>%
+          mutate(
+            minBY = min(Brood_Year),
+            maxBY = max(Brood_Year),
+            min = 0,
+            max = max(value, na.rm = TRUE, nan.rm = TRUE)
+          ) %>%
+          distinct(minBY, maxBY, min, max) %>%
+          pivot_longer(cols = c(minBY, maxBY), values_to = "Brood_Year", names_to = "type") %>%
+          pivot_longer(cols = c(min, max), values_to = "value", names_to = "type2") %>%
+          dplyr::select(-c(type, type2))
+
+        current_plot <- ggplot(filtered_data, aes(x = Brood_Year, y = value, color = Species)) +
+          geom_line() +
+          geom_point() +
+          ylim(0, NA) +
+          theme_bw() +
+          theme() +
+          facet_wrap(~indicator, nrow = 6, scales = "free_y") +
+          ggtitle(filtered_data$population[1]) +
+          geom_blank(data = facet_limits, aes(x = Brood_Year, y = value)) +
+          theme(
+           plot.title = element_text(size = 18),
+           text = element_text(size = 16),  # Adjust the main text size
+           axis.text = element_text(size = 14)  # Adjust the axis text size
+          # You can add more elements like legend.text, title, etc., if needed
+          )
+
+        print(current_plot)
+      } else {
+        print("Please select only one population to generate the plot.")
+      }
+    })
+
+    # Download handler
     output$downloadData <- downloadHandler(
       filename = function() {
         paste("salmon_indicator_data_", Sys.Date(), ".csv", sep = "")
@@ -317,7 +322,5 @@ shinyApp(
       }
     )
   }
-
 )
-
 ```

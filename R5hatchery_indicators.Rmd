@@ -32,7 +32,7 @@ editor_options:
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
-pacman ::p_load(jsonlite, dplyr, RODBC, curl,odbc,DBI,tidyverse,janitor,fuzzyjoin,ggplot2,lubridate,kableExtra,sf,rnaturalearth,ggmap,httr)
+pacman ::p_load(jsonlite, dplyr, RODBC, curl,odbc,DBI,tidyverse,janitor,fuzzyjoin,ggplot2,lubridate,kableExtra,sf,rnaturalearth,ggmap,httr,here)
 #define sql query function:
 SQL_query<- function(dsn,SQL){
   con <- odbcConnect(dsn)
@@ -991,56 +991,115 @@ indicators<-indicators%>%
                      )
        ),
   )
+
+
+new_column_names <- c(
+  "ESA_Population_Name", "Brood_Year", "Species", "pNOB", "pHOB",
+  "Total_Releases", "Popfit", "Best_Value", "NOSAIJ", "NOSAEJ",
+  "pHOSIJ", "pHOSEJ", "TSAIJ", "TSAEJ", "pHOS", "pNOS", "pNI",
+  "NOSA", "TSA"
+)
+
+indicators %<>%
+  ungroup() %>%
+  select(-c(sasi_stock_num, brood_code_count, stock_run_species_count)) %>%
+  rename_with(~case_when(
+    . == "esa_pop_name" ~ "ESA_Population_Name",
+    . == "Brood_Year" ~ "Brood_Year",
+    . == "species" ~ "Species",
+    . == "pNOB" ~ "pNOB",
+    . == "pHOB" ~ "pHOB",
+    . == "total" ~ "Total_Releases",
+    . == "POPFIT" ~ "Popfit",
+    . == "BESTVALUE" ~ "Best_Value",
+    . == "nosaij" ~ "NOSAIJ",
+    . == "nosaej" ~ "NOSAEJ",
+    . == "phosij" ~ "pHOSIJ",
+    . == "phosej" ~ "pHOSEJ",
+    . == "tsaij" ~ "TSAIJ",
+    . == "tsaej" ~ "TSAEJ",
+    . == "pHOS" ~ "pHOS",
+    . == "pNOS" ~ "pNOS",
+    . == "pNI" ~ "pNI",
+    . == "NOSA" ~ "NOSA",
+    . == "TSA" ~ "TSA",
+    TRUE ~ .
+  ))
+
 write.csv(indicators,"results/indicators_by_NOAA_pop.csv",row.names = F)
 
-indicators%>%
-  ungroup()%>%
-  dplyr::select(esa_pop_name,species)%>%
-  distinct(esa_pop_name,species)%>%
-  left_join(populations%>%
-    dplyr::select(ESAPOPNAME,run,NMFS_POPID)%>%
-    dplyr::rename(esa_pop_name=ESAPOPNAME)
-  )%>%
-  write.csv("results/populations_LUT.csv",row.names = F)
+
+indicators %>%
+  ungroup() %>%
+  distinct(ESA_Population_Name, Species) %>%
+  left_join(populations %>%
+    select(ESA_POP_NAME = ESAPOPNAME, Run=run, NMFS_POPID) %>%
+    rename(ESA_Population_Name = ESA_POP_NAME)
+  ) %>%
+  write.csv("results/populations_LUT.csv", row.names = FALSE)
   
 ```
 
 # Visualize Results by NOAA pop
 ```{r message=F,results='hide',warning=F}
-for (i in 1 : length(unique(indicators$esa_pop_name))) {
+dir_path <- here::here("results", "pNI_release_NOAA_pop")
+if (!dir.exists(dir_path)) {
+  # If not, create the directory
+  dir.create(dir_path, recursive = TRUE)
+}
+
+
+for (i in 1:length(unique(indicators$ESA_Population_Name))) {
   # Subset the data for the current facet level
-  subset_data <- indicators%>%
-    left_join(populations%>%
-                dplyr::select(ESAPOPNAME,run,NMFS_POPID)%>%
-                dplyr::rename(esa_pop_name=ESAPOPNAME)
-              ,by=join_by(esa_pop_name))%>%
-    filter(esa_pop_name == unique(indicators$esa_pop_name)[i])%>%
-    dplyr::select(Brood_Year,species,run,esa_pop_name,NMFS_POPID,NOSA,TSA,pNOB,pHOS,pNI,total_releases=total)%>%
-    pivot_longer(values_to ="value", names_to = "indicator",cols=c(NOSA,TSA,pHOS,pNOB,pNI,total_releases))%>%
-    mutate(indicator=factor(indicator, levels = c("NOSA", "TSA", "pHOS", "pNOB", "pNI", "total_releases")))
-  
-  #create "dummy dataset" for facet specific y limits
-  facet_limits<-subset_data%>%
-    group_by(indicator,species)%>%
-    mutate(minBY=min(Brood_Year),maxBY=max(Brood_Year),min=0,max=max(value,na.rm = T,nan.rm=T))%>%
-    distinct(minBY,maxBY,min,max)%>%
-    pivot_longer(cols = c(minBY,maxBY),values_to = "Brood_Year",names_to = "type")%>%
-    pivot_longer(cols = c(min,max),values_to = "value",names_to = "type2")%>%
-    dplyr::select(-c(type,type2))
+  subset_data <- indicators %>%
+    left_join(
+      populations %>%
+        select(ESA_Population_Name=ESAPOPNAME, Run = run, NMFS_POPID)
+      ,by = join_by(ESA_Population_Name)
+    ) %>%
+    filter(ESA_Population_Name == unique(indicators$ESA_Population_Name)[i]) %>%
+    select(Brood_Year, Species, Run, ESA_Population_Name, NMFS_POPID, NOSA, TSA, pNOB, pHOS, pNI, Total_Releases) %>%
+    pivot_longer(values_to = "value", names_to = "indicator", cols = c(NOSA, TSA, pHOS, pNOB, pNI, Total_Releases)) %>%
+    mutate(indicator = factor(indicator, levels = c("NOSA", "TSA", "pHOS", "pNOB", "pNI", "Total_Releases")))
+
+  # create "dummy dataset" for facet-specific y limits
+  facet_limits <- subset_data %>%
+    group_by(indicator, Species) %>%
+    mutate(
+      minBY = min(Brood_Year),
+      maxBY = max(Brood_Year),
+      min = 0,
+      max = max(value, na.rm = TRUE, nan.rm = TRUE)
+    ) %>%
+    distinct(minBY, maxBY, min, max) %>%
+    pivot_longer(cols = c(minBY, maxBY), values_to = "Brood_Year", names_to = "type") %>%
+    pivot_longer(cols = c(min, max), values_to = "value", names_to = "type2") %>%
+    select(-c(type, type2))
 
   # Create the ggplot for the current facet level
-  current_plot <- ggplot(subset_data, aes(x = Brood_Year, y = value,color=species)) +
-    geom_line()+
-    geom_point()+
-    ylim(0,NA)+
-    theme_bw()+
-    theme(plot.title = element_text(size = 12))+
-    facet_wrap(~indicator,nrow=6,scales="free_y")+
-    ggtitle(unique(indicators$esa_pop_name)[i])+
-    geom_blank(data=facet_limits,aes(x=Brood_Year,y=value)) 
+  current_plot <- ggplot(subset_data, aes(x = Brood_Year, y = value, color = Species)) +
+    geom_line() +
+    geom_point() +
+    ylim(0, NA) +
+    theme_bw() +
+    theme(plot.title = element_text(size = 12)) +
+    facet_wrap(~indicator, nrow = 6, scales = "free_y") +
+    ggtitle(unique(indicators$ESA_Population_Name)[i]) +
+    geom_blank(data = facet_limits, aes(x = Brood_Year, y = value))
 
   # Save the current plot as a PNG file
-  ggsave(paste0("results/pNI_release_NOAA_pop/NMFS_POPID_",subset_data%>%ungroup()%>%distinct(NMFS_POPID)%>%pluck("NMFS_POPID"),".png"), current_plot,width=8.5,height=11,units="in",dpi=150)
+  ggsave(
+    paste0(
+      "results/pNI_release_NOAA_pop/NMFS_POPID_",
+      subset_data %>% ungroup() %>% distinct(NMFS_POPID) %>% pluck("NMFS_POPID"),
+      ".png"
+    ),
+    current_plot,
+    width = 8.5,
+    height = 11,
+    units = "in",
+    dpi = 150
+  )
 }
 ```
 
