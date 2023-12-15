@@ -7,7 +7,7 @@ output:
 
 ```{r}
 # Load required libraries
-pacman::p_load(shiny, tidyverse, ggplot2, leaflet,sf,rnaturalearth)
+pacman::p_load(shiny, tidyverse, ggplot2, leaflet,sf,rnaturalearth,httr)
 
 # Load your data (replace this with your actual data loading code)
 populations_LUT <- read_csv("results/populations_LUT.csv") %>%
