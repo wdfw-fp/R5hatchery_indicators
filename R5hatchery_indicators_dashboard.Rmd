@@ -26,6 +26,11 @@ fgdb <- "spatial_data/WCR_Salmon_Steelhead_gdb_2015.gdb"
 if (file.exists(fgdb)) {
     print("Geodatabase already downloaded!")
 } else {
+  dir_path <- here::here("spatial_data")
+  if (!dir.exists(dir_path)) {
+    # If not, create the directory
+    dir.create(dir_path, recursive = TRUE)
+  }
   print("Attempting to download Geodatabase...may take a few mins!")
   url<-"https://www.webapps.nwfsc.noaa.gov/portal/sharing/rest/content/items/097239ff29b44a8b87acc048f0363229/data"
   response <- GET(url, timeout(600))

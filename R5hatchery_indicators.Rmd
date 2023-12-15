@@ -483,6 +483,13 @@ results%>%
 
 # Merge releases with Pops by location, species, run
 ```{r}
+dir_path <- here::here("spatial_data")
+if (!dir.exists(dir_path)) {
+  # If not, create the directory
+  dir.create(dir_path, recursive = TRUE)
+}
+
+
 state_map <- ne_states (country = 'United States of America', returnclass = 'sf')%>% 
   filter (name %in% c('Washington','Oregon'))
 
