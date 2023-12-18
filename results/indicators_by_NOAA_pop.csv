@@ -41,12 +41,12 @@
 "Salmon, Chinook (Lower Columbia River ESU) Grays and Chinook Rivers - fall",2021,"chinook",0,1,609000,"Portion","Yes",NA,168,NA,0.496,NA,343,0.496,0.504,0,168,343
 "Salmon, Chinook (Lower Columbia River ESU) Grays and Chinook Rivers - fall",2022,"chinook",0,1,214800,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "Salmon, Chinook (Lower Columbia River ESU) Grays and Chinook Rivers - fall",2023,"chinook",NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"Salmon, Chinook (Lower Columbia River ESU) Kalama River - fall",2010,"chinook",0.039615976012681,0.960384023987319,5927622,"Same","Yes",NA,593,NA,0.888,NA,5315,0.888,0.112,0.0427073024151316,593,5315
-"Salmon, Chinook (Lower Columbia River ESU) Kalama River - fall",2011,"chinook",0.117270191049501,0.882729808950499,6738907,"Same","Yes",NA,428,NA,0.944,NA,7591,0.944,0.056,0.110499844468006,428,7591
-"Salmon, Chinook (Lower Columbia River ESU) Kalama River - fall",2012,"chinook",0.0476385408968358,0.952361459103164,6679346,"Same","Yes",NA,288,NA,0.961,NA,7477,0.961,0.039,0.0472305379630623,288,7477
-"Salmon, Chinook (Lower Columbia River ESU) Kalama River - fall",2013,"chinook",0.134653498950368,0.865346501049632,7064595,"Same","Yes",NA,812,NA,0.904,NA,8487,0.904,0.096,0.129642367821843,812,8487
-"Salmon, Chinook (Lower Columbia River ESU) Kalama River - fall",2014,"chinook",0.0756189455841084,0.924381054415892,7127073,"Same","Yes",NA,764,NA,0.919,NA,9451,0.919,0.081,0.076028056694315,764,9451
-"Salmon, Chinook (Lower Columbia River ESU) Kalama River - fall",2015,"chinook",0.0918130665718722,0.908186933428128,4484851,"Same","Yes",NA,2889,NA,0.549,NA,6423,0.549,0.451,0.143275896452986,2889,6423
+"Salmon, Chinook (Lower Columbia River ESU) Kalama River - fall",2010,"chinook",0.0412371134020619,0.958762886597938,5927622,"Same","Yes",NA,593,NA,0.888,NA,5315,0.888,0.112,0.044377385284459,593,5315
+"Salmon, Chinook (Lower Columbia River ESU) Kalama River - fall",2011,"chinook",0.132712857635298,0.867287142364702,6738907,"Same","Yes",NA,428,NA,0.944,NA,7591,0.944,0.056,0.123257428100901,428,7591
+"Salmon, Chinook (Lower Columbia River ESU) Kalama River - fall",2012,"chinook",0.0499869825566259,0.950013017443374,6679346,"Same","Yes",NA,288,NA,0.961,NA,7477,0.961,0.039,0.0494437449928551,288,7477
+"Salmon, Chinook (Lower Columbia River ESU) Kalama River - fall",2013,"chinook",0.155391828533155,0.844608171466845,7064595,"Same","Yes",NA,812,NA,0.904,NA,8487,0.904,0.096,0.14668022194235,812,8487
+"Salmon, Chinook (Lower Columbia River ESU) Kalama River - fall",2014,"chinook",0.0817430025445293,0.918256997455471,7127073,"Same","Yes",NA,764,NA,0.919,NA,9451,0.919,0.081,0.0816823123785889,764,9451
+"Salmon, Chinook (Lower Columbia River ESU) Kalama River - fall",2015,"chinook",0.100963031997515,0.899036968002485,4484851,"Same","Yes",NA,2889,NA,0.549,NA,6423,0.549,0.451,0.155336576123765,2889,6423
 "Salmon, Chinook (Lower Columbia River ESU) Kalama River - fall",2016,"chinook",0,1,6761266,"Same","Yes",NA,2539,NA,0.398,NA,4226,0.398,0.602,0,2539,4226
 "Salmon, Chinook (Lower Columbia River ESU) Kalama River - fall",2017,"chinook",0,1,6959854,"Same","Yes",NA,1732,NA,0.43,NA,3041,0.43,0.57,0,1732,3041
 "Salmon, Chinook (Lower Columbia River ESU) Kalama River - fall",2018,"chinook",0,1,6746987,"Same","Yes",NA,1643,NA,0.353,NA,2548,0.353,0.647,0,1643,2548
@@ -55,11 +55,11 @@
 "Salmon, Chinook (Lower Columbia River ESU) Kalama River - fall",2021,"chinook",0,1,2629653,"Same","Yes",NA,1971,NA,0.527,NA,4195,0.527,0.473,0,1971,4195
 "Salmon, Chinook (Lower Columbia River ESU) Kalama River - fall",2022,"chinook",0,1,2519810,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "Salmon, Chinook (Lower Columbia River ESU) Kalama River - fall",2023,"chinook",NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"Salmon, Chinook (Lower Columbia River ESU) Kalama River - spring",2010,"chinook",0.0170943774332038,0.982905622566796,559545,"Same","Yes",NA,46,NA,0,NA,46,0,1,1,46,46
+"Salmon, Chinook (Lower Columbia River ESU) Kalama River - spring",2010,"chinook",0.0173913043478261,0.982608695652174,559545,"Same","Yes",NA,46,NA,0,NA,46,0,1,1,46,46
 "Salmon, Chinook (Lower Columbia River ESU) Kalama River - spring",2011,"chinook",0,1,521462,"Same","Yes",NA,172,NA,0,NA,172,0,1,NA,172,172
-"Salmon, Chinook (Lower Columbia River ESU) Kalama River - spring",2012,"chinook",0.00400002972890196,0.995999970271098,268024,"Same","Yes",NA,81,NA,0,NA,81,0,1,1,81,81
+"Salmon, Chinook (Lower Columbia River ESU) Kalama River - spring",2012,"chinook",0.00401606425702811,0.995983935742972,268024,"Same","Yes",NA,81,NA,0,NA,81,0,1,1,81,81
 "Salmon, Chinook (Lower Columbia River ESU) Kalama River - spring",2013,"chinook",0,1,602235,"Same","Yes",NA,107,NA,0,NA,107,0,1,NA,107,107
-"Salmon, Chinook (Lower Columbia River ESU) Kalama River - spring",2014,"chinook",0.00268099290567586,0.997319007094324,481624,"Same","Yes",NA,55,NA,0,NA,55,0,1,1,55,55
+"Salmon, Chinook (Lower Columbia River ESU) Kalama River - spring",2014,"chinook",0.00268817204301075,0.997311827956989,481624,"Same","Yes",NA,55,NA,0,NA,55,0,1,1,55,55
 "Salmon, Chinook (Lower Columbia River ESU) Kalama River - spring",2015,"chinook",0,1,533954,"Same","Yes",NA,31,NA,0,NA,31,0,1,NA,31,31
 "Salmon, Chinook (Lower Columbia River ESU) Kalama River - spring",2016,"chinook",0,1,509425,"Same","Yes",NA,28,NA,0,NA,28,0,1,NA,28,28
 "Salmon, Chinook (Lower Columbia River ESU) Kalama River - spring",2017,"chinook",0,1,509909,"Same","Yes",NA,60,NA,0,NA,60,0,1,NA,60,60
@@ -97,19 +97,19 @@
 "Salmon, Chinook (Lower Columbia River ESU) Lewis River - late fall",2021,"chinook",NA,NA,0,"Same","Yes",12624,12422,0.02,0.02,12880,12675,0.02,0.98,NA,12624,12880
 "Salmon, Chinook (Lower Columbia River ESU) Lewis River - late fall",2022,"chinook",NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "Salmon, Chinook (Lower Columbia River ESU) Lewis River - late fall",2023,"chinook",NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"Salmon, Chinook (Lower Columbia River ESU) Lower Cowlitz River - fall",2010,"chinook",0.0986542629664516,0.901345737033548,4405456,"Same","Yes",NA,2550,NA,0.317,NA,3734,0.317,0.683,0.237346929302188,2550,3734
+"Salmon, Chinook (Lower Columbia River ESU) Lower Cowlitz River - fall",2010,"chinook",0.109347442680776,0.890652557319224,4405456,"Same","Yes",NA,2550,NA,0.317,NA,3734,0.317,0.683,0.256474958529654,2550,3734
 "Salmon, Chinook (Lower Columbia River ESU) Lower Cowlitz River - fall",2011,"chinook",0,1,4494944,"Same","Yes",NA,2745,NA,0.255,NA,3685,0.255,0.745,0,2745,3685
 "Salmon, Chinook (Lower Columbia River ESU) Lower Cowlitz River - fall",2012,"chinook",0,1,1519271,"Same","Yes",NA,1553,NA,0.43,NA,2725,0.43,0.57,0,1553,2725
-"Salmon, Chinook (Lower Columbia River ESU) Lower Cowlitz River - fall",2013,"chinook",0.010015026621547,0.989984973378453,3153131,"Same","Yes",NA,3477,NA,0.195,NA,4320,0.195,0.805,0.0488502076486059,3477,4320
-"Salmon, Chinook (Lower Columbia River ESU) Lower Cowlitz River - fall",2014,"chinook",0.044525662045523,0.955474337954477,3447633,"Same","Yes",NA,2923,NA,0.328,NA,4347,0.328,0.672,0.119523744487922,2923,4347
-"Salmon, Chinook (Lower Columbia River ESU) Lower Cowlitz River - fall",2015,"chinook",0.06727818892712,0.93272181107288,3416089,"Same","Yes",NA,4186,NA,0.3,NA,5981,0.3,0.7,0.183180463625272,4186,5981
-"Salmon, Chinook (Lower Columbia River ESU) Lower Cowlitz River - fall",2016,"chinook",0.0243951428770746,0.975604857122925,2894928,"Same","Yes",NA,2878,NA,0.259,NA,3885,0.259,0.741,0.0860817254290636,2878,3885
-"Salmon, Chinook (Lower Columbia River ESU) Lower Cowlitz River - fall",2017,"chinook",0.176150391495425,0.823849608504575,3274631,"Same","Yes",NA,2924,NA,0.194,NA,3630,0.194,0.806,0.475888707786501,2924,3630
-"Salmon, Chinook (Lower Columbia River ESU) Lower Cowlitz River - fall",2018,"chinook",0.30660935870974,0.69339064129026,1755813,"Same","Yes",NA,3002,NA,0.155,NA,3553,0.155,0.845,0.664218246282428,3002,3553
-"Salmon, Chinook (Lower Columbia River ESU) Lower Cowlitz River - fall",2019,"chinook",0.213340469665677,0.786659530334323,2311145,"Same","Yes",NA,4514,NA,0.11,NA,5072,0.11,0.89,0.659801323002542,4514,5072
-"Salmon, Chinook (Lower Columbia River ESU) Lower Cowlitz River - fall",2020,"chinook",0.197808607858828,0.802191392141172,3596659,"Same","Yes",NA,4474,NA,0.08,NA,4863,0.08,0.92,0.712031961080727,4474,4863
-"Salmon, Chinook (Lower Columbia River ESU) Lower Cowlitz River - fall",2021,"chinook",0.156711111939631,0.843288888060369,3503839,"Same","Yes",NA,4043,NA,0.15,NA,4756,0.15,0.85,0.510940444735097,4043,4756
-"Salmon, Chinook (Lower Columbia River ESU) Lower Cowlitz River - fall",2022,"chinook",0.219757373342847,0.780242626657153,1187707,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"Salmon, Chinook (Lower Columbia River ESU) Lower Cowlitz River - fall",2013,"chinook",0.0101162939313336,0.989883706068666,3153131,"Same","Yes",NA,3477,NA,0.195,NA,4320,0.195,0.805,0.0493197967720705,3477,4320
+"Salmon, Chinook (Lower Columbia River ESU) Lower Cowlitz River - fall",2014,"chinook",0.0465994484932664,0.953400551506734,3447633,"Same","Yes",NA,2923,NA,0.328,NA,4347,0.328,0.672,0.124398070207261,2923,4347
+"Salmon, Chinook (Lower Columbia River ESU) Lower Cowlitz River - fall",2015,"chinook",0.0721257555057845,0.927874244494215,3416089,"Same","Yes",NA,4186,NA,0.3,NA,5981,0.3,0.7,0.193820917898448,4186,5981
+"Salmon, Chinook (Lower Columbia River ESU) Lower Cowlitz River - fall",2016,"chinook",0.0250047669579347,0.974995233042065,2894928,"Same","Yes",NA,2878,NA,0.259,NA,3885,0.259,0.741,0.0880434762619259,2878,3885
+"Salmon, Chinook (Lower Columbia River ESU) Lower Cowlitz River - fall",2017,"chinook",0.213616321887194,0.786383678112806,3274631,"Same","Yes",NA,2924,NA,0.194,NA,3630,0.194,0.806,0.524062237984453,2924,3630
+"Salmon, Chinook (Lower Columbia River ESU) Lower Cowlitz River - fall",2018,"chinook",0.441621841379047,0.558378158620953,1755813,"Same","Yes",NA,3002,NA,0.155,NA,3553,0.155,0.845,0.740203946201954,3002,3553
+"Salmon, Chinook (Lower Columbia River ESU) Lower Cowlitz River - fall",2019,"chinook",0.271004942339374,0.728995057660626,2311145,"Same","Yes",NA,4514,NA,0.11,NA,5072,0.11,0.89,0.711289834392701,4514,5072
+"Salmon, Chinook (Lower Columbia River ESU) Lower Cowlitz River - fall",2020,"chinook",0.245948522402288,0.754051477597712,3596659,"Same","Yes",NA,4474,NA,0.08,NA,4863,0.08,0.92,0.754562470753393,4474,4863
+"Salmon, Chinook (Lower Columbia River ESU) Lower Cowlitz River - fall",2021,"chinook",0.185515873015873,0.814484126984127,3503839,"Same","Yes",NA,4043,NA,0.15,NA,4756,0.15,0.85,0.552927261975163,4043,4756
+"Salmon, Chinook (Lower Columbia River ESU) Lower Cowlitz River - fall",2022,"chinook",0.281326781326781,0.718673218673219,1187707,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "Salmon, Chinook (Lower Columbia River ESU) Lower Cowlitz River - fall",2023,"chinook",NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "Salmon, Chinook (Lower Columbia River ESU) Lower Gorge Tributaries - fall",2010,"chinook",NA,NA,0,"Same","Yes",NA,639,NA,0.046,NA,670,0.046,0.954,NA,639,670
 "Salmon, Chinook (Lower Columbia River ESU) Lower Gorge Tributaries - fall",2011,"chinook",NA,NA,0,"Same","Yes",NA,1181,NA,0.052,NA,1246,0.052,0.948,NA,1181,1246
@@ -139,25 +139,25 @@
 "Salmon, Chinook (Lower Columbia River ESU) Mill, Abernathy, and Germany Creeks - fall",2021,"chinook",NA,NA,0,"Same","Yes",NA,25,NA,0.732,NA,93,0.732,0.268,NA,25,93
 "Salmon, Chinook (Lower Columbia River ESU) Mill, Abernathy, and Germany Creeks - fall",2022,"chinook",NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "Salmon, Chinook (Lower Columbia River ESU) Mill, Abernathy, and Germany Creeks - fall",2023,"chinook",NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"Salmon, Chinook (Lower Columbia River ESU) North Fork Lewis River - spring",2010,"chinook",0.00246613430153163,0.997533865698468,1256990,"Same","Yes",NA,NA,NA,NA,NA,157,NA,NA,NA,NA,157
+"Salmon, Chinook (Lower Columbia River ESU) North Fork Lewis River - spring",2010,"chinook",0.00247218788627936,0.997527812113721,1256990,"Same","Yes",NA,NA,NA,NA,NA,157,NA,NA,NA,NA,157
 "Salmon, Chinook (Lower Columbia River ESU) North Fork Lewis River - spring",2011,"chinook",0,1,1153445,"Same","Yes",NA,NA,NA,NA,NA,90,NA,NA,NA,NA,90
 "Salmon, Chinook (Lower Columbia River ESU) North Fork Lewis River - spring",2012,"chinook",0,1,984587,"Same","Yes",NA,NA,NA,NA,NA,190,NA,NA,NA,NA,190
-"Salmon, Chinook (Lower Columbia River ESU) North Fork Lewis River - spring",2013,"chinook",0.0427939827912512,0.957206017208749,1226528,"Same","Yes",NA,2,NA,0.997,NA,NA,0.997,0.003,0.0411562131532767,2,2.00601805416249
-"Salmon, Chinook (Lower Columbia River ESU) North Fork Lewis River - spring",2013,"chinook",0.0427939827912512,0.957206017208749,1226528,"Same","Yes",NA,NA,NA,NA,NA,573,NA,NA,NA,NA,573
-"Salmon, Chinook (Lower Columbia River ESU) North Fork Lewis River - spring",2014,"chinook",0.0182280926807372,0.981771907319263,1292685,"Same","Yes",NA,0,NA,1,NA,NA,1,0,0.0179017774227259,0,0
-"Salmon, Chinook (Lower Columbia River ESU) North Fork Lewis River - spring",2014,"chinook",0.0182280926807372,0.981771907319263,1292685,"Same","Yes",NA,NA,NA,NA,NA,403,NA,NA,NA,NA,403
-"Salmon, Chinook (Lower Columbia River ESU) North Fork Lewis River - spring",2015,"chinook",0.000581402109326853,0.999418597890673,601667,"Same","Yes",NA,0,NA,1,NA,NA,1,0,0.000581064277330358,0,0
-"Salmon, Chinook (Lower Columbia River ESU) North Fork Lewis River - spring",2015,"chinook",0.000581402109326853,0.999418597890673,601667,"Same","Yes",NA,NA,NA,NA,NA,147,NA,NA,NA,NA,147
+"Salmon, Chinook (Lower Columbia River ESU) North Fork Lewis River - spring",2013,"chinook",0.0447058689243132,0.955294131075687,1226528,"Same","Yes",NA,2,NA,0.997,NA,NA,0.997,0.003,0.0429160190586978,2,2.00601805416249
+"Salmon, Chinook (Lower Columbia River ESU) North Fork Lewis River - spring",2013,"chinook",0.0447058689243132,0.955294131075687,1226528,"Same","Yes",NA,NA,NA,NA,NA,573,NA,NA,NA,NA,573
+"Salmon, Chinook (Lower Columbia River ESU) North Fork Lewis River - spring",2014,"chinook",0.0185660079601759,0.981433992039824,1292685,"Same","Yes",NA,0,NA,1,NA,NA,1,0,0.0182275942993199,0,0
+"Salmon, Chinook (Lower Columbia River ESU) North Fork Lewis River - spring",2014,"chinook",0.0185660079601759,0.981433992039824,1292685,"Same","Yes",NA,NA,NA,NA,NA,403,NA,NA,NA,NA,403
+"Salmon, Chinook (Lower Columbia River ESU) North Fork Lewis River - spring",2015,"chinook",0.000581717129242588,0.999418282870757,601667,"Same","Yes",NA,0,NA,1,NA,NA,1,0,0.000581378931159751,0,0
+"Salmon, Chinook (Lower Columbia River ESU) North Fork Lewis River - spring",2015,"chinook",0.000581717129242588,0.999418282870757,601667,"Same","Yes",NA,NA,NA,NA,NA,147,NA,NA,NA,NA,147
 "Salmon, Chinook (Lower Columbia River ESU) North Fork Lewis River - spring",2016,"chinook",0,1,402224,"Same","Yes",NA,0,NA,1,NA,NA,1,0,0,0,0
 "Salmon, Chinook (Lower Columbia River ESU) North Fork Lewis River - spring",2016,"chinook",0,1,402224,"Same","Yes",NA,NA,NA,NA,NA,49,NA,NA,NA,NA,49
-"Salmon, Chinook (Lower Columbia River ESU) North Fork Lewis River - spring",2017,"chinook",0.0536627622243319,0.946337237775668,1304861,"Same","Yes",NA,0,NA,1,NA,NA,1,0,0.0509297321194566,0,0
-"Salmon, Chinook (Lower Columbia River ESU) North Fork Lewis River - spring",2017,"chinook",0.0536627622243319,0.946337237775668,1304861,"Same","Yes",NA,NA,NA,NA,NA,868,NA,NA,NA,NA,868
+"Salmon, Chinook (Lower Columbia River ESU) North Fork Lewis River - spring",2017,"chinook",0.0567002737484027,0.943299726251597,1304861,"Same","Yes",NA,0,NA,1,NA,NA,1,0,0.0536578584836279,0,0
+"Salmon, Chinook (Lower Columbia River ESU) North Fork Lewis River - spring",2017,"chinook",0.0567002737484027,0.943299726251597,1304861,"Same","Yes",NA,NA,NA,NA,NA,868,NA,NA,NA,NA,868
 "Salmon, Chinook (Lower Columbia River ESU) North Fork Lewis River - spring",2018,"chinook",0,1,2252168,"Same","Yes",NA,0,NA,0.992,NA,NA,0.992,0.00800000000000001,0,0,0
 "Salmon, Chinook (Lower Columbia River ESU) North Fork Lewis River - spring",2018,"chinook",0,1,2252168,"Same","Yes",NA,NA,NA,NA,NA,994,NA,NA,NA,NA,994
-"Salmon, Chinook (Lower Columbia River ESU) North Fork Lewis River - spring",2019,"chinook",0.00423320365006723,0.995766796349933,1435288,"Same","Yes",NA,29,NA,0.863,NA,212,0.863,0.137,0.00488127487768025,29,212
-"Salmon, Chinook (Lower Columbia River ESU) North Fork Lewis River - spring",2020,"chinook",0.00605032256899291,0.993949677431007,1745606,"Same","Yes",NA,165,NA,0.529,NA,350,0.529,0.471,0.0113079505119123,165,350
-"Salmon, Chinook (Lower Columbia River ESU) North Fork Lewis River - spring",2021,"chinook",0.0041633035061103,0.99583669649389,1562004,"Same","Yes",NA,380,NA,0.744,NA,1484,0.744,0.256,0.00556469889207323,380,1484
-"Salmon, Chinook (Lower Columbia River ESU) North Fork Lewis River - spring",2022,"chinook",0.00242917969419512,0.997570820305805,1215829,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"Salmon, Chinook (Lower Columbia River ESU) North Fork Lewis River - spring",2019,"chinook",0.00425079702444208,0.995749202975558,1435288,"Same","Yes",NA,29,NA,0.863,NA,212,0.863,0.137,0.00490146222871938,29,212
+"Salmon, Chinook (Lower Columbia River ESU) North Fork Lewis River - spring",2020,"chinook",0.00608695652173913,0.993913043478261,1745606,"Same","Yes",NA,165,NA,0.529,NA,350,0.529,0.471,0.0113756398797432,165,350
+"Salmon, Chinook (Lower Columbia River ESU) North Fork Lewis River - spring",2021,"chinook",0.00418060200668896,0.995819397993311,1562004,"Same","Yes",NA,380,NA,0.744,NA,1484,0.744,0.256,0.00558769098727794,380,1484
+"Salmon, Chinook (Lower Columbia River ESU) North Fork Lewis River - spring",2022,"chinook",0.00243506493506494,0.997564935064935,1215829,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "Salmon, Chinook (Lower Columbia River ESU) North Fork Lewis River - spring",2023,"chinook",NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "Salmon, Chinook (Lower Columbia River ESU) Tilton River - spring",2010,"chinook",NA,NA,0,"Same","Yes",NA,0,NA,NA,NA,NA,NA,NA,NA,0,NA
 "Salmon, Chinook (Lower Columbia River ESU) Tilton River - spring",2011,"chinook",NA,NA,0,"Same","Yes",NA,0,NA,NA,NA,NA,NA,NA,NA,0,NA
@@ -173,19 +173,19 @@
 "Salmon, Chinook (Lower Columbia River ESU) Tilton River - spring",2021,"chinook",NA,NA,0,"Same","Yes",NA,0,NA,NA,NA,NA,NA,NA,NA,0,NA
 "Salmon, Chinook (Lower Columbia River ESU) Tilton River - spring",2022,"chinook",NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "Salmon, Chinook (Lower Columbia River ESU) Tilton River - spring",2023,"chinook",NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"Salmon, Chinook (Lower Columbia River ESU) Toutle River - fall",2010,"chinook",0.184101228128812,0.815898771871188,1573797,"Portion","Yes",NA,227,NA,0.881,NA,1917,0.881,0.119,0.17284857370059,227,1917
-"Salmon, Chinook (Lower Columbia River ESU) Toutle River - fall",2011,"chinook",0.174472539957508,0.825527460042492,1575534,"Portion","Yes",NA,198,NA,0.868,NA,1498,0.868,0.132,0.167364159025829,198,1498
-"Salmon, Chinook (Lower Columbia River ESU) Toutle River - fall",2012,"chinook",0.189622156195065,0.810377843804934,1514769,"Portion","Yes",NA,235,NA,0.741,NA,907,0.741,0.259,0.203758480208932,235,907
-"Salmon, Chinook (Lower Columbia River ESU) Toutle River - fall",2013,"chinook",0.25517412429203,0.74482587570797,1474577,"Portion","Yes",NA,914,NA,0.479,NA,1754,0.479,0.521,0.347566218760565,914,1754
-"Salmon, Chinook (Lower Columbia River ESU) Toutle River - fall",2014,"chinook",0.122596206884871,0.877403793115129,1313349,"Portion","Yes",NA,403,NA,0.486,NA,783,0.486,0.514,0.201440964465397,403,783
-"Salmon, Chinook (Lower Columbia River ESU) Toutle River - fall",2015,"chinook",0.135539039379869,0.864460960620131,1459216,"Portion","Yes",NA,374,NA,0.368,NA,598,0.368,0.632,0.269172852112502,374,598
-"Salmon, Chinook (Lower Columbia River ESU) Toutle River - fall",2016,"chinook",0.0675724388136184,0.932427561186382,1422786,"Portion","Yes",NA,367,NA,0.539,NA,803,0.539,0.461,0.111400443689433,367,803
-"Salmon, Chinook (Lower Columbia River ESU) Toutle River - fall",2017,"chinook",0.0883664396662925,0.911633560333707,755688,"Portion","Yes",NA,312,NA,0.471,NA,594,0.471,0.529,0.157975940993189,312,594
-"Salmon, Chinook (Lower Columbia River ESU) Toutle River - fall",2018,"chinook",0.0361855791829418,0.963814420817058,1121212,"Portion","Yes",NA,138,NA,0.429,NA,244,0.429,0.571,0.0777874052899461,138,244
-"Salmon, Chinook (Lower Columbia River ESU) Toutle River - fall",2019,"chinook",0.0571928246291503,0.94280717537085,1150022,"Portion","Yes",NA,116,NA,0.742,NA,466,0.742,0.258,0.071563235888272,116,466
-"Salmon, Chinook (Lower Columbia River ESU) Toutle River - fall",2020,"chinook",0.113682825680381,0.886317174319619,645524,"Portion","Yes",NA,346,NA,0.508,NA,708,0.508,0.492,0.182863062938829,346,708
-"Salmon, Chinook (Lower Columbia River ESU) Toutle River - fall",2021,"chinook",0.214044284283425,0.785955715716575,1074949,"Portion","Yes",NA,552,NA,0.324,NA,819,0.324,0.676,0.397819083922604,552,819
-"Salmon, Chinook (Lower Columbia River ESU) Toutle River - fall",2022,"chinook",0.219725611163654,0.780274388836346,867994,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"Salmon, Chinook (Lower Columbia River ESU) Toutle River - fall",2010,"chinook",0.225574712643678,0.774425287356322,1573797,"Portion","Yes",NA,227,NA,0.881,NA,1917,0.881,0.119,0.203849509722453,227,1917
+"Salmon, Chinook (Lower Columbia River ESU) Toutle River - fall",2011,"chinook",0.211287988422576,0.788712011577424,1575534,"Portion","Yes",NA,198,NA,0.868,NA,1498,0.868,0.132,0.195766089022618,198,1498
+"Salmon, Chinook (Lower Columbia River ESU) Toutle River - fall",2012,"chinook",0.233918128654971,0.766081871345029,1514769,"Portion","Yes",NA,235,NA,0.741,NA,907,0.741,0.259,0.239936176976924,235,907
+"Salmon, Chinook (Lower Columbia River ESU) Toutle River - fall",2013,"chinook",0.342485549132948,0.657514450867052,1474577,"Portion","Yes",NA,914,NA,0.479,NA,1754,0.479,0.521,0.416910010765777,914,1754
+"Salmon, Chinook (Lower Columbia River ESU) Toutle River - fall",2014,"chinook",0.139705882352941,0.860294117647059,1313349,"Portion","Yes",NA,403,NA,0.486,NA,783,0.486,0.514,0.223277239823258,403,783
+"Salmon, Chinook (Lower Columbia River ESU) Toutle River - fall",2015,"chinook",0.156763590391909,0.843236409608091,1459216,"Portion","Yes",NA,374,NA,0.368,NA,598,0.368,0.632,0.298731835177119,374,598
+"Salmon, Chinook (Lower Columbia River ESU) Toutle River - fall",2016,"chinook",0.072463768115942,0.927536231884058,1422786,"Portion","Yes",NA,367,NA,0.539,NA,803,0.539,0.461,0.118508686686734,367,803
+"Salmon, Chinook (Lower Columbia River ESU) Toutle River - fall",2017,"chinook",0.0969267139479905,0.903073286052009,755688,"Portion","Yes",NA,312,NA,0.471,NA,594,0.471,0.529,0.170667643496106,312,594
+"Salmon, Chinook (Lower Columbia River ESU) Toutle River - fall",2018,"chinook",0.037542662116041,0.962457337883959,1121212,"Portion","Yes",NA,138,NA,0.429,NA,244,0.429,0.571,0.0804699444757383,138,244
+"Salmon, Chinook (Lower Columbia River ESU) Toutle River - fall",2019,"chinook",0.0606585788561525,0.939341421143847,1150022,"Portion","Yes",NA,116,NA,0.742,NA,466,0.742,0.258,0.0755720806505245,116,466
+"Salmon, Chinook (Lower Columbia River ESU) Toutle River - fall",2020,"chinook",0.128249566724437,0.871750433275563,645524,"Portion","Yes",NA,346,NA,0.508,NA,708,0.508,0.492,0.201571165517166,346,708
+"Salmon, Chinook (Lower Columbia River ESU) Toutle River - fall",2021,"chinook",0.272292993630573,0.727707006369427,1074949,"Portion","Yes",NA,552,NA,0.324,NA,819,0.324,0.676,0.456642953278216,552,819
+"Salmon, Chinook (Lower Columbia River ESU) Toutle River - fall",2022,"chinook",0.281553398058252,0.718446601941748,867994,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "Salmon, Chinook (Lower Columbia River ESU) Toutle River - fall",2023,"chinook",NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "Salmon, Chinook (Lower Columbia River ESU) Toutle River - spring",2010,"chinook",NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "Salmon, Chinook (Lower Columbia River ESU) Toutle River - spring",2011,"chinook",NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -227,7 +227,7 @@
 "Salmon, Chinook (Lower Columbia River ESU) Upper Cowlitz River - spring",2019,"chinook",0,1,1943551,"Portion","Yes",NA,55,NA,0.402,NA,92,0.402,0.598,0,55,92
 "Salmon, Chinook (Lower Columbia River ESU) Upper Cowlitz River - spring",2020,"chinook",0,1,911240,"Portion","Yes",NA,370,NA,0,NA,370,0,1,NA,370,370
 "Salmon, Chinook (Lower Columbia River ESU) Upper Cowlitz River - spring",2021,"chinook",0,1,1893883,"Portion","Yes",NA,549,NA,0.682,NA,1725,0.682,0.318,0,549,1725
-"Salmon, Chinook (Lower Columbia River ESU) Upper Cowlitz River - spring",2022,"chinook",0.00224406030081398,0.997755939699186,407392,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"Salmon, Chinook (Lower Columbia River ESU) Upper Cowlitz River - spring",2022,"chinook",0.00224887556221889,0.997751124437781,407392,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "Salmon, Chinook (Lower Columbia River ESU) Upper Cowlitz River - spring",2023,"chinook",NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "Salmon, Chinook (Lower Columbia River ESU) Upper Gorge Tributaries - fall",2010,"chinook",NA,NA,0,"Same","Yes",NA,441,NA,0.219,NA,565,0.219,0.781,NA,441,565
 "Salmon, Chinook (Lower Columbia River ESU) Upper Gorge Tributaries - fall",2011,"chinook",NA,NA,0,"Same","Yes",NA,1186,NA,0.631,NA,3084,0.631,0.369,NA,1186,3084
@@ -243,19 +243,19 @@
 "Salmon, Chinook (Lower Columbia River ESU) Upper Gorge Tributaries - fall",2021,"chinook",NA,NA,0,"Same","Yes",NA,350,NA,0.4,NA,582,0.4,0.6,NA,350,582
 "Salmon, Chinook (Lower Columbia River ESU) Upper Gorge Tributaries - fall",2022,"chinook",NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "Salmon, Chinook (Lower Columbia River ESU) Upper Gorge Tributaries - fall",2023,"chinook",NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"Salmon, Chinook (Lower Columbia River ESU) Washougal River - fall",2010,"chinook",0.019015548150442,0.980984451849558,3355864,"Same","Yes",NA,589,NA,0.893,NA,5530,0.893,0.107,0.0208500262840971,589,5530
+"Salmon, Chinook (Lower Columbia River ESU) Washougal River - fall",2010,"chinook",0.0193836978131213,0.980616302186879,3355864,"Same","Yes",NA,589,NA,0.893,NA,5530,0.893,0.107,0.0212451163469731,589,5530
 "Salmon, Chinook (Lower Columbia River ESU) Washougal River - fall",2011,"chinook",NA,NA,3141458,"Same","Yes",NA,473,NA,0.854,NA,3224,0.854,0.146,NA,473,3224
 "Salmon, Chinook (Lower Columbia River ESU) Washougal River - fall",2012,"chinook",0,1,3120005,"Same","Yes",NA,256,NA,0.738,NA,965,0.738,0.262,0,256,965
 "Salmon, Chinook (Lower Columbia River ESU) Washougal River - fall",2013,"chinook",0,1,3041003,"Same","Yes",NA,1197,NA,0.669,NA,3612,0.669,0.331,0,1197,3612
-"Salmon, Chinook (Lower Columbia River ESU) Washougal River - fall",2014,"chinook",0.258695477206679,0.741304522793321,910456,"Same","Yes",NA,997,NA,0.347,NA,1529,0.347,0.653,0.427104852094521,997,1529
-"Salmon, Chinook (Lower Columbia River ESU) Washougal River - fall",2015,"chinook",0.256174481721497,0.743825518278503,910456,"Same","Yes",NA,1332,NA,0.544,NA,2925,0.544,0.456,0.320148277123713,1332,2925
-"Salmon, Chinook (Lower Columbia River ESU) Washougal River - fall",2016,"chinook",0.0637679078677955,0.936232092132204,1906735,"Same","Yes",NA,883,NA,0.6,NA,2198,0.6,0.4,0.0960695856366957,883,2198
-"Salmon, Chinook (Lower Columbia River ESU) Washougal River - fall",2017,"chinook",0.0480412604715363,0.951958739528464,1939414,"Same","Yes",NA,655,NA,0.408,NA,1112,0.408,0.592,0.105344109482249,655,1112
-"Salmon, Chinook (Lower Columbia River ESU) Washougal River - fall",2018,"chinook",0.024931484122016,0.975068515877984,1188750,"Same","Yes",NA,903,NA,0.114,NA,1019,0.114,0.886,0.179451650427343,903,1019
-"Salmon, Chinook (Lower Columbia River ESU) Washougal River - fall",2019,"chinook",0.034707960150243,0.965292039849757,1902688,"Same","Yes",NA,1575,NA,0.133,NA,1817,0.133,0.867,0.206954757061916,1575,1817
-"Salmon, Chinook (Lower Columbia River ESU) Washougal River - fall",2020,"chinook",0.0814518944651463,0.918548105534854,2118768,"Same","Yes",NA,3772,NA,0.252,NA,5042,0.252,0.748,0.244268801038886,3772,5042
-"Salmon, Chinook (Lower Columbia River ESU) Washougal River - fall",2021,"chinook",0.0559327017709026,0.944067298229097,1230834,"Same","Yes",NA,1452,NA,0.257,NA,1956,0.257,0.743,0.178737158035502,1452,1956
-"Salmon, Chinook (Lower Columbia River ESU) Washougal River - fall",2022,"chinook",0.0139695960240217,0.986030403975978,1186974,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"Salmon, Chinook (Lower Columbia River ESU) Washougal River - fall",2014,"chinook",0.348880531240191,0.651119468759809,910456,"Same","Yes",NA,997,NA,0.347,NA,1529,0.347,0.653,0.50135118828288,997,1529
+"Salmon, Chinook (Lower Columbia River ESU) Washougal River - fall",2015,"chinook",0.344279504364332,0.655720495635668,910456,"Same","Yes",NA,1332,NA,0.544,NA,2925,0.544,0.456,0.387580150924122,1332,2925
+"Salmon, Chinook (Lower Columbia River ESU) Washougal River - fall",2016,"chinook",0.0681003584229391,0.931899641577061,1906735,"Same","Yes",NA,883,NA,0.6,NA,2198,0.6,0.4,0.101931330472103,883,2198
+"Salmon, Chinook (Lower Columbia River ESU) Washougal River - fall",2017,"chinook",0.0504625735912532,0.949537426408747,1939414,"Same","Yes",NA,655,NA,0.408,NA,1112,0.408,0.592,0.110069123409501,655,1112
+"Salmon, Chinook (Lower Columbia River ESU) Washougal River - fall",2018,"chinook",0.0255681818181818,0.974431818181818,1188750,"Same","Yes",NA,903,NA,0.114,NA,1019,0.114,0.886,0.183194919394235,903,1019
+"Salmon, Chinook (Lower Columbia River ESU) Washougal River - fall",2019,"chinook",0.0359536867763559,0.964046313223644,1902688,"Same","Yes",NA,1575,NA,0.133,NA,1817,0.133,0.867,0.212802025586738,1575,1817
+"Salmon, Chinook (Lower Columbia River ESU) Washougal River - fall",2020,"chinook",0.0886615515771526,0.911338448422847,2118768,"Same","Yes",NA,3772,NA,0.252,NA,5042,0.252,0.748,0.260262865494149,3772,5042
+"Salmon, Chinook (Lower Columbia River ESU) Washougal River - fall",2021,"chinook",0.0592417061611374,0.940758293838863,1230834,"Same","Yes",NA,1452,NA,0.257,NA,1956,0.257,0.743,0.187330465928335,1452,1956
+"Salmon, Chinook (Lower Columbia River ESU) Washougal River - fall",2022,"chinook",0.0141672000899002,0.9858327999101,1186974,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "Salmon, Chinook (Lower Columbia River ESU) Washougal River - fall",2023,"chinook",NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "Salmon, Chinook (Lower Columbia River ESU) White Salmon River - fall",2010,"chinook",NA,NA,0,"Same","Yes",NA,1369,NA,0.275,NA,1887,0.275,0.725,NA,1369,1887
 "Salmon, Chinook (Lower Columbia River ESU) White Salmon River - fall",2011,"chinook",NA,NA,0,"Same","Yes",NA,640,NA,0.115,NA,723,0.115,0.885,NA,640,723
@@ -299,19 +299,19 @@
 "Salmon, chum (Columbia River ESU) Elochoman River - fall",2021,"chum",NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "Salmon, chum (Columbia River ESU) Elochoman River - fall",2022,"chum",NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "Salmon, chum (Columbia River ESU) Elochoman River - fall",2023,"chum",NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"Salmon, chum (Columbia River ESU) Grays and Chinook Rivers - fall",2010,"chum",0.500287164832614,0.499712835167386,250000,"Same","Yes",NA,6082,NA,0.047,NA,6380,0.047,0.953,0.914121866873354,6082,6380
-"Salmon, chum (Columbia River ESU) Grays and Chinook Rivers - fall",2011,"chum",0.500712178000749,0.499287821999251,206000,"Same","Yes",NA,10052,NA,0.07,NA,10809,0.07,0.93,0.877346230379706,10052,10809
-"Salmon, chum (Columbia River ESU) Grays and Chinook Rivers - fall",2012,"chum",0.500717123383299,0.499282876616701,157800,"Same","Yes",NA,7782,NA,0.028,NA,8010,0.028,0.972,0.947041624411886,7782,8010
-"Salmon, chum (Columbia River ESU) Grays and Chinook Rivers - fall",2013,"chum",0.500812841575194,0.499187158424806,151567,"Same","Yes",NA,4832,NA,0.059,NA,5134,0.059,0.941,0.894607633804922,4832,5134
-"Salmon, chum (Columbia River ESU) Grays and Chinook Rivers - fall",2014,"chum",0.500640925433797,0.499359074566203,192156,"Same","Yes",NA,4267,NA,0.11,NA,4792,0.11,0.89,0.81986140230962,4267,4792
-"Salmon, chum (Columbia River ESU) Grays and Chinook Rivers - fall",2015,"chum",0.500449895142549,0.499550104857451,141271,"Same","Yes",NA,10857,NA,0.062,NA,11580,0.062,0.938,0.889767958825405,10857,11580
-"Salmon, chum (Columbia River ESU) Grays and Chinook Rivers - fall",2016,"chum",0.500480084129028,0.499519915870972,131353,"Same","Yes",NA,30408,NA,0.023,NA,31138,0.023,0.977,0.956063275953912,30408,31138
-"Salmon, chum (Columbia River ESU) Grays and Chinook Rivers - fall",2017,"chum",0.500439833773167,0.499560166226833,131984,"Same","Yes",NA,6217,NA,0.067,NA,6662,0.067,0.933,0.881925807790958,6217,6662
-"Salmon, chum (Columbia River ESU) Grays and Chinook Rivers - fall",2018,"chum",0.500691489658326,0.499308510341674,179571,"Same","Yes",NA,6320,NA,0.072,NA,6811,0.072,0.928,0.874277859370748,6320,6811
-"Salmon, chum (Columbia River ESU) Grays and Chinook Rivers - fall",2019,"chum",0.500665908555388,0.499334091444612,195482,"Same","Yes",NA,7002,NA,0.062,NA,7468,0.062,0.938,0.889810278075703,7002,7468
-"Salmon, chum (Columbia River ESU) Grays and Chinook Rivers - fall",2020,"chum",0.500795112600795,0.499204887399205,187063,"Same","Yes",NA,12726,NA,0.054,NA,13466,0.054,0.946,0.902666770536503,12726,13466
-"Salmon, chum (Columbia River ESU) Grays and Chinook Rivers - fall",2021,"chum",0.500577027108253,0.499422972891747,166562,"Same","Yes",NA,NA,NA,NA,NA,17414,NA,NA,NA,NA,17414
-"Salmon, chum (Columbia River ESU) Grays and Chinook Rivers - fall",2022,"chum",0.500320067246452,0.499679932753548,154754,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"Salmon, chum (Columbia River ESU) Grays and Chinook Rivers - fall",2010,"chum",1,0,250000,"Same","Yes",NA,6082,NA,0.047,NA,6380,0.047,0.953,0.955109837631328,6082,6380
+"Salmon, chum (Columbia River ESU) Grays and Chinook Rivers - fall",2011,"chum",1,0,206000,"Same","Yes",NA,10052,NA,0.07,NA,10809,0.07,0.93,0.934579439252336,10052,10809
+"Salmon, chum (Columbia River ESU) Grays and Chinook Rivers - fall",2012,"chum",1,0,157800,"Same","Yes",NA,7782,NA,0.028,NA,8010,0.028,0.972,0.972762645914397,7782,8010
+"Salmon, chum (Columbia River ESU) Grays and Chinook Rivers - fall",2013,"chum",1,0,151567,"Same","Yes",NA,4832,NA,0.059,NA,5134,0.059,0.941,0.944287063267233,4832,5134
+"Salmon, chum (Columbia River ESU) Grays and Chinook Rivers - fall",2014,"chum",1,0,192156,"Same","Yes",NA,4267,NA,0.11,NA,4792,0.11,0.89,0.900900900900901,4267,4792
+"Salmon, chum (Columbia River ESU) Grays and Chinook Rivers - fall",2015,"chum",1,0,141271,"Same","Yes",NA,10857,NA,0.062,NA,11580,0.062,0.938,0.941619585687382,10857,11580
+"Salmon, chum (Columbia River ESU) Grays and Chinook Rivers - fall",2016,"chum",1,0,131353,"Same","Yes",NA,30408,NA,0.023,NA,31138,0.023,0.977,0.977517106549365,30408,31138
+"Salmon, chum (Columbia River ESU) Grays and Chinook Rivers - fall",2017,"chum",1,0,131984,"Same","Yes",NA,6217,NA,0.067,NA,6662,0.067,0.933,0.937207122774133,6217,6662
+"Salmon, chum (Columbia River ESU) Grays and Chinook Rivers - fall",2018,"chum",1,0,179571,"Same","Yes",NA,6320,NA,0.072,NA,6811,0.072,0.928,0.932835820895522,6320,6811
+"Salmon, chum (Columbia River ESU) Grays and Chinook Rivers - fall",2019,"chum",1,0,195482,"Same","Yes",NA,7002,NA,0.062,NA,7468,0.062,0.938,0.941619585687382,7002,7468
+"Salmon, chum (Columbia River ESU) Grays and Chinook Rivers - fall",2020,"chum",1,0,187063,"Same","Yes",NA,12726,NA,0.054,NA,13466,0.054,0.946,0.94876660341556,12726,13466
+"Salmon, chum (Columbia River ESU) Grays and Chinook Rivers - fall",2021,"chum",1,0,166562,"Same","Yes",NA,NA,NA,NA,NA,17414,NA,NA,NA,NA,17414
+"Salmon, chum (Columbia River ESU) Grays and Chinook Rivers - fall",2022,"chum",1,0,154754,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "Salmon, chum (Columbia River ESU) Grays and Chinook Rivers - fall",2023,"chum",NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "Salmon, chum (Columbia River ESU) Lewis River - fall",2010,"chum",NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "Salmon, chum (Columbia River ESU) Lewis River - fall",2011,"chum",NA,NA,109396,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -329,17 +329,17 @@
 "Salmon, chum (Columbia River ESU) Lewis River - fall",2023,"chum",NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "Salmon, chum (Columbia River ESU) Lower Gorge Tributaries - fall",2010,"chum",NA,NA,53267,"Same","Yes",NA,2674,NA,0,NA,2674,0,1,NA,2674,2674
 "Salmon, chum (Columbia River ESU) Lower Gorge Tributaries - fall",2011,"chum",NA,NA,74893,"Same","Yes",NA,3190,NA,0,NA,3190,0,1,NA,3190,3190
-"Salmon, chum (Columbia River ESU) Lower Gorge Tributaries - fall",2012,"chum",0.500219909104237,0.499780090895763,58004,"Same","Yes",NA,1864,NA,0,NA,1864,0,1,1,1864,1864
-"Salmon, chum (Columbia River ESU) Lower Gorge Tributaries - fall",2013,"chum",0.500255104810083,0.499744895189917,46083,"Same","Yes",NA,1595,NA,0,NA,1595,0,1,1,1595,1595
-"Salmon, chum (Columbia River ESU) Lower Gorge Tributaries - fall",2014,"chum",0.500445340072813,0.499554659927187,89899,"Same","Yes",NA,2342,NA,0.019,NA,2387,0.019,0.981,0.963422522960093,2342,2387
-"Salmon, chum (Columbia River ESU) Lower Gorge Tributaries - fall",2015,"chum",0.500227951633427,0.499772048366573,73514,"Same","Yes",NA,5345,NA,0,NA,5345,0,1,1,5345,5345
-"Salmon, chum (Columbia River ESU) Lower Gorge Tributaries - fall",2016,"chum",0.500429399556287,0.499570600443713,111880,"Same","Yes",NA,6103,NA,0,NA,6103,0,1,1,6103,6103
+"Salmon, chum (Columbia River ESU) Lower Gorge Tributaries - fall",2012,"chum",1,0,58004,"Same","Yes",NA,1864,NA,0,NA,1864,0,1,1,1864,1864
+"Salmon, chum (Columbia River ESU) Lower Gorge Tributaries - fall",2013,"chum",1,0,46083,"Same","Yes",NA,1595,NA,0,NA,1595,0,1,1,1595,1595
+"Salmon, chum (Columbia River ESU) Lower Gorge Tributaries - fall",2014,"chum",1,0,89899,"Same","Yes",NA,2342,NA,0.019,NA,2387,0.019,0.981,0.98135426889107,2342,2387
+"Salmon, chum (Columbia River ESU) Lower Gorge Tributaries - fall",2015,"chum",1,0,73514,"Same","Yes",NA,5345,NA,0,NA,5345,0,1,1,5345,5345
+"Salmon, chum (Columbia River ESU) Lower Gorge Tributaries - fall",2016,"chum",1,0,111880,"Same","Yes",NA,6103,NA,0,NA,6103,0,1,1,6103,6103
 "Salmon, chum (Columbia River ESU) Lower Gorge Tributaries - fall",2017,"chum",NA,NA,0,"Same","Yes",NA,1499,NA,0,NA,1499,0,1,NA,1499,1499
-"Salmon, chum (Columbia River ESU) Lower Gorge Tributaries - fall",2018,"chum",0.50022769534363,0.49977230465637,105452,"Same","Yes",NA,4855,NA,0.013,NA,4918,0.013,0.987,0.974670112080963,4855,4918
-"Salmon, chum (Columbia River ESU) Lower Gorge Tributaries - fall",2019,"chum",0.500217346023926,0.499782653976074,110471,"Same","Yes",NA,5576,NA,0,NA,5576,0,1,1,5576,5576
-"Salmon, chum (Columbia River ESU) Lower Gorge Tributaries - fall",2020,"chum",0.500213165901207,0.499786834098793,103250,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"Salmon, chum (Columbia River ESU) Lower Gorge Tributaries - fall",2021,"chum",0.500234008696614,0.499765991303386,117572,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"Salmon, chum (Columbia River ESU) Lower Gorge Tributaries - fall",2022,"chum",0.500223468443063,0.499776531556937,94015,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"Salmon, chum (Columbia River ESU) Lower Gorge Tributaries - fall",2018,"chum",1,0,105452,"Same","Yes",NA,4855,NA,0.013,NA,4918,0.013,0.987,0.987166831194472,4855,4918
+"Salmon, chum (Columbia River ESU) Lower Gorge Tributaries - fall",2019,"chum",1,0,110471,"Same","Yes",NA,5576,NA,0,NA,5576,0,1,1,5576,5576
+"Salmon, chum (Columbia River ESU) Lower Gorge Tributaries - fall",2020,"chum",1,0,103250,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"Salmon, chum (Columbia River ESU) Lower Gorge Tributaries - fall",2021,"chum",1,0,117572,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"Salmon, chum (Columbia River ESU) Lower Gorge Tributaries - fall",2022,"chum",1,0,94015,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "Salmon, chum (Columbia River ESU) Lower Gorge Tributaries - fall",2023,"chum",NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "Salmon, chum (Columbia River ESU) Mill, Abernathy, and Germany Creeks - fall",2010,"chum",NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "Salmon, chum (Columbia River ESU) Mill, Abernathy, and Germany Creeks - fall",2011,"chum",NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -421,30 +421,30 @@
 "Salmon, coho (Lower Columbia River ESU) Elochoman River - late",2017,"coho",0,1,102750,"Same","Yes",NA,896,NA,0.246,NA,1235,0.246,0.754,0,896,1235
 "Salmon, coho (Lower Columbia River ESU) Elochoman River - late",2018,"coho",0,1,200400,"Same","Yes",NA,1076,NA,0.404,NA,1861,0.404,0.596,0,1076,1861
 "Salmon, coho (Lower Columbia River ESU) Elochoman River - late",2019,"coho",0,1,152807,"Same","Yes",NA,1664,NA,0.362,NA,2658,0.362,0.638,0,1664,2658
-"Salmon, coho (Lower Columbia River ESU) Elochoman River - late",2020,"coho",0.326492361587777,0.673507638412222,165272,"Same","Yes",NA,1725,NA,0.207,NA,2237,0.207,0.793,0.611990695829407,1725,2237
-"Salmon, coho (Lower Columbia River ESU) Elochoman River - late",2021,"coho",0.218828387625207,0.781171612374793,229000,"Same","Yes",NA,1450,NA,0.459,NA,2688,0.459,0.541,0.322837449154172,1450,2688
+"Salmon, coho (Lower Columbia River ESU) Elochoman River - late",2020,"coho",0.484444444444444,0.515555555555556,165272,"Same","Yes",NA,1725,NA,0.207,NA,2237,0.207,0.793,0.700626707375864,1725,2237
+"Salmon, coho (Lower Columbia River ESU) Elochoman River - late",2021,"coho",0.28,0.72,229000,"Same","Yes",NA,1450,NA,0.459,NA,2688,0.459,0.541,0.378890392422192,1450,2688
 "Salmon, coho (Lower Columbia River ESU) Elochoman River - late",2022,"coho",NA,NA,0,"Same","Yes",NA,756,NA,0.183,NA,953,0.183,0.817,NA,756,953
 "Salmon, coho (Lower Columbia River ESU) Elochoman River - late",2023,"coho",NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"Salmon, coho (Lower Columbia River ESU) Grays and Chinook Rivers - late",2010,"coho",0.0382608469825821,0.961739153017418,963000,"Same","Yes",NA,479,NA,0.797,NA,2349,0.797,0.203,0.0458070638900424,479,2349
+"Salmon, coho (Lower Columbia River ESU) Grays and Chinook Rivers - late",2010,"coho",0.0397767393561786,0.960223260643821,963000,"Same","Yes",NA,479,NA,0.797,NA,2349,0.797,0.203,0.0475356657102862,479,2349
 "Salmon, coho (Lower Columbia River ESU) Grays and Chinook Rivers - late",2011,"coho",0,1,765000,"Same","Yes",NA,301,NA,0.93,NA,4224,0.93,0.07,0,301,4224
-"Salmon, coho (Lower Columbia River ESU) Grays and Chinook Rivers - late",2012,"coho",0.000722831403543701,0.999277168596456,880000,"Same","Yes",NA,461,NA,0.425,NA,807,0.425,0.575,0.00169789203261811,461,807
-"Salmon, coho (Lower Columbia River ESU) Grays and Chinook Rivers - late",2013,"coho",0.0172182902488231,0.982781709751177,819000,"Same","Yes",NA,862,NA,0.644,NA,2440,0.644,0.356,0.0260402510074905,862,2440
-"Salmon, coho (Lower Columbia River ESU) Grays and Chinook Rivers - late",2014,"coho",0.113058224985868,0.886941775014132,1076000,"Same","Yes",NA,2689,NA,0.403,NA,4504,0.403,0.597,0.219080366346189,2689,4504
-"Salmon, coho (Lower Columbia River ESU) Grays and Chinook Rivers - late",2015,"coho",0.0135334099712532,0.986466590028747,908000,"Same","Yes",NA,312,NA,0.485,NA,602,0.485,0.515,0.0271464453546526,312,602
-"Salmon, coho (Lower Columbia River ESU) Grays and Chinook Rivers - late",2016,"coho",0.0151794399545629,0.984820560045437,778550,"Same","Yes",NA,627,NA,0.583,NA,1491,0.583,0.417,0.0253760643390149,627,1491
+"Salmon, coho (Lower Columbia River ESU) Grays and Chinook Rivers - late",2012,"coho",0.000723352622736606,0.999276647377263,880000,"Same","Yes",NA,461,NA,0.425,NA,807,0.425,0.575,0.00169911426817504,461,807
+"Salmon, coho (Lower Columbia River ESU) Grays and Chinook Rivers - late",2013,"coho",0.0175187131708871,0.982481286829113,819000,"Same","Yes",NA,862,NA,0.644,NA,2440,0.644,0.356,0.0264825662858634,862,2440
+"Salmon, coho (Lower Columbia River ESU) Grays and Chinook Rivers - late",2014,"coho",0.127450980392157,0.872549019607843,1076000,"Same","Yes",NA,2689,NA,0.403,NA,4504,0.403,0.597,0.240269101393561,2689,4504
+"Salmon, coho (Lower Columbia River ESU) Grays and Chinook Rivers - late",2015,"coho",0.0137183052843135,0.986281694715686,908000,"Same","Yes",NA,312,NA,0.485,NA,602,0.485,0.515,0.0275071220345379,312,602
+"Salmon, coho (Lower Columbia River ESU) Grays and Chinook Rivers - late",2016,"coho",0.0154132682550896,0.98458673174491,778550,"Same","Yes",NA,627,NA,0.583,NA,1491,0.583,0.417,0.0257568958991051,627,1491
 "Salmon, coho (Lower Columbia River ESU) Grays and Chinook Rivers - late",2017,"coho",0,1,7e+05,"Same","Yes",NA,400,NA,0.673,NA,1207,0.673,0.327,0,400,1207
 "Salmon, coho (Lower Columbia River ESU) Grays and Chinook Rivers - late",2018,"coho",0,1,706000,"Same","Yes",NA,406,NA,0.694,NA,1304,0.694,0.306,0,406,1304
-"Salmon, coho (Lower Columbia River ESU) Grays and Chinook Rivers - late",2019,"coho",0.00635155429590903,0.993648445704091,176000,"Same","Yes",NA,746,NA,0.589,NA,1796,0.589,0.411,0.0106685776665531,746,1796
+"Salmon, coho (Lower Columbia River ESU) Grays and Chinook Rivers - late",2019,"coho",0.00639204545454545,0.993607954545455,176000,"Same","Yes",NA,746,NA,0.589,NA,1796,0.589,0.411,0.0107358596799282,746,1796
 "Salmon, coho (Lower Columbia River ESU) Grays and Chinook Rivers - late",2020,"coho",0,1,154000,"Same","Yes",NA,962,NA,0.424,NA,1689,0.424,0.576,0,962,1689
 "Salmon, coho (Lower Columbia River ESU) Grays and Chinook Rivers - late",2021,"coho",0,1,709400,"Same","Yes",NA,1114,NA,0.568,NA,2585,0.568,0.432,0,1114,2585
 "Salmon, coho (Lower Columbia River ESU) Grays and Chinook Rivers - late",2022,"coho",NA,NA,0,"Same","Yes",NA,814,NA,0.451,NA,1504,0.451,0.549,NA,814,1504
 "Salmon, coho (Lower Columbia River ESU) Grays and Chinook Rivers - late",2023,"coho",NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"Salmon, coho (Lower Columbia River ESU) Kalama River - late",2010,"coho",0.152794685117406,0.847205314882594,749364,"Same","Yes",NA,75,NA,0.956,NA,1692,0.956,0.044,0.137802504979745,75,1692
-"Salmon, coho (Lower Columbia River ESU) Kalama River - late",2011,"coho",0.254001515358564,0.745998484641436,826557,"Same","Yes",NA,46,NA,0.903,NA,457,0.903,0.097,0.219534297913038,46,457
-"Salmon, coho (Lower Columbia River ESU) Kalama River - late",2012,"coho",0.138285302215119,0.861714697784881,718495,"Same","Yes",NA,47,NA,0.847,NA,308,0.847,0.153,0.140350517666533,47,308
-"Salmon, coho (Lower Columbia River ESU) Kalama River - late",2013,"coho",0.312845297710737,0.687154702289263,329906,"Same","Yes",NA,59,NA,0.859,NA,406,0.859,0.141,0.266968087273889,59,406
-"Salmon, coho (Lower Columbia River ESU) Kalama River - late",2014,"coho",0.399394545312322,0.600605454687678,89680,"Same","Yes",NA,150,NA,0.9,NA,1481,0.9,0.1,0.307369725964429,150,1481
-"Salmon, coho (Lower Columbia River ESU) Kalama River - late",2015,"coho",0.0465846972011738,0.953415302798826,491632,"Same","Yes",NA,31,NA,0.88,NA,259,0.88,0.12,0.0502757031730469,31,259
+"Salmon, coho (Lower Columbia River ESU) Kalama River - late",2010,"coho",0.180279222389652,0.819720777610348,749364,"Same","Yes",NA,75,NA,0.956,NA,1692,0.956,0.044,0.15865750146387,75,1692
+"Salmon, coho (Lower Columbia River ESU) Kalama River - late",2011,"coho",0.340157810712234,0.659842189287766,826557,"Same","Yes",NA,46,NA,0.903,NA,457,0.903,0.097,0.273623998321943,46,457
+"Salmon, coho (Lower Columbia River ESU) Kalama River - late",2012,"coho",0.16039492866101,0.83960507133899,718495,"Same","Yes",NA,47,NA,0.847,NA,308,0.847,0.153,0.159217526411614,47,308
+"Salmon, coho (Lower Columbia River ESU) Kalama River - late",2013,"coho",0.453917050691244,0.546082949308756,329906,"Same","Yes",NA,59,NA,0.859,NA,406,0.859,0.141,0.34573170517685,59,406
+"Salmon, coho (Lower Columbia River ESU) Kalama River - late",2014,"coho",0.663829787234043,0.336170212765957,89680,"Same","Yes",NA,150,NA,0.9,NA,1481,0.9,0.1,0.424489795918367,150,1481
+"Salmon, coho (Lower Columbia River ESU) Kalama River - late",2015,"coho",0.048834628190899,0.951165371809101,491632,"Same","Yes",NA,31,NA,0.88,NA,259,0.88,0.12,0.0525762355415352,31,259
 "Salmon, coho (Lower Columbia River ESU) Kalama River - late",2016,"coho",0,1,292161,"Same","Yes",NA,74,NA,0.644,NA,210,0.644,0.356,0,74,210
 "Salmon, coho (Lower Columbia River ESU) Kalama River - late",2017,"coho",0,1,301444,"Same","Yes",NA,64,NA,0.588,NA,159,0.588,0.412,0,64,159
 "Salmon, coho (Lower Columbia River ESU) Kalama River - late",2018,"coho",0,1,301981,"Same","Yes",NA,79,NA,0.642,NA,222,0.642,0.358,0,79,222
@@ -453,12 +453,12 @@
 "Salmon, coho (Lower Columbia River ESU) Kalama River - late",2021,"coho",0,1,303490,"Same","Yes",NA,253,NA,0.754,NA,1057,0.754,0.246,0,253,1057
 "Salmon, coho (Lower Columbia River ESU) Kalama River - late",2022,"coho",NA,NA,0,"Same","Yes",NA,268,NA,0.606,NA,691,0.606,0.394,NA,268,691
 "Salmon, coho (Lower Columbia River ESU) Kalama River - late",2023,"coho",NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"Salmon, coho (Lower Columbia River ESU) Lower Cowlitz River - late",2010,"coho",0.363035128786547,0.636964871213453,1879882,"Portion","Yes",NA,7002,NA,0.135,NA,8543,0.135,0.865,0.728934783518334,7002,8543
-"Salmon, coho (Lower Columbia River ESU) Lower Cowlitz River - late",2011,"coho",0.2957159103019,0.7042840896981,2375113,"Portion","Yes",NA,5254,NA,0.111,NA,6192,0.111,0.889,0.727082228188206,5254,6192
-"Salmon, coho (Lower Columbia River ESU) Lower Cowlitz River - late",2012,"coho",0.270917972358029,0.729082027641971,2069654,"Portion","Yes",NA,4610,NA,0.129,NA,5522,0.129,0.871,0.677433851648677,4610,5522
-"Salmon, coho (Lower Columbia River ESU) Lower Cowlitz River - late",2013,"coho",0.0910820382669518,0.908917961733048,2261971,"Portion","Yes",NA,6424,NA,0.159,NA,7833,0.159,0.841,0.364208636886291,6424,7833
-"Salmon, coho (Lower Columbia River ESU) Lower Cowlitz River - late",2014,"coho",0.298532343369945,0.701467656630055,2112914,"Portion","Yes",NA,24951,NA,0.047,NA,26432,0.047,0.953,0.863978001186189,24951,26432
-"Salmon, coho (Lower Columbia River ESU) Lower Cowlitz River - late",2015,"coho",0.139007297235995,0.860992702764005,2375837,"Portion","Yes",NA,2540,NA,0.075,NA,2740,0.075,0.925,0.649544660538867,2540,2740
+"Salmon, coho (Lower Columbia River ESU) Lower Cowlitz River - late",2010,"coho",0.569076676089244,0.430923323910756,1879882,"Portion","Yes",NA,7002,NA,0.135,NA,8543,0.135,0.865,0.808259519758771,7002,8543
+"Salmon, coho (Lower Columbia River ESU) Lower Cowlitz River - late",2011,"coho",0.419431833348561,0.580568166651439,2375113,"Portion","Yes",NA,5254,NA,0.111,NA,6192,0.111,0.889,0.79073654139634,5254,6192
+"Salmon, coho (Lower Columbia River ESU) Lower Cowlitz River - late",2012,"coho",0.37130554189251,0.62869445810749,2069654,"Portion","Yes",NA,4610,NA,0.129,NA,5522,0.129,0.871,0.742157563332138,4610,5522
+"Salmon, coho (Lower Columbia River ESU) Lower Cowlitz River - late",2013,"coho",0.100177851869185,0.899822148130815,2261971,"Portion","Yes",NA,6424,NA,0.159,NA,7833,0.159,0.841,0.386521653554517,6424,7833
+"Salmon, coho (Lower Columbia River ESU) Lower Cowlitz River - late",2014,"coho",0.424968550542048,0.575031449457952,2112914,"Portion","Yes",NA,24951,NA,0.047,NA,26432,0.047,0.953,0.900417093583839,24951,26432
+"Salmon, coho (Lower Columbia River ESU) Lower Cowlitz River - late",2015,"coho",0.161324992251258,0.838675007748742,2375837,"Portion","Yes",NA,2540,NA,0.075,NA,2740,0.075,0.925,0.682640421203268,2540,2740
 "Salmon, coho (Lower Columbia River ESU) Lower Cowlitz River - late",2016,"coho",0,1,1183600,"Portion","Yes",NA,4736,NA,0.08,NA,5202,0.08,0.92,0,4736,5202
 "Salmon, coho (Lower Columbia River ESU) Lower Cowlitz River - late",2017,"coho",0,1,1280316,"Portion","Yes",NA,2807,NA,0.18,NA,3332,0.18,0.82,0,2807,3332
 "Salmon, coho (Lower Columbia River ESU) Lower Cowlitz River - late",2018,"coho",0,1,1103442,"Portion","Yes",NA,3003,NA,0.085,NA,3320,0.085,0.915,0,3003,3320
@@ -497,30 +497,30 @@
 "Salmon, coho (Lower Columbia River ESU) Mill, Abernathy, and Germany Creeks - late",2023,"coho",NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "Salmon, coho (Lower Columbia River ESU) North Fork Lewis River - early and late",2010,"coho",0,1,1894089,"Same","Yes",NA,2157,NA,0.266,NA,2956,0.266,0.734,0,2157,2956
 "Salmon, coho (Lower Columbia River ESU) North Fork Lewis River - early and late",2011,"coho",0,1,1864208,"Same","Yes",NA,1389,NA,0.232,NA,1812,0.232,0.768,0,1389,1812
-"Salmon, coho (Lower Columbia River ESU) North Fork Lewis River - early and late",2012,"coho",0.00879718840335063,0.991202811596649,2050206,"Same","Yes",NA,1524,NA,0.153,NA,1806,0.153,0.847,0.0543717013266001,1524,1806
+"Salmon, coho (Lower Columbia River ESU) North Fork Lewis River - early and late",2012,"coho",0.00887474631307044,0.99112525368693,2050206,"Same","Yes",NA,1524,NA,0.153,NA,1806,0.153,0.847,0.0548247735684874,1524,1806
 "Salmon, coho (Lower Columbia River ESU) North Fork Lewis River - early and late",2013,"coho",0,1,2148984,"Same","Yes",NA,1390,NA,0.844,NA,8902,0.844,0.156,0,1390,8902
-"Salmon, coho (Lower Columbia River ESU) North Fork Lewis River - early and late",2014,"coho",0.129455680667832,0.870544319332168,2177701,"Same","Yes",NA,4840,NA,0.655,NA,14003,0.655,0.345,0.165026124302679,4840,14003
-"Salmon, coho (Lower Columbia River ESU) North Fork Lewis River - early and late",2015,"coho",0.0185313725397614,0.981468627460239,1666442,"Same","Yes",NA,1007,NA,0.79,NA,4801,0.79,0.21,0.0229197940477567,1007,4801
-"Salmon, coho (Lower Columbia River ESU) North Fork Lewis River - early and late",2016,"coho",0.122153734246127,0.877846265753873,2016371,"Same","Yes",NA,3350,NA,0.653,NA,9654,0.653,0.347,0.157586461690631,3350,9654
-"Salmon, coho (Lower Columbia River ESU) North Fork Lewis River - early and late",2017,"coho",0.0613449128061972,0.938655087193803,2193389,"Same","Yes",NA,4274,NA,0.553,NA,9613,0.553,0.447,0.0998541886283174,4274,9613
-"Salmon, coho (Lower Columbia River ESU) North Fork Lewis River - early and late",2018,"coho",0.0137815097980995,0.9862184902019,1916165,"Same","Yes",NA,2984,NA,0.711,NA,10417,0.711,0.289,0.0190147094148947,2984,10417
-"Salmon, coho (Lower Columbia River ESU) North Fork Lewis River - early and late",2019,"coho",0.0356546734949578,0.964345326505042,1957690,"Same","Yes",NA,4433,NA,0.523,NA,9307,0.523,0.477,0.0638223847155904,4433,9307
-"Salmon, coho (Lower Columbia River ESU) North Fork Lewis River - early and late",2020,"coho",0.11158906066161,0.88841093933839,2155007,"Same","Yes",NA,7739,NA,0.439,NA,13831,0.439,0.561,0.202672135417148,7739,13831
-"Salmon, coho (Lower Columbia River ESU) North Fork Lewis River - early and late",2021,"coho",0.175790595528496,0.824209404471504,2146597,"Same","Yes",NA,4761,NA,0.622,NA,12589,0.622,0.378,0.220346788385044,4761,12589
+"Salmon, coho (Lower Columbia River ESU) North Fork Lewis River - early and late",2014,"coho",0.0839245303614786,0.916075469638521,2177701,"Same","Yes",NA,4840,NA,0.655,NA,14003,0.655,0.345,0.113576592619578,4840,14003
+"Salmon, coho (Lower Columbia River ESU) North Fork Lewis River - early and late",2015,"coho",0.0188796821173543,0.981120317882646,1666442,"Same","Yes",NA,1007,NA,0.79,NA,4801,0.79,0.21,0.0233405320157556,1007,4801
+"Salmon, coho (Lower Columbia River ESU) North Fork Lewis River - early and late",2016,"coho",0.139061910647126,0.860938089352874,2016371,"Same","Yes",NA,3350,NA,0.653,NA,9654,0.653,0.347,0.175569496244946,3350,9654
+"Salmon, coho (Lower Columbia River ESU) North Fork Lewis River - early and late",2017,"coho",0.0653277713855204,0.93467222861448,2193389,"Same","Yes",NA,4274,NA,0.553,NA,9613,0.553,0.447,0.10565233264412,4274,9613
+"Salmon, coho (Lower Columbia River ESU) North Fork Lewis River - early and late",2018,"coho",0.0139729708282214,0.986027029171779,1916165,"Same","Yes",NA,2984,NA,0.711,NA,10417,0.711,0.289,0.0192737817690754,2984,10417
+"Salmon, coho (Lower Columbia River ESU) North Fork Lewis River - early and late",2019,"coho",0.0369681153584569,0.963031884641543,1957690,"Same","Yes",NA,4433,NA,0.523,NA,9307,0.523,0.477,0.0660182505834145,4433,9307
+"Salmon, coho (Lower Columbia River ESU) North Fork Lewis River - early and late",2020,"coho",0.12556763630936,0.87443236369064,2155007,"Same","Yes",NA,7739,NA,0.439,NA,13831,0.439,0.561,0.222413805244327,7739,13831
+"Salmon, coho (Lower Columbia River ESU) North Fork Lewis River - early and late",2021,"coho",0.21316764906092,0.78683235093908,2146597,"Same","Yes",NA,4761,NA,0.622,NA,12589,0.622,0.378,0.255239351405206,4761,12589
 "Salmon, coho (Lower Columbia River ESU) North Fork Lewis River - early and late",2022,"coho",NA,NA,0,"Same","Yes",NA,4862,NA,0.628,NA,13082,0.628,0.372,NA,4862,13082
 "Salmon, coho (Lower Columbia River ESU) North Fork Lewis River - early and late",2023,"coho",NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"Salmon, coho (Lower Columbia River ESU) North Fork Toutle River - early and late",2010,"coho",0.333482206122966,0.666517793877034,155310,"Same","Yes",NA,1644,NA,0.557,NA,3743,0.557,0.443,0.374496204225013,1644,3743
-"Salmon, coho (Lower Columbia River ESU) North Fork Toutle River - early and late",2011,"coho",0.500404518347359,0.499595481652641,163289,"Same","Yes",NA,947,NA,0.223,NA,1252,0.223,0.777,0.691735406201981,947,1252
-"Salmon, coho (Lower Columbia River ESU) North Fork Toutle River - early and late",2012,"coho",0.500220305324563,0.499779694675437,161211,"Same","Yes",NA,1366,NA,0.198,NA,1732,0.198,0.802,0.716421882190949,1366,1732
-"Salmon, coho (Lower Columbia River ESU) North Fork Toutle River - early and late",2013,"coho",0.500176899380852,0.499823100619148,163993,"Same","Yes",NA,2300,NA,0.199,NA,2896,0.199,0.801,0.71537961254695,2300,2896
-"Salmon, coho (Lower Columbia River ESU) North Fork Toutle River - early and late",2014,"coho",0.501304915180513,0.498695084819487,25355,"Same","Yes",NA,4567,NA,0.324,NA,6777,0.324,0.676,0.607417823351829,4567,6777
-"Salmon, coho (Lower Columbia River ESU) North Fork Toutle River - early and late",2015,"coho",0.210509181925403,0.789490818074597,124760,"Same","Yes",NA,830,NA,0.551,NA,1872,0.551,0.449,0.276436826924595,830,1872
-"Salmon, coho (Lower Columbia River ESU) North Fork Toutle River - early and late",2016,"coho",0.400995493960732,0.599004506039268,150546,"Same","Yes",NA,1818,NA,0.614,NA,4743,0.614,0.386,0.395071206075961,1818,4743
-"Salmon, coho (Lower Columbia River ESU) North Fork Toutle River - early and late",2017,"coho",0.416159855678432,0.583840144321568,79537,"Same","Yes",NA,889,NA,0.242,NA,1199,0.242,0.758,0.632308172684665,889,1199
-"Salmon, coho (Lower Columbia River ESU) North Fork Toutle River - early and late",2018,"coho",0.0719021305374406,0.928097869462559,109468,"Same","Yes",NA,913,NA,0.25,NA,1243,0.25,0.75,0.223366432578108,913,1243
-"Salmon, coho (Lower Columbia River ESU) North Fork Toutle River - early and late",2019,"coho",0.359399128166127,0.640600871833873,94067,"Same","Yes",NA,2087,NA,0.2,NA,2641,0.2,0.8,0.642473522160004,2087,2641
-"Salmon, coho (Lower Columbia River ESU) North Fork Toutle River - early and late",2020,"coho",0.39931369795484,0.60068630204516,90322,"Same","Yes",NA,2021,NA,0.16,NA,2428,0.16,0.84,0.713935130526843,2021,2428
-"Salmon, coho (Lower Columbia River ESU) North Fork Toutle River - early and late",2021,"coho",0.420438277312178,0.579561722687822,90220,"Same","Yes",NA,2316,NA,0.142,NA,2767,0.142,0.858,0.747527851982976,2316,2767
+"Salmon, coho (Lower Columbia River ESU) North Fork Toutle River - early and late",2010,"coho",0.5,0.5,155310,"Same","Yes",NA,1644,NA,0.557,NA,3743,0.557,0.443,0.473036896877957,1644,3743
+"Salmon, coho (Lower Columbia River ESU) North Fork Toutle River - early and late",2011,"coho",1,0,163289,"Same","Yes",NA,947,NA,0.223,NA,1252,0.223,0.777,0.817661488143908,947,1252
+"Salmon, coho (Lower Columbia River ESU) North Fork Toutle River - early and late",2012,"coho",1,0,161211,"Same","Yes",NA,1366,NA,0.198,NA,1732,0.198,0.802,0.834724540901502,1366,1732
+"Salmon, coho (Lower Columbia River ESU) North Fork Toutle River - early and late",2013,"coho",1,0,163993,"Same","Yes",NA,2300,NA,0.199,NA,2896,0.199,0.801,0.834028356964137,2300,2896
+"Salmon, coho (Lower Columbia River ESU) North Fork Toutle River - early and late",2014,"coho",1,0,25355,"Same","Yes",NA,4567,NA,0.324,NA,6777,0.324,0.676,0.755287009063444,4567,6777
+"Salmon, coho (Lower Columbia River ESU) North Fork Toutle River - early and late",2015,"coho",0.262455915357486,0.737544084642514,124760,"Same","Yes",NA,830,NA,0.551,NA,1872,0.551,0.449,0.322643071864744,830,1872
+"Salmon, coho (Lower Columbia River ESU) North Fork Toutle River - early and late",2016,"coho",0.669014084507042,0.330985915492958,150546,"Same","Yes",NA,1818,NA,0.614,NA,4743,0.614,0.386,0.52143939227611,1818,4743
+"Salmon, coho (Lower Columbia River ESU) North Fork Toutle River - early and late",2017,"coho",0.712,0.288,79537,"Same","Yes",NA,889,NA,0.242,NA,1199,0.242,0.758,0.746331236897275,889,1199
+"Salmon, coho (Lower Columbia River ESU) North Fork Toutle River - early and late",2018,"coho",0.0774647887323944,0.922535211267606,109468,"Same","Yes",NA,913,NA,0.25,NA,1243,0.25,0.75,0.236559139784946,913,1243
+"Salmon, coho (Lower Columbia River ESU) North Fork Toutle River - early and late",2019,"coho",0.560509554140127,0.439490445859873,94067,"Same","Yes",NA,2087,NA,0.2,NA,2641,0.2,0.8,0.737018425460636,2087,2641
+"Salmon, coho (Lower Columbia River ESU) North Fork Toutle River - early and late",2020,"coho",0.66412213740458,0.33587786259542,90322,"Same","Yes",NA,2021,NA,0.16,NA,2428,0.16,0.84,0.80585402000741,2021,2428
+"Salmon, coho (Lower Columbia River ESU) North Fork Toutle River - early and late",2021,"coho",0.72463768115942,0.27536231884058,90220,"Same","Yes",NA,2316,NA,0.142,NA,2767,0.142,0.858,0.836148366166092,2316,2767
 "Salmon, coho (Lower Columbia River ESU) North Fork Toutle River - early and late",2022,"coho",NA,NA,0,"Same","Yes",NA,2584,NA,0.138,NA,3089,0.138,0.862,NA,2584,3089
 "Salmon, coho (Lower Columbia River ESU) North Fork Toutle River - early and late",2023,"coho",NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "Salmon, coho (Lower Columbia River ESU) Salmon Creek - late",2010,"coho",NA,NA,0,"Same","Yes",NA,1952,NA,0.079,NA,2287,0.079,0.921,NA,1952,2287
@@ -571,12 +571,12 @@
 "Salmon, coho (Lower Columbia River ESU) Upper Cowlitz River - early and late",2013,"coho",NA,NA,0,"Multiple","Yes",NA,12,NA,0.998,NA,5866,0.998,0.002,NA,12,5866
 "Salmon, coho (Lower Columbia River ESU) Upper Cowlitz River - early and late",2014,"coho",NA,NA,0,"Multiple","Yes",NA,6850,NA,0.768,NA,29471,0.768,0.232,NA,6850,29471
 "Salmon, coho (Lower Columbia River ESU) Upper Cowlitz River - early and late",2015,"coho",NA,NA,0,"Multiple","Yes",NA,374,NA,0.715,NA,1315,0.715,0.285,NA,374,1315
-"Salmon, coho (Lower Columbia River ESU) Upper Cowlitz River - early and late",2016,"coho",0.500856489658804,0.499143510341196,1127160,"Multiple","Yes",NA,911,NA,0.907,NA,9773,0.907,0.093,0.355758199317735,911,9773
-"Salmon, coho (Lower Columbia River ESU) Upper Cowlitz River - early and late",2017,"coho",0.500117507756777,0.499882492243223,1055449,"Multiple","Yes",NA,5200,NA,0.554,NA,11653,0.554,0.446,0.474441894833011,5200,11653
-"Salmon, coho (Lower Columbia River ESU) Upper Cowlitz River - early and late",2018,"coho",0.438069130975927,0.561930869024073,1003205,"Multiple","Yes",NA,172,NA,0.971,NA,6004,0.971,0.029,0.31089257535045,172,6004
-"Salmon, coho (Lower Columbia River ESU) Upper Cowlitz River - early and late",2019,"coho",0.500825625318596,0.499174374681404,919608,"Multiple","Yes",NA,3562,NA,0.634,NA,9733,0.634,0.366,0.441323859934862,3562,9733
-"Salmon, coho (Lower Columbia River ESU) Upper Cowlitz River - early and late",2020,"coho",0.500849410945791,0.499150589054209,968489,"Multiple","Yes",NA,8915,NA,0.581,NA,21294,0.581,0.419,0.462956679440192,8915,21294
-"Salmon, coho (Lower Columbia River ESU) Upper Cowlitz River - early and late",2021,"coho",0.500257201385553,0.499742798614447,994377,"Multiple","Yes",NA,9666,NA,0.672,NA,29441,0.672,0.328,0.426746963716045,9666,29441
+"Salmon, coho (Lower Columbia River ESU) Upper Cowlitz River - early and late",2016,"coho",1,0,1127160,"Multiple","Yes",NA,911,NA,0.907,NA,9773,0.907,0.093,0.524383848977451,911,9773
+"Salmon, coho (Lower Columbia River ESU) Upper Cowlitz River - early and late",2017,"coho",0.997474747474748,0.00252525252525249,1055449,"Multiple","Yes",NA,5200,NA,0.554,NA,11653,0.554,0.446,0.642920388551785,5200,11653
+"Salmon, coho (Lower Columbia River ESU) Upper Cowlitz River - early and late",2018,"coho",0.777460770328103,0.222539229671897,1003205,"Multiple","Yes",NA,172,NA,0.971,NA,6004,0.971,0.029,0.444654397468815,172,6004
+"Salmon, coho (Lower Columbia River ESU) Upper Cowlitz River - early and late",2019,"coho",1,0,919608,"Multiple","Yes",NA,3562,NA,0.634,NA,9733,0.634,0.366,0.611995104039168,3562,9733
+"Salmon, coho (Lower Columbia River ESU) Upper Cowlitz River - early and late",2020,"coho",1,0,968489,"Multiple","Yes",NA,8915,NA,0.581,NA,21294,0.581,0.419,0.632511068943707,8915,21294
+"Salmon, coho (Lower Columbia River ESU) Upper Cowlitz River - early and late",2021,"coho",0.997304582210243,0.00269541778975746,994377,"Multiple","Yes",NA,9666,NA,0.672,NA,29441,0.672,0.328,0.597437156069962,9666,29441
 "Salmon, coho (Lower Columbia River ESU) Upper Cowlitz River - early and late",2022,"coho",NA,NA,0,"Multiple","Yes",NA,11532,NA,0.516,NA,23839,0.516,0.484,NA,11532,23839
 "Salmon, coho (Lower Columbia River ESU) Upper Cowlitz River - early and late",2023,"coho",NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "Salmon, coho (Lower Columbia River ESU) Washington Upper Gorge Tributaries and White Salmon River - late",2010,"coho",NA,NA,0,"Portion","Yes",NA,20,NA,0.259,NA,27,0.259,0.741,NA,20,27
@@ -595,16 +595,16 @@
 "Salmon, coho (Lower Columbia River ESU) Washington Upper Gorge Tributaries and White Salmon River - late",2023,"coho",NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "Salmon, coho (Lower Columbia River ESU) Washougal River - late",2010,"coho",NA,NA,152039,"Same","Yes",NA,597,NA,0.402,NA,1012,0.402,0.598,NA,597,1012
 "Salmon, coho (Lower Columbia River ESU) Washougal River - late",2011,"coho",NA,NA,153227,"Same","Yes",NA,399,NA,0.104,NA,454,0.104,0.896,NA,399,454
-"Salmon, coho (Lower Columbia River ESU) Washougal River - late",2012,"coho",0.166145533412625,0.833854466587375,154954,"Same","Yes",NA,386,NA,0.121,NA,448,0.121,0.879,0.578610892664924,386,448
-"Salmon, coho (Lower Columbia River ESU) Washougal River - late",2013,"coho",0.494861007706934,0.505138992293066,153899,"Same","Yes",NA,423,NA,0.336,NA,648,0.336,0.664,0.595600230503878,423,648
-"Salmon, coho (Lower Columbia River ESU) Washougal River - late",2014,"coho",0.333509914220768,0.666490085779232,153615,"Same","Yes",NA,834,NA,0.685,NA,2640,0.685,0.315,0.327448863839413,834,2640
-"Salmon, coho (Lower Columbia River ESU) Washougal River - late",2015,"coho",0.333434211492544,0.666565788507456,149841,"Same","Yes",NA,151,NA,0.618,NA,396,0.618,0.382,0.350454300954215,151,396
-"Salmon, coho (Lower Columbia River ESU) Washougal River - late",2016,"coho",0.333514072923211,0.666485927076789,127939,"Same","Yes",NA,322,NA,0.722,NA,1158,0.722,0.278,0.315973118197804,322,1158
-"Salmon, coho (Lower Columbia River ESU) Washougal River - late",2017,"coho",0.333739899374905,0.666260100625095,142285,"Same","Yes",NA,272,NA,0.75,NA,1085,0.75,0.25,0.307952027573594,272,1085
-"Salmon, coho (Lower Columbia River ESU) Washougal River - late",2018,"coho",0.33364589898493,0.66635410101507,130228,"Same","Yes",NA,302,NA,0.703,NA,1019,0.703,0.297,0.321851366326372,302,1019
-"Salmon, coho (Lower Columbia River ESU) Washougal River - late",2019,"coho",0.333507487621883,0.666492512378117,109794,"Same","Yes",NA,584,NA,0.549,NA,1304,0.549,0.451,0.37790896088666,584,1304
-"Salmon, coho (Lower Columbia River ESU) Washougal River - late",2020,"coho",0.333415513975034,0.666584486024966,102780,"Same","Yes",NA,858,NA,0.608,NA,2223,0.608,0.392,0.354164031743242,858,2223
-"Salmon, coho (Lower Columbia River ESU) Washougal River - late",2021,"coho",0.33351190929153,0.66648809070847,109567,"Same","Yes",NA,860,NA,0.173,NA,1051,0.173,0.827,0.658448307282688,860,1051
+"Salmon, coho (Lower Columbia River ESU) Washougal River - late",2012,"coho",0.199233320856512,0.800766679143488,154954,"Same","Yes",NA,386,NA,0.121,NA,448,0.121,0.879,0.622150500527655,386,448
+"Salmon, coho (Lower Columbia River ESU) Washougal River - late",2013,"coho",0.978494623655914,0.021505376344086,153899,"Same","Yes",NA,423,NA,0.336,NA,648,0.336,0.664,0.744388456252863,423,648
+"Salmon, coho (Lower Columbia River ESU) Washougal River - late",2014,"coho",0.5,0.5,153615,"Same","Yes",NA,834,NA,0.685,NA,2640,0.685,0.315,0.421940928270042,834,2640
+"Salmon, coho (Lower Columbia River ESU) Washougal River - late",2015,"coho",0.5,0.5,149841,"Same","Yes",NA,151,NA,0.618,NA,396,0.618,0.382,0.447227191413238,151,396
+"Salmon, coho (Lower Columbia River ESU) Washougal River - late",2016,"coho",0.5,0.5,127939,"Same","Yes",NA,322,NA,0.722,NA,1158,0.722,0.278,0.409165302782324,322,1158
+"Salmon, coho (Lower Columbia River ESU) Washougal River - late",2017,"coho",0.5,0.5,142285,"Same","Yes",NA,272,NA,0.75,NA,1085,0.75,0.25,0.4,272,1085
+"Salmon, coho (Lower Columbia River ESU) Washougal River - late",2018,"coho",0.5,0.5,130228,"Same","Yes",NA,302,NA,0.703,NA,1019,0.703,0.297,0.415627597672486,302,1019
+"Salmon, coho (Lower Columbia River ESU) Washougal River - late",2019,"coho",0.5,0.5,109794,"Same","Yes",NA,584,NA,0.549,NA,1304,0.549,0.451,0.476644423260248,584,1304
+"Salmon, coho (Lower Columbia River ESU) Washougal River - late",2020,"coho",0.5,0.5,102780,"Same","Yes",NA,858,NA,0.608,NA,2223,0.608,0.392,0.451263537906137,858,2223
+"Salmon, coho (Lower Columbia River ESU) Washougal River - late",2021,"coho",0.5,0.5,109567,"Same","Yes",NA,860,NA,0.173,NA,1051,0.173,0.827,0.742942050520059,860,1051
 "Salmon, coho (Lower Columbia River ESU) Washougal River - late",2022,"coho",NA,NA,0,"Same","Yes",NA,1026,NA,0.387,NA,1695,0.387,0.613,NA,1026,1695
 "Salmon, coho (Lower Columbia River ESU) Washougal River - late",2023,"coho",NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "Steelhead (Lower Columbia River DPS) Coweeman River - winter",2010,"steelhead",NA,NA,0,"Same","Yes",NA,NA,NA,NA,NA,528,NA,NA,NA,NA,528
@@ -651,63 +651,63 @@
 "Steelhead (Lower Columbia River DPS) East Fork Lewis River - winter",2023,"steelhead",NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "Steelhead (Lower Columbia River DPS) Kalama River - summer",2010,"steelhead",NA,NA,76672,"Same","Yes",392,392,NA,NA,982,982,0.60081466395112,0.39918533604888,NA,392,982
 "Steelhead (Lower Columbia River DPS) Kalama River - summer",2010,"steelhead",NA,NA,76672,NA,"Yes",NA,NA,0.6,0.6,NA,NA,0.6,0.4,NA,NA,NA
-"Steelhead (Lower Columbia River DPS) Kalama River - summer",2011,"steelhead",0.500207231148061,0.499792768851939,90385,"Same","Yes",582,582,NA,NA,1178,1178,0.505942275042445,0.494057724957555,0.497150004120114,582,1178
-"Steelhead (Lower Columbia River DPS) Kalama River - summer",2011,"steelhead",0.500207231148061,0.499792768851939,90385,NA,"Yes",NA,NA,0.505,0.505,NA,NA,0.505,0.495,0.497616029459684,NA,NA
-"Steelhead (Lower Columbia River DPS) Kalama River - summer",2012,"steelhead",0.400147850881825,0.599852149118175,90931,"Same","Yes",667,667,NA,NA,1207,1207,0.447390223695112,0.552609776304888,0.472129645717174,667,1207
-"Steelhead (Lower Columbia River DPS) Kalama River - summer",2012,"steelhead",0.400147850881825,0.599852149118175,90931,NA,"Yes",NA,NA,0.448,0.448,NA,NA,0.448,0.552,0.471790207881549,NA,NA
-"Steelhead (Lower Columbia River DPS) Kalama River - summer",2013,"steelhead",0.43317102207303,0.56682897792697,116279,"Same","Yes",745,745,NA,NA,1186,1186,0.371838111298482,0.628161888701518,0.538094543423176,745,1186
-"Steelhead (Lower Columbia River DPS) Kalama River - summer",2013,"steelhead",0.43317102207303,0.56682897792697,116279,NA,"Yes",NA,NA,0.37,0.37,NA,NA,0.37,0.63,0.539326009241458,NA,NA
-"Steelhead (Lower Columbia River DPS) Kalama River - summer",2014,"steelhead",0.431841666744245,0.568158333255755,122162,"Same","Yes",402,402,NA,NA,751,751,0.464713715046605,0.535286284953395,0.481667586314245,402,751
-"Steelhead (Lower Columbia River DPS) Kalama River - summer",2014,"steelhead",0.431841666744245,0.568158333255755,122162,NA,"Yes",NA,NA,0.463,0.463,NA,NA,0.463,0.537,0.482590029938413,NA,NA
-"Steelhead (Lower Columbia River DPS) Kalama River - summer",2015,"steelhead",0.414586237843391,0.585413762156609,103800,"Same","Yes",795,795,NA,NA,1879,1879,0.576902607770091,0.423097392229909,0.41814513564887,795,1879
-"Steelhead (Lower Columbia River DPS) Kalama River - summer",2015,"steelhead",0.414586237843391,0.585413762156609,103800,NA,"Yes",NA,NA,0.576,0.576,NA,NA,0.576,0.424,0.418526143413811,NA,NA
-"Steelhead (Lower Columbia River DPS) Kalama River - summer",2016,"steelhead",0.382650907555931,0.617349092444069,79570,"Same","Yes",877,877,0.353,0.353,1356,1356,0.353,0.647,0.520152838290135,877,1356
-"Steelhead (Lower Columbia River DPS) Kalama River - summer",2017,"steelhead",0.375100387271786,0.624899612728214,91078,"Same","Yes",648,648,0.457,0.457,1195,1195,0.457,0.543,0.450787420615956,648,1195
-"Steelhead (Lower Columbia River DPS) Kalama River - summer",2018,"steelhead",0.371210183843378,0.628789816156622,88608,"Same","Yes",329,329,0.321,0.321,486,486,0.321,0.679,0.536268018742945,329,486
-"Steelhead (Lower Columbia River DPS) Kalama River - summer",2019,"steelhead",0.464516573212059,0.535483426787941,56052,"Same","Yes",392,392,0.318,0.318,577,577,0.318,0.682,0.5936188307237,392,577
-"Steelhead (Lower Columbia River DPS) Kalama River - summer",2020,"steelhead",0.450296428880357,0.549703571119643,75194,"Same","Yes",321,321,0.208,0.208,407,407,0.208,0.792,0.684032920619408,321,407
-"Steelhead (Lower Columbia River DPS) Kalama River - summer",2021,"steelhead",0.394627781014623,0.605372218985377,94208,"Same","Yes",240,240,0.122,0.122,274,274,0.122,0.878,0.763853194730643,240,274
-"Steelhead (Lower Columbia River DPS) Kalama River - summer",2022,"steelhead",0.282951520984428,0.717048479015572,92210,"Same","Yes",145,145,0.243,0.243,194,194,0.243,0.757,0.537980231438109,145,194
+"Steelhead (Lower Columbia River DPS) Kalama River - summer",2011,"steelhead",1,0,90385,"Same","Yes",582,582,NA,NA,1178,1178,0.505942275042445,0.494057724957555,0.664036076662909,582,1178
+"Steelhead (Lower Columbia River DPS) Kalama River - summer",2011,"steelhead",1,0,90385,NA,"Yes",NA,NA,0.505,0.505,NA,NA,0.505,0.495,0.664451827242525,NA,NA
+"Steelhead (Lower Columbia River DPS) Kalama River - summer",2012,"steelhead",0.666703324498796,0.333296675501204,90931,"Same","Yes",667,667,NA,NA,1207,1207,0.447390223695112,0.552609776304888,0.598426699068143,667,1207
+"Steelhead (Lower Columbia River DPS) Kalama River - summer",2012,"steelhead",0.666703324498796,0.333296675501204,90931,NA,"Yes",NA,NA,0.448,0.448,NA,NA,0.448,0.552,0.598099341632955,NA,NA
+"Steelhead (Lower Columbia River DPS) Kalama River - summer",2013,"steelhead",0.763517058110235,0.236482941889765,116279,"Same","Yes",745,745,NA,NA,1186,1186,0.371838111298482,0.628161888701518,0.672491814616802,745,1186
+"Steelhead (Lower Columbia River DPS) Kalama River - summer",2013,"steelhead",0.763517058110235,0.236482941889765,116279,NA,"Yes",NA,NA,0.37,0.37,NA,NA,0.37,0.63,0.673582327365366,NA,NA
+"Steelhead (Lower Columbia River DPS) Kalama River - summer",2014,"steelhead",0.759450565642344,0.240549434357656,122162,"Same","Yes",402,402,NA,NA,751,751,0.464713715046605,0.535286284953395,0.620382882937029,402,751
+"Steelhead (Lower Columbia River DPS) Kalama River - summer",2014,"steelhead",0.759450565642344,0.240549434357656,122162,NA,"Yes",NA,NA,0.463,0.463,NA,NA,0.463,0.537,0.621252578212262,NA,NA
+"Steelhead (Lower Columbia River DPS) Kalama River - summer",2015,"steelhead",0.7076204238921,0.2923795761079,103800,"Same","Yes",795,795,NA,NA,1879,1879,0.576902607770091,0.423097392229909,0.550881849877327,795,1879
+"Steelhead (Lower Columbia River DPS) Kalama River - summer",2015,"steelhead",0.7076204238921,0.2923795761079,103800,NA,"Yes",NA,NA,0.576,0.576,NA,NA,0.576,0.424,0.551269215354571,NA,NA
+"Steelhead (Lower Columbia River DPS) Kalama River - summer",2016,"steelhead",0.619283778514644,0.380716221485356,79570,"Same","Yes",877,877,0.353,0.353,1356,1356,0.353,0.647,0.636937273046685,877,1356
+"Steelhead (Lower Columbia River DPS) Kalama River - summer",2017,"steelhead",0.6,0.4,91078,"Same","Yes",648,648,0.457,0.457,1195,1195,0.457,0.543,0.567644276253548,648,1195
+"Steelhead (Lower Columbia River DPS) Kalama River - summer",2018,"steelhead",0.58974358974359,0.41025641025641,88608,"Same","Yes",329,329,0.321,0.321,486,486,0.321,0.679,0.64754075283651,329,486
+"Steelhead (Lower Columbia River DPS) Kalama River - summer",2019,"steelhead",0.866666666666667,0.133333333333333,56052,"Same","Yes",392,392,0.318,0.318,577,577,0.318,0.682,0.731570061902082,392,577
+"Steelhead (Lower Columbia River DPS) Kalama River - summer",2020,"steelhead",0.818181818181818,0.181818181818182,75194,"Same","Yes",321,321,0.208,0.208,407,407,0.208,0.792,0.797306874557052,321,407
+"Steelhead (Lower Columbia River DPS) Kalama River - summer",2021,"steelhead",0.650485436893204,0.349514563106796,94208,"Same","Yes",240,240,0.122,0.122,274,274,0.122,0.878,0.84206822009401,240,274
+"Steelhead (Lower Columbia River DPS) Kalama River - summer",2022,"steelhead",0.394366197183099,0.605633802816901,92210,"Same","Yes",145,145,0.243,0.243,194,194,0.243,0.757,0.618743508717654,145,194
 "Steelhead (Lower Columbia River DPS) Kalama River - summer",2023,"steelhead",NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "Steelhead (Lower Columbia River DPS) Kalama River - winter",2010,"steelhead",NA,NA,112082,"Same","Yes",NA,NA,NA,NA,NA,948,NA,NA,NA,NA,948
 "Steelhead (Lower Columbia River DPS) Kalama River - winter",2010,"steelhead",NA,NA,112082,NA,"Yes",NA,NA,NA,0.027,NA,NA,0.027,0.973,NA,NA,NA
-"Steelhead (Lower Columbia River DPS) Kalama River - winter",2011,"steelhead",0.286630424167453,0.713369575832547,109647,"Same","Yes",NA,NA,NA,NA,NA,627,NA,NA,NA,NA,627
-"Steelhead (Lower Columbia River DPS) Kalama River - winter",2011,"steelhead",0.286630424167453,0.713369575832547,109647,NA,"Yes",NA,NA,NA,0.031,NA,NA,0.031,0.969,0.902402296375561,NA,NA
-"Steelhead (Lower Columbia River DPS) Kalama River - winter",2012,"steelhead",0.205800621903993,0.794199378096007,124931,"Same","Yes",NA,NA,NA,NA,NA,1042,NA,NA,NA,NA,1042
-"Steelhead (Lower Columbia River DPS) Kalama River - winter",2012,"steelhead",0.205800621903993,0.794199378096007,124931,NA,"Yes",NA,NA,NA,0.025,NA,NA,0.025,0.975,0.891681401056192,NA,NA
-"Steelhead (Lower Columbia River DPS) Kalama River - winter",2013,"steelhead",0.36162993950821,0.63837006049179,130169,"Same","Yes",NA,NA,NA,NA,NA,836,NA,NA,NA,NA,836
-"Steelhead (Lower Columbia River DPS) Kalama River - winter",2013,"steelhead",0.36162993950821,0.63837006049179,130169,NA,"Yes",NA,NA,NA,0.05,NA,NA,0.05,0.95,0.878531673231211,NA,NA
-"Steelhead (Lower Columbia River DPS) Kalama River - winter",2014,"steelhead",0.362532963877723,0.637467036122277,114476,"Same","Yes",NA,NA,NA,NA,NA,942,NA,NA,NA,NA,942
-"Steelhead (Lower Columbia River DPS) Kalama River - winter",2014,"steelhead",0.362532963877723,0.637467036122277,114476,NA,"Yes",NA,NA,NA,0.042,NA,NA,0.042,0.958,0.89617656964861,NA,NA
-"Steelhead (Lower Columbia River DPS) Kalama River - winter",2015,"steelhead",0.358466241566181,0.641533758433819,83211,"Same","Yes",NA,NA,NA,NA,NA,1189,NA,NA,NA,NA,1189
-"Steelhead (Lower Columbia River DPS) Kalama River - winter",2015,"steelhead",0.358466241566181,0.641533758433819,83211,NA,"Yes",NA,NA,NA,0.043,NA,NA,0.043,0.957,0.892892613256222,NA,NA
-"Steelhead (Lower Columbia River DPS) Kalama River - winter",2016,"steelhead",0.333986799479246,0.666013200520754,88033,"Same","Yes",NA,NA,NA,NA,NA,1181,NA,NA,NA,NA,1181
-"Steelhead (Lower Columbia River DPS) Kalama River - winter",2016,"steelhead",0.333986799479246,0.666013200520754,88033,NA,"Yes",NA,NA,NA,0.031,NA,NA,0.031,0.969,0.915065421422829,NA,NA
-"Steelhead (Lower Columbia River DPS) Kalama River - winter",2017,"steelhead",0.226953612816813,0.773046387183187,119521,"Same","Yes",NA,NA,NA,NA,NA,682,NA,NA,NA,NA,682
-"Steelhead (Lower Columbia River DPS) Kalama River - winter",2017,"steelhead",0.226953612816813,0.773046387183187,119521,NA,"Yes",NA,NA,NA,0.028,NA,NA,0.028,0.972,0.890176100308418,NA,NA
-"Steelhead (Lower Columbia River DPS) Kalama River - winter",2018,"steelhead",0.343975889147715,0.656024110852285,109418,"Same","Yes",NA,NA,NA,NA,NA,583,NA,NA,NA,NA,583
-"Steelhead (Lower Columbia River DPS) Kalama River - winter",2018,"steelhead",0.343975889147715,0.656024110852285,109418,NA,"Yes",NA,NA,NA,0.02,NA,NA,0.02,0.98,0.945051305330054,NA,NA
-"Steelhead (Lower Columbia River DPS) Kalama River - winter",2019,"steelhead",0.295688838294868,0.704311161705132,110850,"Same","Yes",NA,NA,NA,NA,NA,202,NA,NA,NA,NA,202
-"Steelhead (Lower Columbia River DPS) Kalama River - winter",2019,"steelhead",0.295688838294868,0.704311161705132,110850,NA,"Yes",NA,NA,NA,0.064,NA,NA,0.064,0.936,0.822068429191752,NA,NA
-"Steelhead (Lower Columbia River DPS) Kalama River - winter",2020,"steelhead",0.265346908186207,0.734653091813793,144224,"Same","Yes",NA,NA,NA,NA,NA,464,NA,NA,NA,NA,464
-"Steelhead (Lower Columbia River DPS) Kalama River - winter",2020,"steelhead",0.265346908186207,0.734653091813793,144224,NA,"Yes",NA,NA,NA,0.01,NA,NA,0.01,0.99,0.963682177999117,NA,NA
-"Steelhead (Lower Columbia River DPS) Kalama River - winter",2021,"steelhead",0.254171884867752,0.745828115132248,139464,"Same","Yes",NA,NA,NA,NA,NA,303,NA,NA,NA,NA,303
-"Steelhead (Lower Columbia River DPS) Kalama River - winter",2021,"steelhead",0.254171884867752,0.745828115132248,139464,NA,"Yes",NA,NA,NA,0.027,NA,NA,0.027,0.973,0.903973329293932,NA,NA
-"Steelhead (Lower Columbia River DPS) Kalama River - winter",2022,"steelhead",0.250193178054973,0.749806821945027,135913,"Same","Yes",NA,NA,NA,NA,NA,792,NA,NA,NA,NA,792
-"Steelhead (Lower Columbia River DPS) Kalama River - winter",2022,"steelhead",0.250193178054973,0.749806821945027,135913,NA,"Yes",NA,NA,NA,0.019,NA,NA,0.019,0.981,0.929418716561532,NA,NA
+"Steelhead (Lower Columbia River DPS) Kalama River - winter",2011,"steelhead",0.401515773345372,0.598484226654628,109647,"Same","Yes",NA,NA,NA,NA,NA,627,NA,NA,NA,NA,627
+"Steelhead (Lower Columbia River DPS) Kalama River - winter",2011,"steelhead",0.401515773345372,0.598484226654628,109647,NA,"Yes",NA,NA,NA,0.031,NA,NA,0.031,0.969,0.928326313372979,NA,NA
+"Steelhead (Lower Columbia River DPS) Kalama River - winter",2012,"steelhead",0.259054998359094,0.740945001640906,124931,"Same","Yes",NA,NA,NA,NA,NA,1042,NA,NA,NA,NA,1042
+"Steelhead (Lower Columbia River DPS) Kalama River - winter",2012,"steelhead",0.259054998359094,0.740945001640906,124931,NA,"Yes",NA,NA,NA,0.025,NA,NA,0.025,0.975,0.911988874885434,NA,NA
+"Steelhead (Lower Columbia River DPS) Kalama River - winter",2013,"steelhead",0.565810600066068,0.434189399933932,130169,"Same","Yes",NA,NA,NA,NA,NA,836,NA,NA,NA,NA,836
+"Steelhead (Lower Columbia River DPS) Kalama River - winter",2013,"steelhead",0.565810600066068,0.434189399933932,130169,NA,"Yes",NA,NA,NA,0.05,NA,NA,0.05,0.95,0.918806204383887,NA,NA
+"Steelhead (Lower Columbia River DPS) Kalama River - winter",2014,"steelhead",0.568022991718788,0.431977008281212,114476,"Same","Yes",NA,NA,NA,NA,NA,942,NA,NA,NA,NA,942
+"Steelhead (Lower Columbia River DPS) Kalama River - winter",2014,"steelhead",0.568022991718788,0.431977008281212,114476,NA,"Yes",NA,NA,NA,0.042,NA,NA,0.042,0.958,0.931150136027395,NA,NA
+"Steelhead (Lower Columbia River DPS) Kalama River - winter",2015,"steelhead",0.558039201547872,0.441960798452128,83211,"Same","Yes",NA,NA,NA,NA,NA,1189,NA,NA,NA,NA,1189
+"Steelhead (Lower Columbia River DPS) Kalama River - winter",2015,"steelhead",0.558039201547872,0.441960798452128,83211,NA,"Yes",NA,NA,NA,0.043,NA,NA,0.043,0.957,0.928457245568574,NA,NA
+"Steelhead (Lower Columbia River DPS) Kalama River - winter",2016,"steelhead",0.501232492360819,0.498767507639181,88033,"Same","Yes",NA,NA,NA,NA,NA,1181,NA,NA,NA,NA,1181
+"Steelhead (Lower Columbia River DPS) Kalama River - winter",2016,"steelhead",0.501232492360819,0.498767507639181,88033,NA,"Yes",NA,NA,NA,0.031,NA,NA,0.031,0.969,0.941754777385925,NA,NA
+"Steelhead (Lower Columbia River DPS) Kalama River - winter",2017,"steelhead",0.293463073434794,0.706536926565206,119521,"Same","Yes",NA,NA,NA,NA,NA,682,NA,NA,NA,NA,682
+"Steelhead (Lower Columbia River DPS) Kalama River - winter",2017,"steelhead",0.293463073434794,0.706536926565206,119521,NA,"Yes",NA,NA,NA,0.028,NA,NA,0.028,0.972,0.912898238354958,NA,NA
+"Steelhead (Lower Columbia River DPS) Kalama River - winter",2018,"steelhead",1,0,109418,"Same","Yes",NA,NA,NA,NA,NA,583,NA,NA,NA,NA,583
+"Steelhead (Lower Columbia River DPS) Kalama River - winter",2018,"steelhead",1,0,109418,NA,"Yes",NA,NA,NA,0.02,NA,NA,0.02,0.98,0.980392156862745,NA,NA
+"Steelhead (Lower Columbia River DPS) Kalama River - winter",2019,"steelhead",1,0,110850,"Same","Yes",NA,NA,NA,NA,NA,202,NA,NA,NA,NA,202
+"Steelhead (Lower Columbia River DPS) Kalama River - winter",2019,"steelhead",1,0,110850,NA,"Yes",NA,NA,NA,0.064,NA,NA,0.064,0.936,0.93984962406015,NA,NA
+"Steelhead (Lower Columbia River DPS) Kalama River - winter",2020,"steelhead",0.360876137120036,0.639123862879964,144224,"Same","Yes",NA,NA,NA,NA,NA,464,NA,NA,NA,NA,464
+"Steelhead (Lower Columbia River DPS) Kalama River - winter",2020,"steelhead",0.360876137120036,0.639123862879964,144224,NA,"Yes",NA,NA,NA,0.01,NA,NA,0.01,0.99,0.973036820115597,NA,NA
+"Steelhead (Lower Columbia River DPS) Kalama River - winter",2021,"steelhead",1,0,139464,"Same","Yes",NA,NA,NA,NA,NA,303,NA,NA,NA,NA,303
+"Steelhead (Lower Columbia River DPS) Kalama River - winter",2021,"steelhead",1,0,139464,NA,"Yes",NA,NA,NA,0.027,NA,NA,0.027,0.973,0.973709834469328,NA,NA
+"Steelhead (Lower Columbia River DPS) Kalama River - winter",2022,"steelhead",0.333522179629616,0.666477820370384,135913,"Same","Yes",NA,NA,NA,NA,NA,792,NA,NA,NA,NA,792
+"Steelhead (Lower Columbia River DPS) Kalama River - winter",2022,"steelhead",0.333522179629616,0.666477820370384,135913,NA,"Yes",NA,NA,NA,0.019,NA,NA,0.019,0.981,0.946102682049786,NA,NA
 "Steelhead (Lower Columbia River DPS) Kalama River - winter",2023,"steelhead",NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "Steelhead (Lower Columbia River DPS) Lower Cowlitz River - winter",2010,"steelhead",NA,NA,1161914,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "Steelhead (Lower Columbia River DPS) Lower Cowlitz River - winter",2011,"steelhead",0,1,1144441,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"Steelhead (Lower Columbia River DPS) Lower Cowlitz River - winter",2012,"steelhead",0.122624885519192,0.877375114480808,1362708,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"Steelhead (Lower Columbia River DPS) Lower Cowlitz River - winter",2013,"steelhead",0.00425961533516493,0.995740384664835,1207574,"Portion","Yes",NA,503,NA,0.099,NA,558,0.099,0.901,0.0412515127171341,503,558
-"Steelhead (Lower Columbia River DPS) Lower Cowlitz River - winter",2014,"steelhead",0.065386673048839,0.934613326951161,851703,"Portion","Yes",NA,556,NA,0.12,NA,632,0.12,0.88,0.352704280051529,556,632
-"Steelhead (Lower Columbia River DPS) Lower Cowlitz River - winter",2015,"steelhead",0.0582265246538982,0.941773475346102,621894,"Portion","Yes",NA,728,NA,0.059,NA,774,0.059,0.941,0.496700937145474,728,774
-"Steelhead (Lower Columbia River DPS) Lower Cowlitz River - winter",2016,"steelhead",0.0482597848082661,0.951740215191734,1119000,"Portion","Yes",NA,719,NA,0.266,NA,979,0.266,0.734,0.153566530435035,719,979
-"Steelhead (Lower Columbia River DPS) Lower Cowlitz River - winter",2017,"steelhead",0.0127636079655364,0.987236392034464,1067000,"Portion","Yes",NA,292,NA,0.581,NA,697,0.581,0.419,0.0214961102268788,292,697
-"Steelhead (Lower Columbia River DPS) Lower Cowlitz River - winter",2018,"steelhead",0.00547829474315331,0.994521705256847,1016015,"Portion","Yes",NA,365,NA,0.32,NA,537,0.32,0.68,0.0168315209697053,365,537
-"Steelhead (Lower Columbia River DPS) Lower Cowlitz River - winter",2019,"steelhead",0.00524246914306213,0.994757530856938,1007734,"Portion","Yes",NA,236,NA,0.291,NA,333,0.291,0.709,0.0176965482303296,236,333
-"Steelhead (Lower Columbia River DPS) Lower Cowlitz River - winter",2020,"steelhead",0.00466469093301401,0.995335309066986,1068770,"Portion","Yes",NA,271,NA,0.349,NA,416,0.349,0.651,0.0131895862171254,271,416
-"Steelhead (Lower Columbia River DPS) Lower Cowlitz River - winter",2021,"steelhead",0.00217143668157455,0.997828563318425,1135883,"Portion","Yes",NA,124,NA,0.168,NA,149,0.168,0.832,0.0127602888235453,124,149
+"Steelhead (Lower Columbia River DPS) Lower Cowlitz River - winter",2012,"steelhead",0.139718120096161,0.860281879903839,1362708,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"Steelhead (Lower Columbia River DPS) Lower Cowlitz River - winter",2013,"steelhead",0.00427777351133383,0.995722226488666,1207574,"Portion","Yes",NA,503,NA,0.099,NA,558,0.099,0.901,0.0414200787438972,503,558
+"Steelhead (Lower Columbia River DPS) Lower Cowlitz River - winter",2014,"steelhead",0.0699427212677599,0.93005727873224,851703,"Portion","Yes",NA,556,NA,0.12,NA,632,0.12,0.88,0.368230594996912,556,632
+"Steelhead (Lower Columbia River DPS) Lower Cowlitz River - winter",2015,"steelhead",0.0618185115204661,0.938181488479534,621894,"Portion","Yes",NA,728,NA,0.059,NA,774,0.059,0.941,0.511664237065148,728,774
+"Steelhead (Lower Columbia River DPS) Lower Cowlitz River - winter",2016,"steelhead",0.0506995473836168,0.949300452616383,1119000,"Portion","Yes",NA,719,NA,0.266,NA,979,0.266,0.734,0.160087211372628,719,979
+"Steelhead (Lower Columbia River DPS) Lower Cowlitz River - winter",2017,"steelhead",0.0129279453112079,0.987072054688792,1067000,"Portion","Yes",NA,292,NA,0.581,NA,697,0.581,0.419,0.0217668581067252,292,697
+"Steelhead (Lower Columbia River DPS) Lower Cowlitz River - winter",2018,"steelhead",0.00550833623401817,0.994491663765982,1016015,"Portion","Yes",NA,365,NA,0.32,NA,537,0.32,0.68,0.0169222585748405,365,537
+"Steelhead (Lower Columbia River DPS) Lower Cowlitz River - winter",2019,"steelhead",0.00527000333268654,0.994729996667313,1007734,"Portion","Yes",NA,236,NA,0.291,NA,333,0.291,0.709,0.0177878397185177,236,333
+"Steelhead (Lower Columbia River DPS) Lower Cowlitz River - winter",2020,"steelhead",0.00468646016588795,0.995313539834112,1068770,"Portion","Yes",NA,271,NA,0.349,NA,416,0.349,0.651,0.0132503239272713,271,416
+"Steelhead (Lower Columbia River DPS) Lower Cowlitz River - winter",2021,"steelhead",0.00217614292141004,0.99782385707859,1135883,"Portion","Yes",NA,124,NA,0.168,NA,149,0.168,0.832,0.0127875910456792,124,149
 "Steelhead (Lower Columbia River DPS) Lower Cowlitz River - winter",2022,"steelhead",0,1,1131162,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "Steelhead (Lower Columbia River DPS) Lower Cowlitz River - winter",2023,"steelhead",NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "Steelhead (Lower Columbia River DPS) Lower Gorge Tributaries - winter",2010,"steelhead",NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -739,18 +739,18 @@
 "Steelhead (Lower Columbia River DPS) North Fork Lewis River - summer",2022,"steelhead",0,1,175585,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "Steelhead (Lower Columbia River DPS) North Fork Lewis River - summer",2023,"steelhead",NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "Steelhead (Lower Columbia River DPS) North Fork Lewis River - winter",2010,"steelhead",NA,NA,159160,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"Steelhead (Lower Columbia River DPS) North Fork Lewis River - winter",2011,"steelhead",0.360611276273927,0.639388723726073,81823,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"Steelhead (Lower Columbia River DPS) North Fork Lewis River - winter",2012,"steelhead",0.233044745057232,0.766955254942768,184349,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"Steelhead (Lower Columbia River DPS) North Fork Lewis River - winter",2013,"steelhead",0.156022561863173,0.843977438136827,120639,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"Steelhead (Lower Columbia River DPS) North Fork Lewis River - winter",2014,"steelhead",0.270741231848637,0.729258768151363,190794,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"Steelhead (Lower Columbia River DPS) North Fork Lewis River - winter",2015,"steelhead",0.288178740230977,0.711821259769023,167922,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"Steelhead (Lower Columbia River DPS) North Fork Lewis River - winter",2016,"steelhead",0.248082328838916,0.751917671161084,173713,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"Steelhead (Lower Columbia River DPS) North Fork Lewis River - winter",2017,"steelhead",0.24951407971965,0.75048592028035,156865,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"Steelhead (Lower Columbia River DPS) North Fork Lewis River - winter",2018,"steelhead",0.226847965695446,0.773152034304554,152989,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"Steelhead (Lower Columbia River DPS) North Fork Lewis River - winter",2019,"steelhead",0.258581361980795,0.741418638019205,161316,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"Steelhead (Lower Columbia River DPS) North Fork Lewis River - winter",2020,"steelhead",0.262502613707647,0.737497386292354,162341,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"Steelhead (Lower Columbia River DPS) North Fork Lewis River - winter",2021,"steelhead",0.276061448503596,0.723938551496404,166502,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"Steelhead (Lower Columbia River DPS) North Fork Lewis River - winter",2022,"steelhead",0.24741063168286,0.75258936831714,154111,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"Steelhead (Lower Columbia River DPS) North Fork Lewis River - winter",2011,"steelhead",0.56367193869232,0.43632806130768,81823,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"Steelhead (Lower Columbia River DPS) North Fork Lewis River - winter",2012,"steelhead",0.303711981079366,0.696288018920634,184349,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"Steelhead (Lower Columbia River DPS) North Fork Lewis River - winter",2013,"steelhead",0.184807566375716,0.815192433624284,120639,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"Steelhead (Lower Columbia River DPS) North Fork Lewis River - winter",2014,"steelhead",0.370905115403185,0.629094884596815,190794,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"Steelhead (Lower Columbia River DPS) North Fork Lewis River - winter",2015,"steelhead",0.404485415847834,0.595514584152166,167922,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"Steelhead (Lower Columbia River DPS) North Fork Lewis River - winter",2016,"steelhead",0.32972201274516,0.67027798725484,173713,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"Steelhead (Lower Columbia River DPS) North Fork Lewis River - winter",2017,"steelhead",0.332253848850923,0.667746151149077,156865,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"Steelhead (Lower Columbia River DPS) North Fork Lewis River - winter",2018,"steelhead",0.293230232238919,0.706769767761081,152989,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"Steelhead (Lower Columbia River DPS) North Fork Lewis River - winter",2019,"steelhead",0.34855810954896,0.65144189045104,161316,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"Steelhead (Lower Columbia River DPS) North Fork Lewis River - winter",2020,"steelhead",0.35572652626262,0.64427347373738,162341,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"Steelhead (Lower Columbia River DPS) North Fork Lewis River - winter",2021,"steelhead",0.38109452138713,0.61890547861287,166502,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"Steelhead (Lower Columbia River DPS) North Fork Lewis River - winter",2022,"steelhead",0.348651296792572,0.651348703207428,154111,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "Steelhead (Lower Columbia River DPS) North Fork Lewis River - winter",2023,"steelhead",NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "Steelhead (Lower Columbia River DPS) North Fork Toutle River - winter",2010,"steelhead",NA,NA,24887,"Portion","Yes",NA,NA,NA,NA,NA,510,NA,NA,NA,NA,510
 "Steelhead (Lower Columbia River DPS) North Fork Toutle River - winter",2011,"steelhead",NA,NA,24974,"Portion","Yes",NA,NA,NA,NA,NA,451,NA,NA,NA,NA,451
@@ -777,7 +777,7 @@
 "Steelhead (Lower Columbia River DPS) Salmon Creek - winter",2018,"steelhead",0,1,38179,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "Steelhead (Lower Columbia River DPS) Salmon Creek - winter",2019,"steelhead",0,1,36026,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "Steelhead (Lower Columbia River DPS) Salmon Creek - winter",2020,"steelhead",0,1,40478,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"Steelhead (Lower Columbia River DPS) Salmon Creek - winter",2021,"steelhead",0,1,39588,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"Steelhead (Lower Columbia River DPS) Salmon Creek - winter",2021,"steelhead",NA,NA,39588,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "Steelhead (Lower Columbia River DPS) Salmon Creek - winter",2022,"steelhead",NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "Steelhead (Lower Columbia River DPS) Salmon Creek - winter",2023,"steelhead",NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "Steelhead (Lower Columbia River DPS) South Fork Toutle River - winter",2010,"steelhead",NA,NA,15844,"Same","Yes",NA,NA,NA,NA,NA,274,NA,NA,NA,NA,274
@@ -797,30 +797,30 @@
 "Steelhead (Lower Columbia River DPS) Tilton River - winter",2010,"steelhead",NA,NA,0,"Same","Yes",NA,179,NA,0,NA,179,0,1,NA,179,179
 "Steelhead (Lower Columbia River DPS) Tilton River - winter",2011,"steelhead",NA,NA,0,"Same","Yes",NA,209,NA,0,NA,209,0,1,NA,209,209
 "Steelhead (Lower Columbia River DPS) Tilton River - winter",2012,"steelhead",NA,NA,0,"Same","Yes",NA,284,NA,0,NA,284,0,1,NA,284,284
-"Steelhead (Lower Columbia River DPS) Tilton River - winter",2013,"steelhead",0.500847182667003,0.499152817332997,41679,"Same","Yes",NA,445,NA,0,NA,445,0,1,1,445,445
-"Steelhead (Lower Columbia River DPS) Tilton River - winter",2014,"steelhead",0.500769355867746,0.499230644132254,40030,"Same","Yes",NA,292,NA,0,NA,292,0,1,1,292,292
-"Steelhead (Lower Columbia River DPS) Tilton River - winter",2015,"steelhead",0.455809554311418,0.544190445688582,40058,"Same","Yes",NA,363,NA,0.339,NA,549,0.339,0.661,0.573482731603935,363,549
-"Steelhead (Lower Columbia River DPS) Tilton River - winter",2016,"steelhead",0.500322430010451,0.499677569989549,45000,"Same","Yes",NA,364,NA,0.29,NA,513,0.29,0.71,0.633061154551611,364,513
-"Steelhead (Lower Columbia River DPS) Tilton River - winter",2017,"steelhead",0.430534157820315,0.569465842179685,54000,"Same","Yes",NA,155,NA,0.129,NA,178,0.129,0.871,0.769451072473352,155,178
-"Steelhead (Lower Columbia River DPS) Tilton River - winter",2018,"steelhead",0.485649756000641,0.514350243999359,48886,"Same","Yes",NA,166,NA,0.088,NA,182,0.088,0.912,0.846596291413917,166,182
-"Steelhead (Lower Columbia River DPS) Tilton River - winter",2019,"steelhead",0.500506851230425,0.499493148769575,57274,"Same","Yes",NA,194,NA,0.205,NA,244,0.205,0.795,0.709428760837015,194,244
-"Steelhead (Lower Columbia River DPS) Tilton River - winter",2020,"steelhead",0.322743727938322,0.677256272061678,53625,"Same","Yes",NA,185,NA,0.307,NA,267,0.307,0.693,0.512500106979917,185,267
-"Steelhead (Lower Columbia River DPS) Tilton River - winter",2021,"steelhead",0.239247365317146,0.760752634682854,51374,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"Steelhead (Lower Columbia River DPS) Tilton River - winter",2022,"steelhead",0.215769260365585,0.784230739634415,44864,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"Steelhead (Lower Columbia River DPS) Tilton River - winter",2013,"steelhead",1,0,41679,"Same","Yes",NA,445,NA,0,NA,445,0,1,1,445,445
+"Steelhead (Lower Columbia River DPS) Tilton River - winter",2014,"steelhead",1,0,40030,"Same","Yes",NA,292,NA,0,NA,292,0,1,1,292,292
+"Steelhead (Lower Columbia River DPS) Tilton River - winter",2015,"steelhead",0.836734693877551,0.163265306122449,40058,"Same","Yes",NA,363,NA,0.339,NA,549,0.339,0.661,0.71166964642169,363,549
+"Steelhead (Lower Columbia River DPS) Tilton River - winter",2016,"steelhead",1,0,45000,"Same","Yes",NA,364,NA,0.29,NA,513,0.29,0.71,0.775193798449612,364,513
+"Steelhead (Lower Columbia River DPS) Tilton River - winter",2017,"steelhead",0.755555555555556,0.244444444444444,54000,"Same","Yes",NA,155,NA,0.129,NA,178,0.129,0.871,0.854164049742495,155,178
+"Steelhead (Lower Columbia River DPS) Tilton River - winter",2018,"steelhead",0.942307692307692,0.0576923076923077,48886,"Same","Yes",NA,166,NA,0.088,NA,182,0.088,0.912,0.914588621770942,166,182
+"Steelhead (Lower Columbia River DPS) Tilton River - winter",2019,"steelhead",1,0,57274,"Same","Yes",NA,194,NA,0.205,NA,244,0.205,0.795,0.829875518672199,194,244
+"Steelhead (Lower Columbia River DPS) Tilton River - winter",2020,"steelhead",0.476190476190476,0.523809523809524,53625,"Same","Yes",NA,185,NA,0.307,NA,267,0.307,0.693,0.608013619505077,185,267
+"Steelhead (Lower Columbia River DPS) Tilton River - winter",2021,"steelhead",0.314285714285714,0.685714285714286,51374,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"Steelhead (Lower Columbia River DPS) Tilton River - winter",2022,"steelhead",0.275,0.725,44864,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "Steelhead (Lower Columbia River DPS) Tilton River - winter",2023,"steelhead",NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "Steelhead (Lower Columbia River DPS) Upper Cowlitz River - winter",2010,"steelhead",NA,NA,0,"Multiple","Yes",NA,614,NA,NA,NA,622,0.0128617363344051,0.987138263665595,NA,614,622
 "Steelhead (Lower Columbia River DPS) Upper Cowlitz River - winter",2011,"steelhead",NA,NA,0,"Multiple","Yes",NA,627,NA,NA,NA,646,0.0294117647058824,0.970588235294118,NA,627,646
 "Steelhead (Lower Columbia River DPS) Upper Cowlitz River - winter",2012,"steelhead",NA,NA,0,"Multiple","Yes",NA,580,NA,0,NA,580,0,1,NA,580,580
-"Steelhead (Lower Columbia River DPS) Upper Cowlitz River - winter",2013,"steelhead",0.50047589747534,0.49952410252466,104113,"Multiple","Yes",NA,343,NA,0,NA,343,0,1,1,343,343
-"Steelhead (Lower Columbia River DPS) Upper Cowlitz River - winter",2014,"steelhead",0.0933483676161908,0.906651632383809,118220,"Multiple","Yes",NA,24,NA,0.905,NA,253,0.905,0.095,0.0935027998684304,24,253
-"Steelhead (Lower Columbia River DPS) Upper Cowlitz River - winter",2015,"steelhead",0.323230458188446,0.676769541811554,119708,"Multiple","Yes",NA,151,NA,0.664,NA,449,0.664,0.336,0.32741135112623,151,449
-"Steelhead (Lower Columbia River DPS) Upper Cowlitz River - winter",2016,"steelhead",0.37827849368101,0.62172150631899,127000,"Multiple","Yes",NA,120,NA,0.733,NA,450,0.733,0.267,0.340399365084441,120,450
-"Steelhead (Lower Columbia River DPS) Upper Cowlitz River - winter",2017,"steelhead",0.464395419777136,0.535604580222864,103000,"Multiple","Yes",NA,216,NA,0.335,NA,325,0.335,0.665,0.580933300701929,216,325
-"Steelhead (Lower Columbia River DPS) Upper Cowlitz River - winter",2018,"steelhead",0.336250000177866,0.663749999822134,112528,"Multiple","Yes",NA,400,NA,0.317,NA,586,0.317,0.683,0.514734022328836,400,586
-"Steelhead (Lower Columbia River DPS) Upper Cowlitz River - winter",2019,"steelhead",0.269741297915272,0.730258702084728,104064,"Multiple","Yes",NA,118,NA,0.157,NA,140,0.157,0.843,0.632095602729381,118,140
-"Steelhead (Lower Columbia River DPS) Upper Cowlitz River - winter",2020,"steelhead",0.426029249042512,0.573970750957488,118105,"Multiple","Yes",NA,513,NA,0.342,NA,780,0.342,0.658,0.554704458942983,513,780
-"Steelhead (Lower Columbia River DPS) Upper Cowlitz River - winter",2021,"steelhead",0.50031696279209,0.49968303720791,113650,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"Steelhead (Lower Columbia River DPS) Upper Cowlitz River - winter",2022,"steelhead",0.250090130064616,0.749909869935384,108216,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"Steelhead (Lower Columbia River DPS) Upper Cowlitz River - winter",2013,"steelhead",1,0,104113,"Multiple","Yes",NA,343,NA,0,NA,343,0,1,1,343,343
+"Steelhead (Lower Columbia River DPS) Upper Cowlitz River - winter",2014,"steelhead",0.102941176470588,0.897058823529412,118220,"Multiple","Yes",NA,24,NA,0.905,NA,253,0.905,0.095,0.1021301429822,24,253
+"Steelhead (Lower Columbia River DPS) Upper Cowlitz River - winter",2015,"steelhead",0.477272727272727,0.522727272727273,119708,"Multiple","Yes",NA,151,NA,0.664,NA,449,0.664,0.336,0.418193404492592,151,449
+"Steelhead (Lower Columbia River DPS) Upper Cowlitz River - winter",2016,"steelhead",0.607843137254902,0.392156862745098,127000,"Multiple","Yes",NA,120,NA,0.733,NA,450,0.733,0.267,0.453329043768188,120,450
+"Steelhead (Lower Columbia River DPS) Upper Cowlitz River - winter",2017,"steelhead",0.865853658536585,0.134146341463415,103000,"Multiple","Yes",NA,216,NA,0.335,NA,325,0.335,0.665,0.721031786330862,216,325
+"Steelhead (Lower Columbia River DPS) Upper Cowlitz River - winter",2018,"steelhead",0.506024096385542,0.493975903614458,112528,"Multiple","Yes",NA,400,NA,0.317,NA,586,0.317,0.683,0.614835092444848,400,586
+"Steelhead (Lower Columbia River DPS) Upper Cowlitz River - winter",2019,"steelhead",0.369047619047619,0.630952380952381,104064,"Multiple","Yes",NA,118,NA,0.157,NA,140,0.157,0.843,0.701547931565131,118,140
+"Steelhead (Lower Columbia River DPS) Upper Cowlitz River - winter",2020,"steelhead",0.740740740740741,0.259259259259259,118105,"Multiple","Yes",NA,513,NA,0.342,NA,780,0.342,0.658,0.684134911404529,513,780
+"Steelhead (Lower Columbia River DPS) Upper Cowlitz River - winter",2021,"steelhead",1,0,113650,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"Steelhead (Lower Columbia River DPS) Upper Cowlitz River - winter",2022,"steelhead",0.333333333333333,0.666666666666667,108216,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "Steelhead (Lower Columbia River DPS) Upper Cowlitz River - winter",2023,"steelhead",NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "Steelhead (Lower Columbia River DPS) Upper Gorge Tributaries - winter",2010,"steelhead",NA,NA,0,"Same","Yes",NA,NA,NA,NA,NA,35,NA,NA,NA,NA,35
 "Steelhead (Lower Columbia River DPS) Upper Gorge Tributaries - winter",2011,"steelhead",NA,NA,24003,"Same","Yes",NA,NA,NA,NA,NA,19,NA,NA,NA,NA,19
