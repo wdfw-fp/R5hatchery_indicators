@@ -5,7 +5,7 @@ output:
     orientation: columns
 ---
 
-```{r}
+```{r,message=FALSE,echo=FALSE,results='hide'}
 # Load required libraries
 pacman::p_load(shiny, tidyverse, ggplot2, leaflet,sf,rnaturalearth,httr)
 
