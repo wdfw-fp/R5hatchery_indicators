@@ -169,21 +169,30 @@ server = function(input, output, session) {
     species_population_filtered <- indicators %>%
       filter(if (input$Species != "None") Species == input$Species else TRUE) %>%
       filter(if (input$Population != "None") Population == input$Population else TRUE)
-    updateSelectInput(session, "Run", choices = c("None", unique(species_population_filtered$Run)), selected = if (input$Run != "None") input$Run else "None")
+    
+    choice_cnt<-length(unique(species_population_filtered$Run))
+    
+    updateSelectInput(session, "Run", choices = c("None", unique(species_population_filtered$Run)), selected = if (input$Run != "None") input$Run else if(choice_cnt>1)  "None" else unique(species_population_filtered$Run))
   })
   
   observe({
     run_population_filtered <- indicators %>%
       filter(if (input$Run != "None") Run == input$Run else TRUE) %>%
       filter(if (input$Population != "None") Population == input$Population else TRUE)
-    updateSelectInput(session, "Species", choices = c("None", unique(run_population_filtered$Species)), selected = if (input$Species != "None") input$Species else "None")
+    
+    choice_cnt<-length(unique(run_population_filtered$Species))
+    
+    updateSelectInput(session, "Species", choices = c("None", unique(run_population_filtered$Species)), selected = if (input$Species != "None") input$Species else if(choice_cnt>1)  "None" else unique(run_population_filtered$Species))
   })
   
   observe({
     run_species_filtered <- indicators %>%
       filter(if (input$Run != "None") Run == input$Run else TRUE) %>%
       filter(if (input$Species != "None") Species == input$Species else TRUE)
-    updateSelectInput(session, "Population", choices = c("None", unique(run_species_filtered$Population)), selected = if (input$Population != "None") input$Population else "None")
+    
+    choice_cnt<-length(unique(run_species_filtered$Population))
+    
+    updateSelectInput(session, "Population", choices = c("None", unique(run_species_filtered$Population)), selected = if (input$Population != "None") input$Population else if(choice_cnt>1)  "None" else unique(run_species_filtered$Population))
   })
   
   #map

@@ -1,3 +1,15 @@
+# Load required libraries
+pacman::p_load(shiny, tidyverse, ggplot2, leaflet,sf,rnaturalearth,httr)
+
+# Load your data (replace this with your actual data loading code)
+populations_LUT <- read_csv("results/populations_LUT.csv") %>%
+  dplyr::rename(Population = ESA_Population_Name)
+
+indicators <- read_csv("results/indicators_by_NOAA_pop.csv") %>%
+  dplyr::rename(Population = ESA_Population_Name) %>%
+  left_join(populations_LUT)
+
+
 ui = fluidPage(
   # Title
   titlePanel("Lower Columbia Salmon Indicator Dashboard"),
