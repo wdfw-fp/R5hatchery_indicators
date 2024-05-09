@@ -1,0 +1,31 @@
+run_description,stock_description,species_description,nosa_esa_pop_name,SPI_stock_id
+NA,Columbia River,CHUM,"Salmon, chum (Columbia River ESU) Lower Gorge Tributaries - fall",8A5D58E1-DA28-4CA7-8CC9-C2D7D2184B25
+NA,Grays River,CHUM,"Salmon, chum (Columbia River ESU) Grays and Chinook Rivers - fall",21B7D79C-A1CF-4C67-A798-D61AD141A523
+NA,I-205,CHUM,"Salmon, chum (Columbia River ESU) Washougal River - fall",2CB705B7-0D2C-483F-88D3-80226165224B
+FALL,Cowlitz River,CHINOOK,"Salmon, Chinook (Lower Columbia River ESU) Lower Cowlitz River - fall",2780D7B8-3349-4A06-87C9-386B95DF1882
+FALL,Kalama River,CHINOOK,"Salmon, Chinook (Lower Columbia River ESU) Kalama River - fall",936B6531-3BBF-4FD3-938E-9AFE87978842
+FALL,Toutle River,CHINOOK,"Salmon, Chinook (Lower Columbia River ESU) Toutle River - fall",B1FE67B3-5D33-4978-AF69-1C3C5650A2F3
+FALL,Washougal River,CHINOOK,"Salmon, Chinook (Lower Columbia River ESU) Washougal River - fall",1F2F9F62-FE8F-4934-A1E3-DBAFF7FE49F9
+SPRING,Kalama River,CHINOOK,"Salmon, Chinook (Lower Columbia River ESU) Kalama River - spring",DC782234-F619-4D27-AD19-EDF19D9BF7E7
+SPRING,Lewis River,CHINOOK,"Salmon, Chinook (Lower Columbia River ESU) North Fork Lewis River - spring",BDB87F1F-D64E-47A8-8CE6-0B6BC415973F
+TYPE N,Cowlitz River,COHO,"Salmon, coho (Lower Columbia River ESU) Lower Cowlitz River - late",26A87887-9878-4DA6-A207-C9D26DAEC587
+TYPE N,Elochoman River,COHO,"Salmon, coho (Lower Columbia River ESU) Elochoman River - late",A8655092-2FE2-46DE-B49B-C5A2F4D44451
+TYPE N,Grays River,COHO,"Salmon, coho (Lower Columbia River ESU) Grays and Chinook Rivers - late",B0BAF03F-4C1A-440C-94FB-7BF53CD15D9D
+TYPE N,Kalama River,COHO,"Salmon, coho (Lower Columbia River ESU) Kalama River - late",FC5372B1-0479-448C-B9C5-E8591AA89999
+TYPE N,Lewis River,COHO,"Salmon, coho (Lower Columbia River ESU) North Fork Lewis River - early and late",48D5363E-85A4-45B3-AC34-112780345C7E
+TYPE N,Upper Cowlitz River,COHO,"Salmon, coho (Lower Columbia River ESU) Upper Cowlitz River - early and late",F6D6E39E-80E1-4A22-A52D-EB733334D579
+TYPE N,Washougal River,COHO,"Salmon, coho (Lower Columbia River ESU) Washougal River - late",40B850DA-D2AF-43DE-9E39-495518B517BE
+TYPE S,Grays River,COHO,"Salmon, coho (Lower Columbia River ESU) Grays and Chinook Rivers - late",B0BAF03F-4C1A-440C-94FB-7BF53CD15D9D
+TYPE S,Kalama River,COHO,"Salmon, coho (Lower Columbia River ESU) Kalama River - late",FC5372B1-0479-448C-B9C5-E8591AA89999
+TYPE S,Lewis River,COHO,"Salmon, coho (Lower Columbia River ESU) North Fork Lewis River - early and late",48D5363E-85A4-45B3-AC34-112780345C7E
+TYPE S,Toutle River,COHO,"Salmon, coho (Lower Columbia River ESU) North Fork Toutle River - early and late",DB8AF0AD-BAE9-480B-8A2F-643BF842E6B1
+SUMMER,Kalama River,STEELHEAD,Steelhead (Lower Columbia River DPS) Kalama River - summer,286FEC6E-6971-4434-94D2-25E3F2737187
+WINTER,Cowlitz River,STEELHEAD,Steelhead (Lower Columbia River DPS) Lower Cowlitz River - winter,0CCF5308-0104-462A-823D-208168F9ECF7
+WINTER,Kalama River,STEELHEAD,Steelhead (Lower Columbia River DPS) Kalama River - winter,E4599B39-1404-49A3-B1CF-D09DE1F2963D
+WINTER,Lewis River,STEELHEAD,Steelhead (Lower Columbia River DPS) North Fork Lewis River - winter,221E528E-D73A-40AC-94C5-421B2743FCCA
+WINTERLATE,Cowlitz River,STEELHEAD,Steelhead (Lower Columbia River DPS) Lower Cowlitz River - winter,0CCF5308-0104-462A-823D-208168F9ECF7
+WINTERLATE,Kalama River,STEELHEAD,Steelhead (Lower Columbia River DPS) Kalama River - winter,E4599B39-1404-49A3-B1CF-D09DE1F2963D
+WINTERLATE,Lower Cowlitz River,STEELHEAD,Steelhead (Lower Columbia River DPS) Lower Cowlitz River - winter,0CCF5308-0104-462A-823D-208168F9ECF7
+WINTERLATE,Lewis River,STEELHEAD,Steelhead (Lower Columbia River DPS) North Fork Lewis River - winter,221E528E-D73A-40AC-94C5-421B2743FCCA
+WINTERLATE,Tilton River,STEELHEAD,Steelhead (Lower Columbia River DPS) Tilton River - winter,F088B0C7-1F48-40E0-B871-DA0FF4EB94E6
+WINTERLATE,Upper Cowlitz River,STEELHEAD,Steelhead (Lower Columbia River DPS) Upper Cowlitz River - winter,8E86EC48-6DEB-4FC8-8F3A-7F57B814EBF6
