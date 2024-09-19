@@ -910,6 +910,13 @@ join2<-left_join(releases_NOAA_pop,missed_1,
 releases_NOAA_pop<-bind_rows(join1,join2)
 write.csv(releases_NOAA_pop,"results/releases_noaa_pop.csv",row.names = F)
 
+#unique release combos by location
+releases_NOAA_pop%>%
+  filter(total_amt>0)%>%
+  distinct(esa_pop_name,species,run, name, stock, origin,release_location)%>%
+  write.csv("results/unique_release_combos_noaa_pop.csv",row.names = F)
+
+
 releases_edit%>%
   filter(!release_id%in%releases_NOAA_pop$release_id)%>%
   write.csv("results/qaqc/unassigned_releases.csv",row.names = F)
